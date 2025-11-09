@@ -1,0 +1,18 @@
+{
+  "file_name": "bifrose.exe",
+  "file_path": "/data/bifrose.exe",
+  "image_base": "10000000",
+  "min_address": "10000000",
+  "max_address": "ffdfffff",
+  "md5": "2ef2faffaf5a504e5400aef8d9adc340",
+  "sha256": "f7f193e94e6c43ff8196621172db8a0484123b1baac9264412d52feb764a764b",
+  "crc32": "0xa07cd4c0",
+  "file_size": 85373,
+  "language": "x86:LE:32:default",
+  "compiler": "windows",
+  "endian": "little",
+  "processor": "x86",
+  "executable_format": "Portable Executable (PE)",
+  "creation_date": "Fri Nov 07 14:57:19 UTC 2025",
+  "format": "Portable Executable (PE)"
+}

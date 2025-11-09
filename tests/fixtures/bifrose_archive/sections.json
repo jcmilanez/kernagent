@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Headers",
+    "start": "10000000",
+    "end": "100003ff",
+    "size": 1024,
+    "permissions": {
+      "read": true,
+      "write": false,
+      "execute": false
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": ".text",
+    "start": "10001000",
+    "end": "10009bff",
+    "size": 35840,
+    "permissions": {
+      "read": true,
+      "write": false,
+      "execute": true
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": ".rdata",
+    "start": "1000a000",
+    "end": "1000c3ff",
+    "size": 9216,
+    "permissions": {
+      "read": true,
+      "write": false,
+      "execute": false
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": ".data",
+    "start": "1000d000",
+    "end": "1000fac7",
+    "size": 10952,
+    "permissions": {
+      "read": true,
+      "write": true,
+      "execute": false
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": ".rsrc",
+    "start": "10010000",
+    "end": "100177ff",
+    "size": 30720,
+    "permissions": {
+      "read": true,
+      "write": true,
+      "execute": true
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": ".reloc",
+    "start": "10018000",
+    "end": "10018fff",
+    "size": 4096,
+    "permissions": {
+      "read": true,
+      "write": false,
+      "execute": false
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  },
+  {
+    "name": "tdb",
+    "start": "ffdff000",
+    "end": "ffdfffff",
+    "size": 4096,
+    "permissions": {
+      "read": true,
+      "write": true,
+      "execute": false
+    },
+    "initialized": true,
+    "type": "Default",
+    "comment": null
+  }
+]

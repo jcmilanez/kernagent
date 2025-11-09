@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+.python-version
+
+# Environment
+.env
+
+# Logs and outputs
+*.log
+repomix-output.xml
+
+# Archives
+*.zip
+
+# Malware samples and analysis artifacts (do not commit)
+*.exe
+*.dll
+*.bin
+*_ghidra/
+samples/
+
+.venv/
+
+# MacOS
+
+.DS_Store

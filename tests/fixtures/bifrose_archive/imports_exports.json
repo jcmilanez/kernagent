@@ -1,0 +1,2532 @@
+{
+  "imports": [
+    {
+      "name": "ExitProcess",
+      "library": "KERNEL32.DLL",
+      "address": "0000bef2",
+      "ordinal": 48882,
+      "type": "function",
+      "signature": "void ExitProcess(UINT uExitCode)"
+    },
+    {
+      "name": "RtlUnwind",
+      "library": "KERNEL32.DLL",
+      "address": "0000c12c",
+      "ordinal": 49452,
+      "type": "function",
+      "signature": "void RtlUnwind(PVOID TargetFrame, PVOID TargetIp, PEXCEPTION_RECORD ExceptionRecord, PVOID ReturnValue)"
+    },
+    {
+      "name": "FindResourceA",
+      "library": "KERNEL32.DLL",
+      "address": "0000bda6",
+      "ordinal": 48550,
+      "type": "function",
+      "signature": "HRSRC FindResourceA(HMODULE hModule, LPCSTR lpName, LPCSTR lpType)"
+    },
+    {
+      "name": "SizeofResource",
+      "library": "KERNEL32.DLL",
+      "address": "0000bdb6",
+      "ordinal": 48566,
+      "type": "function",
+      "signature": "DWORD SizeofResource(HMODULE hModule, HRSRC hResInfo)"
+    },
+    {
+      "name": "LoadResource",
+      "library": "KERNEL32.DLL",
+      "address": "0000bdc8",
+      "ordinal": 48584,
+      "type": "function",
+      "signature": "HGLOBAL LoadResource(HMODULE hModule, HRSRC hResInfo)"
+    },
+    {
+      "name": "LockResource",
+      "library": "KERNEL32.DLL",
+      "address": "0000bdd8",
+      "ordinal": 48600,
+      "type": "function",
+      "signature": "LPVOID LockResource(HGLOBAL hResData)"
+    },
+    {
+      "name": "GetSystemTimeAsFileTime",
+      "library": "KERNEL32.DLL",
+      "address": "0000be18",
+      "ordinal": 48664,
+      "type": "function",
+      "signature": "void GetSystemTimeAsFileTime(LPFILETIME lpSystemTimeAsFileTime)"
+    },
+    {
+      "name": "GetCommandLineA",
+      "library": "KERNEL32.DLL",
+      "address": "0000be32",
+      "ordinal": 48690,
+      "type": "function",
+      "signature": "LPSTR GetCommandLineA(void)"
+    },
+    {
+      "name": "IsDebuggerPresent",
+      "library": "KERNEL32.DLL",
+      "address": "0000be92",
+      "ordinal": 48786,
+      "type": "function",
+      "signature": "BOOL IsDebuggerPresent(void)"
+    },
+    {
+      "name": "SetUnhandledExceptionFilter",
+      "library": "KERNEL32.DLL",
+      "address": "0000be74",
+      "ordinal": 48756,
+      "type": "function",
+      "signature": "LPTOP_LEVEL_EXCEPTION_FILTER SetUnhandledExceptionFilter(LPTOP_LEVEL_EXCEPTION_FILTER lpTopLevelExceptionFilter)"
+    },
+    {
+      "name": "UnhandledExceptionFilter",
+      "library": "KERNEL32.DLL",
+      "address": "0000be58",
+      "ordinal": 48728,
+      "type": "function",
+      "signature": "LONG UnhandledExceptionFilter(_EXCEPTION_POINTERS * ExceptionInfo)"
+    },
+    {
+      "name": "GetCurrentProcess",
+      "library": "KERNEL32.DLL",
+      "address": "0000bd80",
+      "ordinal": 48512,
+      "type": "function",
+      "signature": "HANDLE GetCurrentProcess(void)"
+    },
+    {
+      "name": "TerminateProcess",
+      "library": "KERNEL32.DLL",
+      "address": "0000be44",
+      "ordinal": 48708,
+      "type": "function",
+      "signature": "BOOL TerminateProcess(HANDLE hProcess, UINT uExitCode)"
+    },
+    {
+      "name": "EnterCriticalSection",
+      "library": "KERNEL32.DLL",
+      "address": "0000bea6",
+      "ordinal": 48806,
+      "type": "function",
+      "signature": "void EnterCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+    },
+    {
+      "name": "LeaveCriticalSection",
+      "library": "KERNEL32.DLL",
+      "address": "0000bebe",
+      "ordinal": 48830,
+      "type": "function",
+      "signature": "void LeaveCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+    },
+    {
+      "name": "Sleep",
+      "library": "KERNEL32.DLL",
+      "address": "0000beea",
+      "ordinal": 48874,
+      "type": "function",
+      "signature": "void Sleep(DWORD dwMilliseconds)"
+    },
+    {
+      "name": "GetModuleHandleW",
+      "library": "KERNEL32.DLL",
+      "address": "0000bed6",
+      "ordinal": 48854,
+      "type": "function",
+      "signature": "HMODULE GetModuleHandleW(LPCWSTR lpModuleName)"
+    },
+    {
+      "name": "GetProcAddress",
+      "library": "KERNEL32.DLL",
+      "address": "0000bde8",
+      "ordinal": 48616,
+      "type": "function",
+      "signature": "FARPROC GetProcAddress(HMODULE hModule, LPCSTR lpProcName)"
+    },
+    {
+      "name": "GetModuleFileNameA",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf1c",
+      "ordinal": 48924,
+      "type": "function",
+      "signature": "DWORD GetModuleFileNameA(HMODULE hModule, LPSTR lpFilename, DWORD nSize)"
+    },
+    {
+      "name": "GetStdHandle",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf0c",
+      "ordinal": 48908,
+      "type": "function",
+      "signature": "HANDLE GetStdHandle(DWORD nStdHandle)"
+    },
+    {
+      "name": "WriteFile",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf00",
+      "ordinal": 48896,
+      "type": "function",
+      "signature": "BOOL WriteFile(HANDLE hFile, LPCVOID lpBuffer, DWORD nNumberOfBytesToWrite, LPDWORD lpNumberOfBytesWritten, LPOVERLAPPED lpOverlapped)"
+    },
+    {
+      "name": "GetEnvironmentStringsW",
+      "library": "KERNEL32.DLL",
+      "address": "0000bfa4",
+      "ordinal": 49060,
+      "type": "function",
+      "signature": "LPWCH GetEnvironmentStringsW(void)"
+    },
+    {
+      "name": "GetLastError",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf94",
+      "ordinal": 49044,
+      "type": "function",
+      "signature": "DWORD GetLastError(void)"
+    },
+    {
+      "name": "WideCharToMultiByte",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf7e",
+      "ordinal": 49022,
+      "type": "function",
+      "signature": "int WideCharToMultiByte(UINT CodePage, DWORD dwFlags, LPCWSTR lpWideCharStr, int cchWideChar, LPSTR lpMultiByteStr, int cbMultiByte, LPCSTR lpDefaultChar, LPBOOL lpUsedDefaultChar)"
+    },
+    {
+      "name": "FreeEnvironmentStringsW",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf64",
+      "ordinal": 48996,
+      "type": "function",
+      "signature": "BOOL FreeEnvironmentStringsW(LPWCH param_1)"
+    },
+    {
+      "name": "GetEnvironmentStrings",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf4c",
+      "ordinal": 48972,
+      "type": "function",
+      "signature": "LPCH GetEnvironmentStrings(void)"
+    },
+    {
+      "name": "FreeEnvironmentStringsA",
+      "library": "KERNEL32.DLL",
+      "address": "0000bf32",
+      "ordinal": 48946,
+      "type": "function",
+      "signature": "BOOL FreeEnvironmentStringsA(LPCH param_1)"
+    },
+    {
+      "name": "GetStartupInfoA",
+      "library": "KERNEL32.DLL",
+      "address": "0000bfde",
+      "ordinal": 49118,
+      "type": "function",
+      "signature": "void GetStartupInfoA(LPSTARTUPINFOA lpStartupInfo)"
+    },
+    {
+      "name": "GetFileType",
+      "library": "KERNEL32.DLL",
+      "address": "0000bfd0",
+      "ordinal": 49104,
+      "type": "function",
+      "signature": "DWORD GetFileType(HANDLE hFile)"
+    },
+    {
+      "name": "SetHandleCount",
+      "library": "KERNEL32.DLL",
+      "address": "0000bfbe",
+      "ordinal": 49086,
+      "type": "function",
+      "signature": "UINT SetHandleCount(UINT uNumber)"
+    },
+    {
+      "name": "TlsGetValue",
+      "library": "KERNEL32.DLL",
+      "address": "0000c008",
+      "ordinal": 49160,
+      "type": "function",
+      "signature": "LPVOID TlsGetValue(DWORD dwTlsIndex)"
+    },
+    {
+      "name": "TlsSetValue",
+      "library": "KERNEL32.DLL",
+      "address": "0000c022",
+      "ordinal": 49186,
+      "type": "function",
+      "signature": "BOOL TlsSetValue(DWORD dwTlsIndex, LPVOID lpTlsValue)"
+    },
+    {
+      "name": "TlsFree",
+      "library": "KERNEL32.DLL",
+      "address": "0000c030",
+      "ordinal": 49200,
+      "type": "function",
+      "signature": "BOOL TlsFree(DWORD dwTlsIndex)"
+    },
+    {
+      "name": "InterlockedIncrement",
+      "library": "KERNEL32.DLL",
+      "address": "0000c03a",
+      "ordinal": 49210,
+      "type": "function",
+      "signature": "LONG InterlockedIncrement(LONG * lpAddend)"
+    },
+    {
+      "name": "GetCurrentThreadId",
+      "library": "KERNEL32.DLL",
+      "address": "0000c062",
+      "ordinal": 49250,
+      "type": "function",
+      "signature": "DWORD GetCurrentThreadId(void)"
+    },
+    {
+      "name": "SetLastError",
+      "library": "KERNEL32.DLL",
+      "address": "0000c052",
+      "ordinal": 49234,
+      "type": "function",
+      "signature": "void SetLastError(DWORD dwErrCode)"
+    },
+    {
+      "name": "TlsAlloc",
+      "library": "KERNEL32.DLL",
+      "address": "0000c016",
+      "ordinal": 49174,
+      "type": "function",
+      "signature": "DWORD TlsAlloc(void)"
+    },
+    {
+      "name": "HeapCreate",
+      "library": "KERNEL32.DLL",
+      "address": "0000c090",
+      "ordinal": 49296,
+      "type": "function",
+      "signature": "HANDLE HeapCreate(DWORD flOptions, SIZE_T dwInitialSize, SIZE_T dwMaximumSize)"
+    },
+    {
+      "name": "GetCurrentProcessId",
+      "library": "KERNEL32.DLL",
+      "address": "0000c0e2",
+      "ordinal": 49378,
+      "type": "function",
+      "signature": "DWORD GetCurrentProcessId(void)"
+    },
+    {
+      "name": "GetTickCount",
+      "library": "KERNEL32.DLL",
+      "address": "0000c0d2",
+      "ordinal": 49362,
+      "type": "function",
+      "signature": "DWORD GetTickCount(void)"
+    },
+    {
+      "name": "QueryPerformanceCounter",
+      "library": "KERNEL32.DLL",
+      "address": "0000c0b8",
+      "ordinal": 49336,
+      "type": "function",
+      "signature": "BOOL QueryPerformanceCounter(LARGE_INTEGER * lpPerformanceCount)"
+    },
+    {
+      "name": "HeapFree",
+      "library": "KERNEL32.DLL",
+      "address": "0000c0ac",
+      "ordinal": 49324,
+      "type": "function",
+      "signature": "BOOL HeapFree(HANDLE hHeap, DWORD dwFlags, LPVOID lpMem)"
+    },
+    {
+      "name": "DeleteCriticalSection",
+      "library": "KERNEL32.DLL",
+      "address": "0000bff0",
+      "ordinal": 49136,
+      "type": "function",
+      "signature": "void DeleteCriticalSection(LPCRITICAL_SECTION lpCriticalSection)"
+    },
+    {
+      "name": "GetCPInfo",
+      "library": "KERNEL32.DLL",
+      "address": "0000c0f8",
+      "ordinal": 49400,
+      "type": "function",
+      "signature": "BOOL GetCPInfo(UINT CodePage, LPCPINFO lpCPInfo)"
+    },
+    {
+      "name": "InterlockedDecrement",
+      "library": "KERNEL32.DLL",
+      "address": "0000c078",
+      "ordinal": 49272,
+      "type": "function",
+      "signature": "LONG InterlockedDecrement(LONG * lpAddend)"
+    },
+    {
+      "name": "GetOEMCP",
+      "library": "KERNEL32.DLL",
+      "address": "0000c10e",
+      "ordinal": 49422,
+      "type": "function",
+      "signature": "UINT GetOEMCP(void)"
+    },
+    {
+      "name": "GetACP",
+      "library": "KERNEL32.DLL",
+      "address": "0000c104",
+      "ordinal": 49412,
+      "type": "function",
+      "signature": "UINT GetACP(void)"
+    },
+    {
+      "name": "IsValidCodePage",
+      "library": "KERNEL32.DLL",
+      "address": "0000c11a",
+      "ordinal": 49434,
+      "type": "function",
+      "signature": "BOOL IsValidCodePage(UINT CodePage)"
+    },
+    {
+      "name": "InitializeCriticalSectionAndSpinCount",
+      "library": "KERNEL32.DLL",
+      "address": "0000c138",
+      "ordinal": 49464,
+      "type": "function",
+      "signature": "BOOL InitializeCriticalSectionAndSpinCount(LPCRITICAL_SECTION lpCriticalSection, DWORD dwSpinCount)"
+    },
+    {
+      "name": "LoadLibraryA",
+      "library": "KERNEL32.DLL",
+      "address": "0000bdfa",
+      "ordinal": 48634,
+      "type": "function",
+      "signature": "HMODULE LoadLibraryA(LPCSTR lpLibFileName)"
+    },
+    {
+      "name": "VirtualFree",
+      "library": "KERNEL32.DLL",
+      "address": "0000c09e",
+      "ordinal": 49310,
+      "type": "function",
+      "signature": "BOOL VirtualFree(LPVOID lpAddress, SIZE_T dwSize, DWORD dwFreeType)"
+    },
+    {
+      "name": "HeapReAlloc",
+      "library": "KERNEL32.DLL",
+      "address": "0000c17c",
+      "ordinal": 49532,
+      "type": "function",
+      "signature": "LPVOID HeapReAlloc(HANDLE hHeap, DWORD dwFlags, LPVOID lpMem, SIZE_T dwBytes)"
+    },
+    {
+      "name": "HeapAlloc",
+      "library": "KERNEL32.DLL",
+      "address": "0000c160",
+      "ordinal": 49504,
+      "type": "function",
+      "signature": "LPVOID HeapAlloc(HANDLE hHeap, DWORD dwFlags, SIZE_T dwBytes)"
+    },
+    {
+      "name": "VirtualAlloc",
+      "library": "KERNEL32.DLL",
+      "address": "0000c16c",
+      "ordinal": 49516,
+      "type": "function",
+      "signature": "LPVOID VirtualAlloc(LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect)"
+    },
+    {
+      "name": "GetConsoleMode",
+      "library": "KERNEL32.DLL",
+      "address": "0000c19a",
+      "ordinal": 49562,
+      "type": "function",
+      "signature": "BOOL GetConsoleMode(HANDLE hConsoleHandle, LPDWORD lpMode)"
+    },
+    {
+      "name": "GetConsoleCP",
+      "library": "KERNEL32.DLL",
+      "address": "0000c18a",
+      "ordinal": 49546,
+      "type": "function",
+      "signature": "UINT GetConsoleCP(void)"
+    },
+    {
+      "name": "FlushFileBuffers",
+      "library": "KERNEL32.DLL",
+      "address": "0000c1ac",
+      "ordinal": 49580,
+      "type": "function",
+      "signature": "BOOL FlushFileBuffers(HANDLE hFile)"
+    },
+    {
+      "name": "LCMapStringW",
+      "library": "KERNEL32.DLL",
+      "address": "0000c1e6",
+      "ordinal": 49638,
+      "type": "function",
+      "signature": "int LCMapStringW(LCID Locale, DWORD dwMapFlags, LPCWSTR lpSrcStr, int cchSrc, LPWSTR lpDestStr, int cchDest)"
+    },
+    {
+      "name": "MultiByteToWideChar",
+      "library": "KERNEL32.DLL",
+      "address": "0000c1d0",
+      "ordinal": 49616,
+      "type": "function",
+      "signature": "int MultiByteToWideChar(UINT CodePage, DWORD dwFlags, LPCSTR lpMultiByteStr, int cbMultiByte, LPWSTR lpWideCharStr, int cchWideChar)"
+    },
+    {
+      "name": "LCMapStringA",
+      "library": "KERNEL32.DLL",
+      "address": "0000c1c0",
+      "ordinal": 49600,
+      "type": "function",
+      "signature": "int LCMapStringA(LCID Locale, DWORD dwMapFlags, LPCSTR lpSrcStr, int cchSrc, LPSTR lpDestStr, int cchDest)"
+    },
+    {
+      "name": "GetStringTypeW",
+      "library": "KERNEL32.DLL",
+      "address": "0000c208",
+      "ordinal": 49672,
+      "type": "function",
+      "signature": "BOOL GetStringTypeW(DWORD dwInfoType, LPCWSTR lpSrcStr, int cchSrc, LPWORD lpCharType)"
+    },
+    {
+      "name": "GetStringTypeA",
+      "library": "KERNEL32.DLL",
+      "address": "0000c1f6",
+      "ordinal": 49654,
+      "type": "function",
+      "signature": "BOOL GetStringTypeA(LCID Locale, DWORD dwInfoType, LPCSTR lpSrcStr, int cchSrc, LPWORD lpCharType)"
+    },
+    {
+      "name": "SetFilePointer",
+      "library": "KERNEL32.DLL",
+      "address": "0000c22c",
+      "ordinal": 49708,
+      "type": "function",
+      "signature": "DWORD SetFilePointer(HANDLE hFile, LONG lDistanceToMove, PLONG lpDistanceToMoveHigh, DWORD dwMoveMethod)"
+    },
+    {
+      "name": "HeapSize",
+      "library": "KERNEL32.DLL",
+      "address": "0000c23e",
+      "ordinal": 49726,
+      "type": "function",
+      "signature": "SIZE_T HeapSize(HANDLE hHeap, DWORD dwFlags, LPCVOID lpMem)"
+    },
+    {
+      "name": "CloseHandle",
+      "library": "KERNEL32.DLL",
+      "address": "0000c24a",
+      "ordinal": 49738,
+      "type": "function",
+      "signature": "BOOL CloseHandle(HANDLE hObject)"
+    },
+    {
+      "name": "WriteConsoleW",
+      "library": "KERNEL32.DLL",
+      "address": "0000c27e",
+      "ordinal": 49790,
+      "type": "function",
+      "signature": "BOOL WriteConsoleW(HANDLE hConsoleOutput, void * lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten, LPVOID lpReserved)"
+    },
+    {
+      "name": "GetConsoleOutputCP",
+      "library": "KERNEL32.DLL",
+      "address": "0000c268",
+      "ordinal": 49768,
+      "type": "function",
+      "signature": "UINT GetConsoleOutputCP(void)"
+    },
+    {
+      "name": "WriteConsoleA",
+      "library": "KERNEL32.DLL",
+      "address": "0000c258",
+      "ordinal": 49752,
+      "type": "function",
+      "signature": "BOOL WriteConsoleA(HANDLE hConsoleOutput, void * lpBuffer, DWORD nNumberOfCharsToWrite, LPDWORD lpNumberOfCharsWritten, LPVOID lpReserved)"
+    },
+    {
+      "name": "SetStdHandle",
+      "library": "KERNEL32.DLL",
+      "address": "0000c28e",
+      "ordinal": 49806,
+      "type": "function",
+      "signature": "BOOL SetStdHandle(DWORD nStdHandle, HANDLE hHandle)"
+    },
+    {
+      "name": "GetLocaleInfoA",
+      "library": "KERNEL32.DLL",
+      "address": "0000c21a",
+      "ordinal": 49690,
+      "type": "function",
+      "signature": "int GetLocaleInfoA(LCID Locale, LCTYPE LCType, LPSTR lpLCData, int cchData)"
+    },
+    {
+      "name": "CreateFileA",
+      "library": "KERNEL32.DLL",
+      "address": "0000c29e",
+      "ordinal": 49822,
+      "type": "function",
+      "signature": "HANDLE CreateFileA(LPCSTR lpFileName, DWORD dwDesiredAccess, DWORD dwShareMode, LPSECURITY_ATTRIBUTES lpSecurityAttributes, DWORD dwCreationDisposition, DWORD dwFlagsAndAttributes, HANDLE hTemplateFile)"
+    },
+    {
+      "name": "VirtualAllocEx",
+      "library": "KERNEL32.DLL",
+      "address": "0000bd94",
+      "ordinal": 48532,
+      "type": "function",
+      "signature": "LPVOID VirtualAllocEx(HANDLE hProcess, LPVOID lpAddress, SIZE_T dwSize, DWORD flAllocationType, DWORD flProtect)"
+    }
+  ],
+  "exports": [
+    {
+      "name": "FUN_10001020",
+      "address": "10001020",
+      "type": "Function",
+      "signature": "undefined4 FUN_10001020(void)"
+    },
+    {
+      "name": "__security_check_cookie",
+      "address": "1000126a",
+      "type": "Function",
+      "signature": "undefined __security_check_cookie(int param_1)"
+    },
+    {
+      "name": "@__security_check_cookie@4",
+      "address": "1000126a",
+      "type": "Label"
+    },
+    {
+      "name": "_clock",
+      "address": "10001279",
+      "type": "Function",
+      "signature": "clock_t _clock(void)"
+    },
+    {
+      "name": "___inittime",
+      "address": "100012be",
+      "type": "Function",
+      "signature": "undefined4 ___inittime(void)"
+    },
+    {
+      "name": "_printf",
+      "address": "100012f7",
+      "type": "Function",
+      "signature": "int _printf(char * _Format, ...)"
+    },
+    {
+      "name": "FUN_10001393",
+      "address": "10001393",
+      "type": "Function",
+      "signature": "undefined FUN_10001393(void)"
+    },
+    {
+      "name": "__get_printf_count_output",
+      "address": "100013a6",
+      "type": "Function",
+      "signature": "int __get_printf_count_output(void)"
+    },
+    {
+      "name": "fast_error_exit",
+      "address": "100013bc",
+      "type": "Function",
+      "signature": "undefined fast_error_exit(int param_1)"
+    },
+    {
+      "name": "_fast_error_exit",
+      "address": "100013bc",
+      "type": "Label"
+    },
+    {
+      "name": "___tmainCRTStartup",
+      "address": "100013e5",
+      "type": "Function",
+      "signature": "int ___tmainCRTStartup(void)"
+    },
+    {
+      "name": "entry",
+      "address": "10001537",
+      "type": "Function",
+      "signature": "undefined entry(void)"
+    },
+    {
+      "name": "___report_gsfailure",
+      "address": "10001541",
+      "type": "Function",
+      "signature": "void ___report_gsfailure(void)"
+    },
+    {
+      "name": "__aulldiv",
+      "address": "10001650",
+      "type": "Function",
+      "signature": "undefined8 __aulldiv(uint param_1, uint param_2, uint param_3, uint param_4)"
+    },
+    {
+      "name": "__allmul",
+      "address": "100016c0",
+      "type": "Function",
+      "signature": "longlong __allmul(uint param_1, int param_2, uint param_3, int param_4)"
+    },
+    {
+      "name": "FUN_100016f4",
+      "address": "100016f4",
+      "type": "Function",
+      "signature": "undefined * * FUN_100016f4(void)"
+    },
+    {
+      "name": "__lock_file",
+      "address": "100017cb",
+      "type": "Function",
+      "signature": "void __lock_file(FILE * _File)"
+    },
+    {
+      "name": "__lock_file2",
+      "address": "1000180c",
+      "type": "Function",
+      "signature": "void __lock_file2(int _Index, void * _File)"
+    },
+    {
+      "name": "__unlock_file",
+      "address": "1000183e",
+      "type": "Function",
+      "signature": "void __unlock_file(FILE * _File)"
+    },
+    {
+      "name": "__unlock_file2",
+      "address": "1000187a",
+      "type": "Function",
+      "signature": "void __unlock_file2(int _Index, void * _File)"
+    },
+    {
+      "name": "__stbuf",
+      "address": "100018a9",
+      "type": "Function",
+      "signature": "int __stbuf(FILE * _File)"
+    },
+    {
+      "name": "__ftbuf",
+      "address": "10001945",
+      "type": "Function",
+      "signature": "void __ftbuf(int _Flag, FILE * _File)"
+    },
+    {
+      "name": "??0_LocaleUpdate@@QAE@PAUlocaleinfo_struct@@@Z",
+      "address": "10001979",
+      "type": "Label"
+    },
+    {
+      "name": "write_char",
+      "address": "10001a00",
+      "type": "Function",
+      "signature": "undefined write_char(void)"
+    },
+    {
+      "name": "_write_char",
+      "address": "10001a00",
+      "type": "Label"
+    },
+    {
+      "name": "write_multi_char",
+      "address": "10001a33",
+      "type": "Function",
+      "signature": "undefined write_multi_char(undefined4 param_1, int param_2)"
+    },
+    {
+      "name": "_write_multi_char",
+      "address": "10001a33",
+      "type": "Label"
+    },
+    {
+      "name": "write_string",
+      "address": "10001a59",
+      "type": "Function",
+      "signature": "undefined write_string(int param_1)"
+    },
+    {
+      "name": "_write_string",
+      "address": "10001a59",
+      "type": "Label"
+    },
+    {
+      "name": "__output_l",
+      "address": "10001aa6",
+      "type": "Function",
+      "signature": "int __output_l(FILE * _File, char * _Format, _locale_t _Locale, va_list _ArgList)"
+    },
+    {
+      "name": "FUN_1000263e",
+      "address": "1000263e",
+      "type": "Function",
+      "signature": "undefined FUN_1000263e(undefined4 param_1)"
+    },
+    {
+      "name": "__invoke_watson",
+      "address": "1000264d",
+      "type": "Function",
+      "signature": "void __invoke_watson(wchar_t * param_1, wchar_t * param_2, wchar_t * param_3, uint param_4, uintptr_t param_5)"
+    },
+    {
+      "name": "__invalid_parameter",
+      "address": "10002775",
+      "type": "Function",
+      "signature": "undefined __invalid_parameter(wchar_t * param_1, wchar_t * param_2, wchar_t * param_3, uint param_4, uintptr_t param_5)"
+    },
+    {
+      "name": "__get_errno_from_oserr",
+      "address": "1000279b",
+      "type": "Function",
+      "signature": "int __get_errno_from_oserr(ulong param_1)"
+    },
+    {
+      "name": "__errno",
+      "address": "100027dd",
+      "type": "Function",
+      "signature": "int * __errno(void)"
+    },
+    {
+      "name": "___doserrno",
+      "address": "100027f0",
+      "type": "Function",
+      "signature": "ulong * ___doserrno(void)"
+    },
+    {
+      "name": "__dosmaperr",
+      "address": "10002803",
+      "type": "Function",
+      "signature": "void __dosmaperr(ulong param_1)"
+    },
+    {
+      "name": "__SEH_prolog4",
+      "address": "10002828",
+      "type": "Function",
+      "signature": "undefined __SEH_prolog4(undefined4 param_1, int param_2)"
+    },
+    {
+      "name": "__SEH_epilog4",
+      "address": "1000286d",
+      "type": "Function",
+      "signature": "undefined __SEH_epilog4(void)"
+    },
+    {
+      "name": "__except_handler4",
+      "address": "10002890",
+      "type": "Function",
+      "signature": "undefined4 __except_handler4(int * param_1, PVOID param_2, undefined4 param_3)"
+    },
+    {
+      "name": "__CxxUnhandledExceptionFilter",
+      "address": "10002a1c",
+      "type": "Function",
+      "signature": "long __CxxUnhandledExceptionFilter(_EXCEPTION_POINTERS * param_1)"
+    },
+    {
+      "name": "?__CxxUnhandledExceptionFilter@@YGJPAU_EXCEPTION_POINTERS@@@Z",
+      "address": "10002a1c",
+      "type": "Label"
+    },
+    {
+      "name": "__crt_waiting_on_module_handle",
+      "address": "10002a6c",
+      "type": "Function",
+      "signature": "undefined __crt_waiting_on_module_handle(LPCWSTR param_1)"
+    },
+    {
+      "name": "__amsg_exit",
+      "address": "10002a9c",
+      "type": "Function",
+      "signature": "void __amsg_exit(int param_1)"
+    },
+    {
+      "name": "___crtCorExitProcess",
+      "address": "10002ac5",
+      "type": "Function",
+      "signature": "void ___crtCorExitProcess(int param_1)"
+    },
+    {
+      "name": "___crtExitProcess",
+      "address": "10002af0",
+      "type": "Function",
+      "signature": "void ___crtExitProcess(int param_1)"
+    },
+    {
+      "name": "FUN_10002b08",
+      "address": "10002b08",
+      "type": "Function",
+      "signature": "undefined FUN_10002b08(void)"
+    },
+    {
+      "name": "FUN_10002b11",
+      "address": "10002b11",
+      "type": "Function",
+      "signature": "undefined FUN_10002b11(void)"
+    },
+    {
+      "name": "__initterm",
+      "address": "10002b1a",
+      "type": "Function",
+      "signature": "undefined __initterm(undefined4 * param_1)"
+    },
+    {
+      "name": "__initterm_e",
+      "address": "10002b37",
+      "type": "Function",
+      "signature": "undefined __initterm_e(undefined4 * param_1, undefined4 * param_2)"
+    },
+    {
+      "name": "__cinit",
+      "address": "10002b5b",
+      "type": "Function",
+      "signature": "int __cinit(int param_1)"
+    },
+    {
+      "name": "doexit",
+      "address": "10002be0",
+      "type": "Function",
+      "signature": "undefined doexit(int param_1, int param_2, int param_3)"
+    },
+    {
+      "name": "_doexit",
+      "address": "10002be0",
+      "type": "Label"
+    },
+    {
+      "name": "FUN_10002cf7",
+      "address": "10002cf7",
+      "type": "Function",
+      "signature": "undefined FUN_10002cf7(void)"
+    },
+    {
+      "name": "_exit",
+      "address": "10002d0c",
+      "type": "Function",
+      "signature": "void _exit(int _Code)"
+    },
+    {
+      "name": "__exit",
+      "address": "10002d22",
+      "type": "Function",
+      "signature": "undefined __exit(int param_1)"
+    },
+    {
+      "name": "__cexit",
+      "address": "10002d38",
+      "type": "Function",
+      "signature": "void __cexit(void)"
+    },
+    {
+      "name": "FUN_10002d47",
+      "address": "10002d47",
+      "type": "Function",
+      "signature": "undefined FUN_10002d47(void)"
+    },
+    {
+      "name": "__init_pointers",
+      "address": "10002d56",
+      "type": "Function",
+      "signature": "void __init_pointers(void)"
+    },
+    {
+      "name": "__NMSG_WRITE",
+      "address": "10002da4",
+      "type": "Function",
+      "signature": "void __NMSG_WRITE(int param_1)"
+    },
+    {
+      "name": "__FF_MSGBANNER",
+      "address": "10002f4f",
+      "type": "Function",
+      "signature": "void __FF_MSGBANNER(void)"
+    },
+    {
+      "name": "FUN_10002f88",
+      "address": "10002f88",
+      "type": "Function",
+      "signature": "undefined FUN_10002f88(void)"
+    },
+    {
+      "name": "__XcptFilter",
+      "address": "10002f89",
+      "type": "Function",
+      "signature": "int __XcptFilter(ulong _ExceptionNum, _EXCEPTION_POINTERS * _ExceptionPtr)"
+    },
+    {
+      "name": "__setenvp",
+      "address": "100030e9",
+      "type": "Function",
+      "signature": "int __setenvp(void)"
+    },
+    {
+      "name": "parse_cmdline",
+      "address": "100031c7",
+      "type": "Function",
+      "signature": "undefined parse_cmdline(undefined4 * param_1, byte * param_2, int * param_3)"
+    },
+    {
+      "name": "_parse_cmdline",
+      "address": "100031c7",
+      "type": "Label"
+    },
+    {
+      "name": "__setargv",
+      "address": "10003361",
+      "type": "Function",
+      "signature": "int __setargv(void)"
+    },
+    {
+      "name": "___crtGetEnvironmentStringsA",
+      "address": "1000341c",
+      "type": "Function",
+      "signature": "LPVOID ___crtGetEnvironmentStringsA(void)"
+    },
+    {
+      "name": "__ioinit",
+      "address": "10003553",
+      "type": "Function",
+      "signature": "int __ioinit(void)"
+    },
+    {
+      "name": "__RTC_Initialize",
+      "address": "100037a7",
+      "type": "Function",
+      "signature": "undefined __RTC_Initialize(void)"
+    },
+    {
+      "name": "__encode_pointer",
+      "address": "100037f3",
+      "type": "Function",
+      "signature": "int __encode_pointer(int param_1)"
+    },
+    {
+      "name": "__encoded_null",
+      "address": "10003865",
+      "type": "Function",
+      "signature": "undefined __encoded_null(void)"
+    },
+    {
+      "name": "__decode_pointer",
+      "address": "1000386e",
+      "type": "Function",
+      "signature": "int __decode_pointer(int param_1)"
+    },
+    {
+      "name": "___set_flsgetvalue",
+      "address": "100038e9",
+      "type": "Function",
+      "signature": "LPVOID ___set_flsgetvalue(void)"
+    },
+    {
+      "name": "__mtterm",
+      "address": "1000391d",
+      "type": "Function",
+      "signature": "void __mtterm(void)"
+    },
+    {
+      "name": "__initptd",
+      "address": "1000395a",
+      "type": "Function",
+      "signature": "void __initptd(_ptiddata _Ptd, pthreadlocinfo _Locale)"
+    },
+    {
+      "name": "FUN_10003a2f",
+      "address": "10003a2f",
+      "type": "Function",
+      "signature": "undefined FUN_10003a2f(void)"
+    },
+    {
+      "name": "FUN_10003a38",
+      "address": "10003a38",
+      "type": "Function",
+      "signature": "undefined FUN_10003a38(void)"
+    },
+    {
+      "name": "__getptd_noexit",
+      "address": "10003a41",
+      "type": "Function",
+      "signature": "_ptiddata __getptd_noexit(void)"
+    },
+    {
+      "name": "__getptd",
+      "address": "10003aba",
+      "type": "Function",
+      "signature": "_ptiddata __getptd(void)"
+    },
+    {
+      "name": "FUN_10003bee",
+      "address": "10003bee",
+      "type": "Function",
+      "signature": "undefined FUN_10003bee(void)"
+    },
+    {
+      "name": "FUN_10003bfa",
+      "address": "10003bfa",
+      "type": "Function",
+      "signature": "undefined FUN_10003bfa(void)"
+    },
+    {
+      "name": "__mtinit",
+      "address": "10003c03",
+      "type": "Function",
+      "signature": "int __mtinit(void)"
+    },
+    {
+      "name": "__heap_init",
+      "address": "10003d90",
+      "type": "Function",
+      "signature": "int __heap_init(void)"
+    },
+    {
+      "name": "___security_init_cookie",
+      "address": "10003dc0",
+      "type": "Function",
+      "signature": "void ___security_init_cookie(void)"
+    },
+    {
+      "name": "FUN_10003e56",
+      "address": "10003e56",
+      "type": "Function",
+      "signature": "undefined FUN_10003e56(void)"
+    },
+    {
+      "name": "__malloc_crt",
+      "address": "10003e5e",
+      "type": "Function",
+      "signature": "void * __malloc_crt(size_t _Size)"
+    },
+    {
+      "name": "__calloc_crt",
+      "address": "10003ea3",
+      "type": "Function",
+      "signature": "void * __calloc_crt(size_t _Count, size_t _Size)"
+    },
+    {
+      "name": "__realloc_crt",
+      "address": "10003eef",
+      "type": "Function",
+      "signature": "void * __realloc_crt(void * _Ptr, size_t _NewSize)"
+    },
+    {
+      "name": "_free",
+      "address": "10003f3d",
+      "type": "Function",
+      "signature": "void _free(void * _Memory)"
+    },
+    {
+      "name": "FUN_10003f93",
+      "address": "10003f93",
+      "type": "Function",
+      "signature": "undefined FUN_10003f93(void)"
+    },
+    {
+      "name": "FUN_10003fcb",
+      "address": "10003fcb",
+      "type": "Function",
+      "signature": "int FUN_10003fcb(void)"
+    },
+    {
+      "name": "FUN_10004061",
+      "address": "10004061",
+      "type": "Function",
+      "signature": "undefined FUN_10004061(void)"
+    },
+    {
+      "name": "__flush",
+      "address": "1000406a",
+      "type": "Function",
+      "signature": "int __flush(FILE * _File)"
+    },
+    {
+      "name": "__fflush_nolock",
+      "address": "100040d2",
+      "type": "Function",
+      "signature": "int __fflush_nolock(FILE * _File)"
+    },
+    {
+      "name": "flsall",
+      "address": "1000411a",
+      "type": "Function",
+      "signature": "int flsall(int param_1)"
+    },
+    {
+      "name": "_flsall",
+      "address": "1000411a",
+      "type": "Label"
+    },
+    {
+      "name": "FUN_100041bc",
+      "address": "100041bc",
+      "type": "Function",
+      "signature": "undefined FUN_100041bc(void)"
+    },
+    {
+      "name": "FUN_100041eb",
+      "address": "100041eb",
+      "type": "Function",
+      "signature": "undefined FUN_100041eb(void)"
+    },
+    {
+      "name": "FUN_100041f4",
+      "address": "100041f4",
+      "type": "Function",
+      "signature": "undefined FUN_100041f4(void)"
+    },
+    {
+      "name": "__mtinitlocks",
+      "address": "100041fd",
+      "type": "Function",
+      "signature": "int __mtinitlocks(void)"
+    },
+    {
+      "name": "__mtdeletelocks",
+      "address": "10004248",
+      "type": "Function",
+      "signature": "void __mtdeletelocks(void)"
+    },
+    {
+      "name": "FUN_1000429f",
+      "address": "1000429f",
+      "type": "Function",
+      "signature": "undefined FUN_1000429f(int param_1)"
+    },
+    {
+      "name": "__mtinitlocknum",
+      "address": "100042b6",
+      "type": "Function",
+      "signature": "int __mtinitlocknum(int _LockNum)"
+    },
+    {
+      "name": "FUN_10004370",
+      "address": "10004370",
+      "type": "Function",
+      "signature": "undefined FUN_10004370(void)"
+    },
+    {
+      "name": "__lock",
+      "address": "10004379",
+      "type": "Function",
+      "signature": "void __lock(int _File)"
+    },
+    {
+      "name": "__isatty",
+      "address": "100043ac",
+      "type": "Function",
+      "signature": "int __isatty(int _FileHandle)"
+    },
+    {
+      "name": "__fileno",
+      "address": "10004410",
+      "type": "Function",
+      "signature": "int __fileno(FILE * _File)"
+    },
+    {
+      "name": "CPtoLCID",
+      "address": "10004442",
+      "type": "Function",
+      "signature": "int CPtoLCID(int param_1)"
+    },
+    {
+      "name": "?CPtoLCID@@YAHH@Z",
+      "address": "10004442",
+      "type": "Label"
+    },
+    {
+      "name": "setSBCS",
+      "address": "10004471",
+      "type": "Function",
+      "signature": "void setSBCS(threadmbcinfostruct * param_1)"
+    },
+    {
+      "name": "?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z",
+      "address": "10004471",
+      "type": "Label"
+    },
+    {
+      "name": "setSBUpLow",
+      "address": "100044d5",
+      "type": "Function",
+      "signature": "void setSBUpLow(threadmbcinfostruct * param_1)"
+    },
+    {
+      "name": "?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z",
+      "address": "100044d5",
+      "type": "Label"
+    },
+    {
+      "name": "___updatetmbcinfo",
+      "address": "10004668",
+      "type": "Function",
+      "signature": "pthreadmbcinfo ___updatetmbcinfo(void)"
+    },
+    {
+      "name": "FUN_10004703",
+      "address": "10004703",
+      "type": "Function",
+      "signature": "undefined FUN_10004703(void)"
+    },
+    {
+      "name": "getSystemCP",
+      "address": "1000470c",
+      "type": "Function",
+      "signature": "int getSystemCP(int param_1)"
+    },
+    {
+      "name": "?getSystemCP@@YAHH@Z",
+      "address": "1000470c",
+      "type": "Label"
+    },
+    {
+      "name": "__setmbcp_nolock",
+      "address": "10004788",
+      "type": "Function",
+      "signature": "undefined __setmbcp_nolock(undefined4 param_1, int param_2)"
+    },
+    {
+      "name": "__setmbcp",
+      "address": "1000496d",
+      "type": "Function",
+      "signature": "int __setmbcp(int _CodePage)"
+    },
+    {
+      "name": "FUN_10004ace",
+      "address": "10004ace",
+      "type": "Function",
+      "signature": "undefined FUN_10004ace(void)"
+    },
+    {
+      "name": "___initmbctable",
+      "address": "10004b07",
+      "type": "Function",
+      "signature": "undefined4 ___initmbctable(void)"
+    },
+    {
+      "name": "___freetlocinfo",
+      "address": "10004b25",
+      "type": "Function",
+      "signature": "undefined ___freetlocinfo(void * param_1)"
+    },
+    {
+      "name": "___addlocaleref",
+      "address": "10004c6e",
+      "type": "Function",
+      "signature": "undefined ___addlocaleref(LONG * param_1)"
+    },
+    {
+      "name": "___removelocaleref",
+      "address": "10004cfd",
+      "type": "Function",
+      "signature": "LONG * ___removelocaleref(LONG * param_1)"
+    },
+    {
+      "name": "__updatetlocinfoEx_nolock",
+      "address": "10004d96",
+      "type": "Function",
+      "signature": "LONG * __updatetlocinfoEx_nolock(void)"
+    },
+    {
+      "name": "___updatetlocinfo",
+      "address": "10004dd4",
+      "type": "Function",
+      "signature": "pthreadlocinfo ___updatetlocinfo(void)"
+    },
+    {
+      "name": "FUN_10004e3e",
+      "address": "10004e3e",
+      "type": "Function",
+      "signature": "undefined FUN_10004e3e(void)"
+    },
+    {
+      "name": "__flsbuf",
+      "address": "10004e4a",
+      "type": "Function",
+      "signature": "int __flsbuf(int _Ch, FILE * _File)"
+    },
+    {
+      "name": "__initp_misc_cfltcvt_tab",
+      "address": "10004fae",
+      "type": "Function",
+      "signature": "undefined __initp_misc_cfltcvt_tab(void)"
+    },
+    {
+      "name": "_strlen",
+      "address": "10004fd0",
+      "type": "Function",
+      "signature": "size_t _strlen(char * _Str)"
+    },
+    {
+      "name": "__wctomb_s_l",
+      "address": "1000505b",
+      "type": "Function",
+      "signature": "errno_t __wctomb_s_l(int * _SizeConverted, char * _MbCh, size_t _SizeInBytes, wchar_t _WCh, _locale_t _Locale)"
+    },
+    {
+      "name": "_wctomb_s",
+      "address": "100051c7",
+      "type": "Function",
+      "signature": "errno_t _wctomb_s(int * _SizeConverted, char * _MbCh, rsize_t _SizeInBytes, wchar_t _WCh)"
+    },
+    {
+      "name": "__isleadbyte_l",
+      "address": "100051e4",
+      "type": "Function",
+      "signature": "int __isleadbyte_l(int _C, _locale_t _Locale)"
+    },
+    {
+      "name": "_isleadbyte",
+      "address": "1000521c",
+      "type": "Function",
+      "signature": "int _isleadbyte(int _C)"
+    },
+    {
+      "name": "__aulldvrm",
+      "address": "10005230",
+      "type": "Function",
+      "signature": "undefined8 __aulldvrm(uint param_1, uint param_2, uint param_3, uint param_4)"
+    },
+    {
+      "name": "_memset",
+      "address": "100052d0",
+      "type": "Function",
+      "signature": "void * _memset(void * _Dst, int _Val, size_t _Size)"
+    },
+    {
+      "name": "__local_unwind4",
+      "address": "1000534c",
+      "type": "Function",
+      "signature": "undefined __local_unwind4(uint * param_1, int param_2, uint param_3)"
+    },
+    {
+      "name": "FUN_10005422",
+      "address": "10005422",
+      "type": "Function",
+      "signature": "undefined FUN_10005422(int param_1)"
+    },
+    {
+      "name": "_EH4_CallFilterFunc",
+      "address": "1000543e",
+      "type": "Function",
+      "signature": "undefined _EH4_CallFilterFunc(undefined * param_1)"
+    },
+    {
+      "name": "@_EH4_CallFilterFunc@8",
+      "address": "1000543e",
+      "type": "Label"
+    },
+    {
+      "name": "_EH4_TransferToHandler",
+      "address": "10005455",
+      "type": "Function",
+      "signature": "undefined _EH4_TransferToHandler(undefined * UNRECOVERED_JUMPTABLE)"
+    },
+    {
+      "name": "@_EH4_TransferToHandler@8",
+      "address": "10005455",
+      "type": "Label"
+    },
+    {
+      "name": "_EH4_GlobalUnwind",
+      "address": "1000546e",
+      "type": "Function",
+      "signature": "undefined _EH4_GlobalUnwind(PVOID param_1)"
+    },
+    {
+      "name": "@_EH4_GlobalUnwind@4",
+      "address": "1000546e",
+      "type": "Label"
+    },
+    {
+      "name": "_EH4_LocalUnwind",
+      "address": "10005488",
+      "type": "Function",
+      "signature": "undefined _EH4_LocalUnwind(int param_1, uint param_2, undefined4 param_3, uint * param_4)"
+    },
+    {
+      "name": "@_EH4_LocalUnwind@16",
+      "address": "10005488",
+      "type": "Label"
+    },
+    {
+      "name": "__ValidateImageBase",
+      "address": "100054a0",
+      "type": "Function",
+      "signature": "BOOL __ValidateImageBase(PBYTE pImageBase)"
+    },
+    {
+      "name": "__FindPESection",
+      "address": "100054e0",
+      "type": "Function",
+      "signature": "PIMAGE_SECTION_HEADER __FindPESection(PBYTE pImageBase, DWORD_PTR rva)"
+    },
+    {
+      "name": "__IsNonwritableInCurrentImage",
+      "address": "10005530",
+      "type": "Function",
+      "signature": "BOOL __IsNonwritableInCurrentImage(PBYTE pTarget)"
+    },
+    {
+      "name": "terminate",
+      "address": "100055ed",
+      "type": "Function",
+      "signature": "void terminate(void)"
+    },
+    {
+      "name": "?terminate@@YAXXZ",
+      "address": "100055ed",
+      "type": "Label"
+    },
+    {
+      "name": "__initp_eh_hooks",
+      "address": "10005626",
+      "type": "Function",
+      "signature": "undefined __initp_eh_hooks(void)"
+    },
+    {
+      "name": "__onexit_nolock",
+      "address": "10005637",
+      "type": "Function",
+      "signature": "int __onexit_nolock(int param_1)"
+    },
+    {
+      "name": "__onexit",
+      "address": "10005722",
+      "type": "Function",
+      "signature": "_onexit_t __onexit(_onexit_t _Func)"
+    },
+    {
+      "name": "FUN_10005758",
+      "address": "10005758",
+      "type": "Function",
+      "signature": "undefined FUN_10005758(void)"
+    },
+    {
+      "name": "_atexit",
+      "address": "1000575e",
+      "type": "Function",
+      "signature": "int _atexit(_func_4879 * param_1)"
+    },
+    {
+      "name": "__initp_misc_winsig",
+      "address": "10005775",
+      "type": "Function",
+      "signature": "undefined __initp_misc_winsig(undefined4 param_1)"
+    },
+    {
+      "name": "siglookup",
+      "address": "10005793",
+      "type": "Function",
+      "signature": "uint siglookup(uint param_1)"
+    },
+    {
+      "name": "_siglookup",
+      "address": "10005793",
+      "type": "Label"
+    },
+    {
+      "name": "___get_sigabrt",
+      "address": "100057ca",
+      "type": "Function",
+      "signature": "_PHNDLR ___get_sigabrt(void)"
+    },
+    {
+      "name": "_raise",
+      "address": "100057d7",
+      "type": "Function",
+      "signature": "int _raise(int _SigNum)"
+    },
+    {
+      "name": "FUN_1000594b",
+      "address": "1000594b",
+      "type": "Function",
+      "signature": "undefined FUN_1000594b(void)"
+    },
+    {
+      "name": "FUN_10005987",
+      "address": "10005987",
+      "type": "Function",
+      "signature": "undefined FUN_10005987(undefined4 param_1)"
+    },
+    {
+      "name": "FUN_10005996",
+      "address": "10005996",
+      "type": "Function",
+      "signature": "undefined FUN_10005996(undefined4 param_1)"
+    },
+    {
+      "name": "FUN_100059a5",
+      "address": "100059a5",
+      "type": "Function",
+      "signature": "undefined FUN_100059a5(undefined4 param_1)"
+    },
+    {
+      "name": "___crtInitCritSecAndSpinCount",
+      "address": "100059b4",
+      "type": "Function",
+      "signature": "BOOL ___crtInitCritSecAndSpinCount(LPCRITICAL_SECTION param_1, DWORD param_2)"
+    },
+    {
+      "name": "FUN_10005a14",
+      "address": "10005a14",
+      "type": "Function",
+      "signature": "undefined FUN_10005a14(undefined4 param_1)"
+    },
+    {
+      "name": "__callnewh",
+      "address": "10005a23",
+      "type": "Function",
+      "signature": "int __callnewh(size_t _Size)"
+    },
+    {
+      "name": "___crtMessageBoxA",
+      "address": "10005a4b",
+      "type": "Function",
+      "signature": "int ___crtMessageBoxA(LPCSTR _LpText, LPCSTR _LpCaption, UINT _UType)"
+    },
+    {
+      "name": "_strcat_s",
+      "address": "10005bb4",
+      "type": "Function",
+      "signature": "errno_t _strcat_s(char * _Dst, rsize_t _SizeInBytes, char * _Src)"
+    },
+    {
+      "name": "_strncpy_s",
+      "address": "10005c28",
+      "type": "Function",
+      "signature": "errno_t _strncpy_s(char * _Dst, rsize_t _SizeInBytes, char * _Src, rsize_t _MaxCount)"
+    },
+    {
+      "name": "_strcpy_s",
+      "address": "10005cdd",
+      "type": "Function",
+      "signature": "errno_t _strcpy_s(char * _Dst, rsize_t _SizeInBytes, char * _Src)"
+    },
+    {
+      "name": "__set_error_mode",
+      "address": "10005d45",
+      "type": "Function",
+      "signature": "int __set_error_mode(int _Mode)"
+    },
+    {
+      "name": "x_ismbbtype_l",
+      "address": "10005d90",
+      "type": "Function",
+      "signature": "int x_ismbbtype_l(localeinfo_struct * param_1, uint param_2, int param_3, int param_4)"
+    },
+    {
+      "name": "?x_ismbbtype_l@@YAHPAUlocaleinfo_struct@@IHH@Z",
+      "address": "10005d90",
+      "type": "Label"
+    },
+    {
+      "name": "__ismbblead",
+      "address": "10005de3",
+      "type": "Function",
+      "signature": "int __ismbblead(uint _C)"
+    },
+    {
+      "name": "_memcpy",
+      "address": "10005e00",
+      "type": "Function",
+      "signature": "void * _memcpy(void * _Dst, void * _Src, size_t _Size)"
+    },
+    {
+      "name": "___sbh_find_block",
+      "address": "10006165",
+      "type": "Function",
+      "signature": "uint ___sbh_find_block(int param_1)"
+    },
+    {
+      "name": "___sbh_free_block",
+      "address": "10006195",
+      "type": "Function",
+      "signature": "undefined ___sbh_free_block(uint * param_1, int param_2)"
+    },
+    {
+      "name": "___sbh_alloc_new_region",
+      "address": "100064ab",
+      "type": "Function",
+      "signature": "undefined4 * ___sbh_alloc_new_region(void)"
+    },
+    {
+      "name": "___sbh_alloc_new_group",
+      "address": "1000655b",
+      "type": "Function",
+      "signature": "int ___sbh_alloc_new_group(int param_1)"
+    },
+    {
+      "name": "___sbh_resize_block",
+      "address": "10006663",
+      "type": "Function",
+      "signature": "undefined4 ___sbh_resize_block(uint * param_1, int param_2, int param_3)"
+    },
+    {
+      "name": "___sbh_alloc_block",
+      "address": "10006944",
+      "type": "Function",
+      "signature": "int * ___sbh_alloc_block(uint * param_1)"
+    },
+    {
+      "name": "_V6_HeapAlloc",
+      "address": "10006c29",
+      "type": "Function",
+      "signature": "int * _V6_HeapAlloc(uint * param_1)"
+    },
+    {
+      "name": "FUN_10006c6f",
+      "address": "10006c6f",
+      "type": "Function",
+      "signature": "undefined FUN_10006c6f(void)"
+    },
+    {
+      "name": "_malloc",
+      "address": "10006c78",
+      "type": "Function",
+      "signature": "void * _malloc(size_t _Size)"
+    },
+    {
+      "name": "__calloc_impl",
+      "address": "10006d42",
+      "type": "Function",
+      "signature": "int * __calloc_impl(uint param_1, uint param_2, undefined4 * param_3)"
+    },
+    {
+      "name": "FUN_10006e3e",
+      "address": "10006e3e",
+      "type": "Function",
+      "signature": "undefined FUN_10006e3e(void)"
+    },
+    {
+      "name": "_realloc",
+      "address": "10006e60",
+      "type": "Function",
+      "signature": "void * _realloc(void * _Memory, size_t _NewSize)"
+    },
+    {
+      "name": "FUN_10006fa4",
+      "address": "10006fa4",
+      "type": "Function",
+      "signature": "undefined FUN_10006fa4(void)"
+    },
+    {
+      "name": "__fclose_nolock",
+      "address": "1000707b",
+      "type": "Function",
+      "signature": "int __fclose_nolock(FILE * _File)"
+    },
+    {
+      "name": "FUN_100070f2",
+      "address": "100070f2",
+      "type": "Function",
+      "signature": "int FUN_100070f2(FILE * param_1)"
+    },
+    {
+      "name": "FUN_10007166",
+      "address": "10007166",
+      "type": "Function",
+      "signature": "undefined FUN_10007166(void)"
+    },
+    {
+      "name": "__write_nolock",
+      "address": "1000716e",
+      "type": "Function",
+      "signature": "int __write_nolock(int _FileHandle, void * _Buf, uint _MaxCharCount)"
+    },
+    {
+      "name": "__write",
+      "address": "100078a1",
+      "type": "Function",
+      "signature": "int __write(int _FileHandle, void * _Buf, uint _MaxCharCount)"
+    },
+    {
+      "name": "FUN_10007973",
+      "address": "10007973",
+      "type": "Function",
+      "signature": "undefined FUN_10007973(void)"
+    },
+    {
+      "name": "__commit",
+      "address": "1000797d",
+      "type": "Function",
+      "signature": "int __commit(int _FileHandle)"
+    },
+    {
+      "name": "FUN_10007a54",
+      "address": "10007a54",
+      "type": "Function",
+      "signature": "undefined FUN_10007a54(void)"
+    },
+    {
+      "name": "__freea",
+      "address": "10007a5e",
+      "type": "Function",
+      "signature": "void __freea(void * _Memory)"
+    },
+    {
+      "name": "__crtLCMapStringA_stat",
+      "address": "10007a7e",
+      "type": "Function",
+      "signature": "int __crtLCMapStringA_stat(localeinfo_struct * param_1, ulong param_2, ulong param_3, char * param_4, int param_5, char * param_6, int param_7, int param_8, int param_9)"
+    },
+    {
+      "name": "?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z",
+      "address": "10007a7e",
+      "type": "Label"
+    },
+    {
+      "name": "___crtLCMapStringA",
+      "address": "10007e23",
+      "type": "Function",
+      "signature": "int ___crtLCMapStringA(_locale_t _Plocinfo, LPCWSTR _LocaleName, DWORD _DwMapFlag, LPCSTR _LpSrcStr, int _CchSrc, LPSTR _LpDestStr, int _CchDest, int _Code_page, BOOL _BError)"
+    },
+    {
+      "name": "__crtGetStringTypeA_stat",
+      "address": "10007e6b",
+      "type": "Function",
+      "signature": "int __crtGetStringTypeA_stat(localeinfo_struct * param_1, ulong param_2, char * param_3, int param_4, ushort * param_5, int param_6, int param_7, int param_8)"
+    },
+    {
+      "name": "?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z",
+      "address": "10007e6b",
+      "type": "Label"
+    },
+    {
+      "name": "___crtGetStringTypeA",
+      "address": "10008025",
+      "type": "Function",
+      "signature": "BOOL ___crtGetStringTypeA(_locale_t _Plocinfo, DWORD _DWInfoType, LPCSTR _LpSrcStr, int _CchSrc, LPWORD _LpCharType, int _Code_page, BOOL _BError)"
+    },
+    {
+      "name": "___free_lc_time",
+      "address": "10008067",
+      "type": "Function",
+      "signature": "undefined ___free_lc_time(undefined4 * param_1)"
+    },
+    {
+      "name": "___free_lconv_num",
+      "address": "100081fc",
+      "type": "Function",
+      "signature": "undefined ___free_lconv_num(undefined4 * param_1)"
+    },
+    {
+      "name": "___free_lconv_mon",
+      "address": "10008241",
+      "type": "Function",
+      "signature": "undefined ___free_lconv_mon(int param_1)"
+    },
+    {
+      "name": "_strcspn",
+      "address": "100082d0",
+      "type": "Function",
+      "signature": "size_t _strcspn(char * _Str, char * _Control)"
+    },
+    {
+      "name": "_strpbrk",
+      "address": "100083b0",
+      "type": "Function",
+      "signature": "char * _strpbrk(char * _Str, char * _Control)"
+    },
+    {
+      "name": "__lseeki64_nolock",
+      "address": "100083f0",
+      "type": "Function",
+      "signature": "longlong __lseeki64_nolock(int _FileHandle, longlong _Offset, int _Origin)"
+    },
+    {
+      "name": "__lseeki64",
+      "address": "10008475",
+      "type": "Function",
+      "signature": "longlong __lseeki64(int _FileHandle, longlong _Offset, int _Origin)"
+    },
+    {
+      "name": "FUN_10008584",
+      "address": "10008584",
+      "type": "Function",
+      "signature": "undefined FUN_10008584(void)"
+    },
+    {
+      "name": "__getbuf",
+      "address": "1000858e",
+      "type": "Function",
+      "signature": "void __getbuf(FILE * _File)"
+    },
+    {
+      "name": "fastzero_I",
+      "address": "100085e0",
+      "type": "Function",
+      "signature": "undefined fastzero_I(undefined1[16] * param_1, uint param_2)"
+    },
+    {
+      "name": "_fastzero_I",
+      "address": "100085e0",
+      "type": "Label"
+    },
+    {
+      "name": "__VEC_memzero",
+      "address": "10008637",
+      "type": "Function",
+      "signature": "undefined1[16] * __VEC_memzero(undefined1[16] * param_1, undefined4 param_2, uint param_3)"
+    },
+    {
+      "name": "FUN_100086c6",
+      "address": "100086c6",
+      "type": "Function",
+      "signature": "undefined4 FUN_100086c6(void)"
+    },
+    {
+      "name": "__get_sse2_info",
+      "address": "10008716",
+      "type": "Function",
+      "signature": "undefined4 __get_sse2_info(void)"
+    },
+    {
+      "name": "__global_unwind2",
+      "address": "10008788",
+      "type": "Function",
+      "signature": "undefined __global_unwind2(PVOID param_1)"
+    },
+    {
+      "name": "__local_unwind2",
+      "address": "100087ed",
+      "type": "Function",
+      "signature": "undefined __local_unwind2(int param_1, uint param_2)"
+    },
+    {
+      "name": "__NLG_Notify",
+      "address": "1000889d",
+      "type": "Function",
+      "signature": "void __NLG_Notify(ulong param_1)"
+    },
+    {
+      "name": "FUN_100088bc",
+      "address": "100088bc",
+      "type": "Function",
+      "signature": "undefined FUN_100088bc(void)"
+    },
+    {
+      "name": "strtoxl",
+      "address": "100088bf",
+      "type": "Function",
+      "signature": "ulong strtoxl(localeinfo_struct * param_1, char * param_2, char * * param_3, int param_4, int param_5)"
+    },
+    {
+      "name": "?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z",
+      "address": "100088bf",
+      "type": "Label"
+    },
+    {
+      "name": "_strtol",
+      "address": "10008aee",
+      "type": "Function",
+      "signature": "long _strtol(char * _Str, char * * _EndPtr, int _Radix)"
+    },
+    {
+      "name": "_abort",
+      "address": "10008b19",
+      "type": "Function",
+      "signature": "void _abort(void)"
+    },
+    {
+      "name": "__msize",
+      "address": "10008c30",
+      "type": "Function",
+      "signature": "size_t __msize(void * _Memory)"
+    },
+    {
+      "name": "FUN_10008cca",
+      "address": "10008cca",
+      "type": "Function",
+      "signature": "undefined FUN_10008cca(void)"
+    },
+    {
+      "name": "FUN_10008cd3",
+      "address": "10008cd3",
+      "type": "Function",
+      "signature": "undefined FUN_10008cd3(undefined4 * param_1, undefined4 * param_2, uint param_3)"
+    },
+    {
+      "name": "__VEC_memcpy",
+      "address": "10008d5a",
+      "type": "Function",
+      "signature": "undefined4 * __VEC_memcpy(undefined4 * param_1, undefined4 * param_2, uint param_3)"
+    },
+    {
+      "name": "_memmove",
+      "address": "10008e40",
+      "type": "Function",
+      "signature": "void * _memmove(void * _Dst, void * _Src, size_t _Size)"
+    },
+    {
+      "name": "__close_nolock",
+      "address": "100091a5",
+      "type": "Function",
+      "signature": "int __close_nolock(int _FileHandle)"
+    },
+    {
+      "name": "__close",
+      "address": "10009241",
+      "type": "Function",
+      "signature": "int __close(int _FileHandle)"
+    },
+    {
+      "name": "FUN_10009304",
+      "address": "10009304",
+      "type": "Function",
+      "signature": "undefined FUN_10009304(void)"
+    },
+    {
+      "name": "__freebuf",
+      "address": "1000930e",
+      "type": "Function",
+      "signature": "void __freebuf(FILE * _File)"
+    },
+    {
+      "name": "__putwch_nolock",
+      "address": "1000933f",
+      "type": "Function",
+      "signature": "wint_t __putwch_nolock(wchar_t _WCh)"
+    },
+    {
+      "name": "__mbtowc_l",
+      "address": "10009404",
+      "type": "Function",
+      "signature": "int __mbtowc_l(wchar_t * _DstCh, char * _SrcCh, size_t _SrcSizeInBytes, _locale_t _Locale)"
+    },
+    {
+      "name": "_mbtowc",
+      "address": "1000951b",
+      "type": "Function",
+      "signature": "int _mbtowc(wchar_t * _DstCh, char * _SrcCh, size_t _SrcSizeInBytes)"
+    },
+    {
+      "name": "__alloca_probe",
+      "address": "10009540",
+      "type": "Function",
+      "signature": "undefined __alloca_probe(void)"
+    },
+    {
+      "name": "__chkstk",
+      "address": "10009540",
+      "type": "Label"
+    },
+    {
+      "name": "__free_osfhnd",
+      "address": "1000956b",
+      "type": "Function",
+      "signature": "int __free_osfhnd(int param_1)"
+    },
+    {
+      "name": "__get_osfhandle",
+      "address": "100095f1",
+      "type": "Function",
+      "signature": "intptr_t __get_osfhandle(int _FileHandle)"
+    },
+    {
+      "name": "___lock_fhandle",
+      "address": "10009668",
+      "type": "Function",
+      "signature": "int ___lock_fhandle(int _Filehandle)"
+    },
+    {
+      "name": "FUN_100096ff",
+      "address": "100096ff",
+      "type": "Function",
+      "signature": "undefined FUN_100096ff(void)"
+    },
+    {
+      "name": "__unlock_fhandle",
+      "address": "10009708",
+      "type": "Function",
+      "signature": "void __unlock_fhandle(int _Filehandle)"
+    },
+    {
+      "name": "___ansicp",
+      "address": "1000972f",
+      "type": "Function",
+      "signature": "undefined ___ansicp(LCID param_1)"
+    },
+    {
+      "name": "___convertcp",
+      "address": "10009778",
+      "type": "Function",
+      "signature": "undefined ___convertcp(UINT param_1, UINT param_2, char * param_3, uint * param_4, LPSTR param_5, int param_6)"
+    },
+    {
+      "name": "__alloca_probe_16",
+      "address": "10009930",
+      "type": "Function",
+      "signature": "uint __alloca_probe_16(void)"
+    },
+    {
+      "name": "__alloca_probe_8",
+      "address": "10009946",
+      "type": "Function",
+      "signature": "uint __alloca_probe_8(void)"
+    },
+    {
+      "name": "_atol",
+      "address": "1000995c",
+      "type": "Function",
+      "signature": "long _atol(char * _Str)"
+    },
+    {
+      "name": "__isctype_l",
+      "address": "10009972",
+      "type": "Function",
+      "signature": "int __isctype_l(int _C, int _Type, _locale_t _Locale)"
+    },
+    {
+      "name": "___initconout",
+      "address": "10009a2a",
+      "type": "Function",
+      "signature": "void ___initconout(void)"
+    },
+    {
+      "name": "___ascii_strnicmp",
+      "address": "10009a80",
+      "type": "Function",
+      "signature": "int ___ascii_strnicmp(char * _Str1, char * _Str2, size_t _MaxCount)"
+    },
+    {
+      "name": "RtlUnwind",
+      "address": "10009bbe",
+      "type": "Function",
+      "signature": "void RtlUnwind(PVOID TargetFrame, PVOID TargetIp, PEXCEPTION_RECORD ExceptionRecord, PVOID ReturnValue)"
+    },
+    {
+      "name": "Rsrc_DAT_6c_804",
+      "address": "100100a8",
+      "type": "Label"
+    },
+    {
+      "name": "Rsrc_Manifest_1_409",
+      "address": "100174a8",
+      "type": "Label"
+    },
+    {
+      "name": "ExceptionList",
+      "address": "ffdff000",
+      "type": "Label"
+    },
+    {
+      "name": "StackBase",
+      "address": "ffdff004",
+      "type": "Label"
+    },
+    {
+      "name": "StackLimit",
+      "address": "ffdff008",
+      "type": "Label"
+    },
+    {
+      "name": "SubSystemTib",
+      "address": "ffdff00c",
+      "type": "Label"
+    },
+    {
+      "name": "FiberData",
+      "address": "ffdff010",
+      "type": "Label"
+    },
+    {
+      "name": "ArbitraryUserPointer",
+      "address": "ffdff014",
+      "type": "Label"
+    },
+    {
+      "name": "Self",
+      "address": "ffdff018",
+      "type": "Label"
+    },
+    {
+      "name": "EnvironmentPointer",
+      "address": "ffdff01c",
+      "type": "Label"
+    },
+    {
+      "name": "ClientId",
+      "address": "ffdff020",
+      "type": "Label"
+    },
+    {
+      "name": "ActiveRpcHandle",
+      "address": "ffdff028",
+      "type": "Label"
+    },
+    {
+      "name": "ThreadLocalStoragePointer",
+      "address": "ffdff02c",
+      "type": "Label"
+    },
+    {
+      "name": "ProcessEnvironmentBlock",
+      "address": "ffdff030",
+      "type": "Label"
+    },
+    {
+      "name": "LastErrorValue",
+      "address": "ffdff034",
+      "type": "Label"
+    },
+    {
+      "name": "CountOfOwnedCriticalSections",
+      "address": "ffdff038",
+      "type": "Label"
+    },
+    {
+      "name": "CsrClientThread",
+      "address": "ffdff03c",
+      "type": "Label"
+    },
+    {
+      "name": "Win32ThreadInfo",
+      "address": "ffdff040",
+      "type": "Label"
+    },
+    {
+      "name": "User32Reserved",
+      "address": "ffdff044",
+      "type": "Label"
+    },
+    {
+      "name": "UserReserved",
+      "address": "ffdff0ac",
+      "type": "Label"
+    },
+    {
+      "name": "WOW32Reserved",
+      "address": "ffdff0c0",
+      "type": "Label"
+    },
+    {
+      "name": "CurrentLocale",
+      "address": "ffdff0c4",
+      "type": "Label"
+    },
+    {
+      "name": "FpSoftwareStatusRegister",
+      "address": "ffdff0c8",
+      "type": "Label"
+    },
+    {
+      "name": "SystemReserved1",
+      "address": "ffdff0cc",
+      "type": "Label"
+    },
+    {
+      "name": "ExceptionCode",
+      "address": "ffdff1a4",
+      "type": "Label"
+    },
+    {
+      "name": "ActivationContextStackPointer",
+      "address": "ffdff1a8",
+      "type": "Label"
+    },
+    {
+      "name": "SpareBytes",
+      "address": "ffdff1ac",
+      "type": "Label"
+    },
+    {
+      "name": "TxFsContext",
+      "address": "ffdff1d0",
+      "type": "Label"
+    },
+    {
+      "name": "GdiTebBatch",
+      "address": "ffdff1d4",
+      "type": "Label"
+    },
+    {
+      "name": "RealClientId",
+      "address": "ffdff6b4",
+      "type": "Label"
+    },
+    {
+      "name": "GdiCachedProcessHandle",
+      "address": "ffdff6bc",
+      "type": "Label"
+    },
+    {
+      "name": "GdiClientPID",
+      "address": "ffdff6c0",
+      "type": "Label"
+    },
+    {
+      "name": "GdiCLientTID",
+      "address": "ffdff6c4",
+      "type": "Label"
+    },
+    {
+      "name": "GdiThreadLocalInfo",
+      "address": "ffdff6c8",
+      "type": "Label"
+    },
+    {
+      "name": "Win32ClientInfo",
+      "address": "ffdff6cc",
+      "type": "Label"
+    },
+    {
+      "name": "glDispatchTable",
+      "address": "ffdff7c4",
+      "type": "Label"
+    },
+    {
+      "name": "glReserved1",
+      "address": "ffdffb68",
+      "type": "Label"
+    },
+    {
+      "name": "glReserved2",
+      "address": "ffdffbdc",
+      "type": "Label"
+    },
+    {
+      "name": "glSectionInfo",
+      "address": "ffdffbe0",
+      "type": "Label"
+    },
+    {
+      "name": "glSection",
+      "address": "ffdffbe4",
+      "type": "Label"
+    },
+    {
+      "name": "glTable",
+      "address": "ffdffbe8",
+      "type": "Label"
+    },
+    {
+      "name": "glCurrentRC",
+      "address": "ffdffbec",
+      "type": "Label"
+    },
+    {
+      "name": "glContext",
+      "address": "ffdffbf0",
+      "type": "Label"
+    },
+    {
+      "name": "LastStatusValue",
+      "address": "ffdffbf4",
+      "type": "Label"
+    },
+    {
+      "name": "StaticUnicodeBuffer",
+      "address": "ffdffc00",
+      "type": "Label"
+    },
+    {
+      "name": "DeallocationStack",
+      "address": "ffdffe0c",
+      "type": "Label"
+    },
+    {
+      "name": "TlsSlots",
+      "address": "ffdffe10",
+      "type": "Label"
+    },
+    {
+      "name": "TlsLinks.Flink",
+      "address": "ffdfff10",
+      "type": "Label"
+    },
+    {
+      "name": "TlsLinks.Blink",
+      "address": "ffdfff14",
+      "type": "Label"
+    },
+    {
+      "name": "Vdm",
+      "address": "ffdfff18",
+      "type": "Label"
+    },
+    {
+      "name": "ReservedForNtRpc",
+      "address": "ffdfff1c",
+      "type": "Label"
+    },
+    {
+      "name": "DbgSsReserved",
+      "address": "ffdfff20",
+      "type": "Label"
+    },
+    {
+      "name": "HardErrorMode",
+      "address": "ffdfff28",
+      "type": "Label"
+    },
+    {
+      "name": "Instrumentation",
+      "address": "ffdfff2c",
+      "type": "Label"
+    },
+    {
+      "name": "ActivityId",
+      "address": "ffdfff50",
+      "type": "Label"
+    },
+    {
+      "name": "SubProcessTag",
+      "address": "ffdfff60",
+      "type": "Label"
+    },
+    {
+      "name": "EtwLocalData",
+      "address": "ffdfff64",
+      "type": "Label"
+    },
+    {
+      "name": "EtwTraceData",
+      "address": "ffdfff68",
+      "type": "Label"
+    },
+    {
+      "name": "WinSockData",
+      "address": "ffdfff6c",
+      "type": "Label"
+    },
+    {
+      "name": "GdiBatchCount",
+      "address": "ffdfff70",
+      "type": "Label"
+    },
+    {
+      "name": "IdealProcessorValue",
+      "address": "ffdfff74",
+      "type": "Label"
+    },
+    {
+      "name": "GuaranteedStackBytes",
+      "address": "ffdfff78",
+      "type": "Label"
+    },
+    {
+      "name": "ReservedForPerf",
+      "address": "ffdfff7c",
+      "type": "Label"
+    },
+    {
+      "name": "ReservedForOle",
+      "address": "ffdfff80",
+      "type": "Label"
+    },
+    {
+      "name": "WaitingOnLoaderLock",
+      "address": "ffdfff84",
+      "type": "Label"
+    },
+    {
+      "name": "SavedPriorityState",
+      "address": "ffdfff88",
+      "type": "Label"
+    },
+    {
+      "name": "SoftPatchPtr1",
+      "address": "ffdfff8c",
+      "type": "Label"
+    },
+    {
+      "name": "ThreadPoolData",
+      "address": "ffdfff90",
+      "type": "Label"
+    },
+    {
+      "name": "TlsExpansionSlots",
+      "address": "ffdfff94",
+      "type": "Label"
+    },
+    {
+      "name": "MuiGeneration",
+      "address": "ffdfff98",
+      "type": "Label"
+    },
+    {
+      "name": "IsImpersonating",
+      "address": "ffdfff9c",
+      "type": "Label"
+    },
+    {
+      "name": "NlsCache",
+      "address": "ffdfffa0",
+      "type": "Label"
+    },
+    {
+      "name": "pShimData",
+      "address": "ffdfffa4",
+      "type": "Label"
+    },
+    {
+      "name": "HeapVirtualAffinity",
+      "address": "ffdfffa8",
+      "type": "Label"
+    },
+    {
+      "name": "CurrentTransactionHandle",
+      "address": "ffdfffac",
+      "type": "Label"
+    },
+    {
+      "name": "ActiveFrame",
+      "address": "ffdfffb0",
+      "type": "Label"
+    },
+    {
+      "name": "FlsData",
+      "address": "ffdfffb4",
+      "type": "Label"
+    },
+    {
+      "name": "PreferredLanguages",
+      "address": "ffdfffb8",
+      "type": "Label"
+    },
+    {
+      "name": "UserPrefLanguages",
+      "address": "ffdfffbc",
+      "type": "Label"
+    },
+    {
+      "name": "MergedPrefLanguages",
+      "address": "ffdfffc0",
+      "type": "Label"
+    },
+    {
+      "name": "MuiImpersonation",
+      "address": "ffdfffc4",
+      "type": "Label"
+    },
+    {
+      "name": "CrossTebFlags",
+      "address": "ffdfffc8",
+      "type": "Label"
+    },
+    {
+      "name": "SameTebFlags",
+      "address": "ffdfffca",
+      "type": "Label"
+    },
+    {
+      "name": "TxnScopeEnterCallback",
+      "address": "ffdfffcc",
+      "type": "Label"
+    },
+    {
+      "name": "TxnScopeExitCallback",
+      "address": "ffdfffd0",
+      "type": "Label"
+    },
+    {
+      "name": "TxnScopeContext",
+      "address": "ffdfffd4",
+      "type": "Label"
+    },
+    {
+      "name": "LockCount",
+      "address": "ffdfffd8",
+      "type": "Label"
+    },
+    {
+      "name": "ResourceRetValue",
+      "address": "ffdfffe0",
+      "type": "Label"
+    }
+  ]
+}

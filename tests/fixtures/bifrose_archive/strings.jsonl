@@ -1,0 +1,157 @@
+{"ea": "10000000", "value": "MZ", "length": 2, "xrefs": [{"from": "10000124", "function": null}, {"from": "100013f6", "function": "___tmainCRTStartup"}, {"from": "1000556c", "function": "__IsNonwritableInCurrentImage"}, {"from": "10005586", "function": "__IsNonwritableInCurrentImage"}, {"from": "10005580", "function": "__IsNonwritableInCurrentImage"}]}
+{"ea": "100000f0", "value": "PE", "length": 4, "xrefs": [{"from": "10001404", "function": "___tmainCRTStartup"}]}
+{"ea": "100001e8", "value": ".text", "length": 8, "xrefs": []}
+{"ea": "10000210", "value": ".rdata", "length": 8, "xrefs": []}
+{"ea": "10000238", "value": ".data", "length": 8, "xrefs": []}
+{"ea": "10000260", "value": ".rsrc", "length": 8, "xrefs": []}
+{"ea": "10000288", "value": ".reloc", "length": 8, "xrefs": []}
+{"ea": "1000a194", "value": "(null)", "length": 14, "xrefs": [{"from": "10001f75", "function": "__output_l"}, {"from": "10002408", "function": "__output_l"}, {"from": "1000d294", "function": null}]}
+{"ea": "1000a1a4", "value": "(null)", "length": 7, "xrefs": [{"from": "10002426", "function": "__output_l"}, {"from": "10002435", "function": "__output_l"}, {"from": "10002065", "function": "__output_l"}, {"from": "1000206b", "function": "__output_l"}, {"from": "1000d290", "function": null}]}
+{"ea": "1000a20c", "value": "CorExitProcess", "length": 15, "xrefs": [{"from": "10002ad9", "function": "___crtCorExitProcess"}]}
+{"ea": "1000a21c", "value": "mscoree.dll", "length": 24, "xrefs": [{"from": "10002aca", "function": "___crtCorExitProcess"}]}
+{"ea": "1000a234", "value": "runtime error ", "length": 16, "xrefs": []}
+{"ea": "1000a248", "value": "TLOSS error\r\n", "length": 16, "xrefs": []}
+{"ea": "1000a258", "value": "SING error\r\n", "length": 16, "xrefs": []}
+{"ea": "1000a268", "value": "DOMAIN error\r\n", "length": 16, "xrefs": []}
+{"ea": "1000a278", "value": "R6034\r\nAn application has made an attempt to load the C runtime library incorrectly.\nPlease contact the application's support team for more information.\r\n", "length": 156, "xrefs": []}
+{"ea": "1000a318", "value": "R6033\r\n- Attempt to use MSIL code from this assembly during native code initialization\nThis indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.\r\n", "length": 248, "xrefs": []}
+{"ea": "1000a410", "value": "R6032\r\n- not enough space for locale information\r\n", "length": 52, "xrefs": []}
+{"ea": "1000a448", "value": "R6031\r\n- Attempt to initialize the CRT more than once.\nThis indicates a bug in your application.\r\n", "length": 100, "xrefs": []}
+{"ea": "1000a4ac", "value": "R6030\r\n- CRT not initialized\r\n", "length": 32, "xrefs": []}
+{"ea": "1000a4cc", "value": "R6028\r\n- unable to initialize heap\r\n", "length": 40, "xrefs": []}
+{"ea": "1000a4f4", "value": "R6027\r\n- not enough space for lowio initialization\r\n", "length": 56, "xrefs": []}
+{"ea": "1000a52c", "value": "R6026\r\n- not enough space for stdio initialization\r\n", "length": 56, "xrefs": []}
+{"ea": "1000a564", "value": "R6025\r\n- pure virtual function call\r\n", "length": 40, "xrefs": []}
+{"ea": "1000a58c", "value": "R6024\r\n- not enough space for _onexit/atexit table\r\n", "length": 56, "xrefs": []}
+{"ea": "1000a5c4", "value": "R6019\r\n- unable to open console device\r\n", "length": 44, "xrefs": []}
+{"ea": "1000a5f0", "value": "R6018\r\n- unexpected heap error\r\n", "length": 36, "xrefs": []}
+{"ea": "1000a614", "value": "R6017\r\n- unexpected multithread lock error\r\n", "length": 48, "xrefs": []}
+{"ea": "1000a644", "value": "R6016\r\n- not enough space for thread data\r\n", "length": 44, "xrefs": []}
+{"ea": "1000a670", "value": "\r\nThis application has requested the Runtime to terminate it in an unusual way.\nPlease contact the application's support team for more information.\r\n", "length": 152, "xrefs": []}
+{"ea": "1000a708", "value": "R6009\r\n- not enough space for environment\r\n", "length": 44, "xrefs": [{"from": "10002f38", "function": "__NMSG_WRITE"}, {"from": "10002f41", "function": "__NMSG_WRITE"}, {"from": "10002ee1", "function": "__NMSG_WRITE"}, {"from": "1000d424", "function": null}]}
+{"ea": "1000a734", "value": "R6008\r\n- not enough space for arguments\r\n", "length": 44, "xrefs": []}
+{"ea": "1000a760", "value": "R6002\r\n- floating point support not loaded\r\n", "length": 48, "xrefs": []}
+{"ea": "1000a790", "value": "Microsoft Visual C++ Runtime Library", "length": 37, "xrefs": [{"from": "10002f08", "function": "__NMSG_WRITE"}]}
+{"ea": "1000a7c0", "value": "<program name unknown>", "length": 23, "xrefs": [{"from": "10002e51", "function": "__NMSG_WRITE"}]}
+{"ea": "1000a7d8", "value": "Runtime Error!\n\nProgram: ", "length": 26, "xrefs": [{"from": "10002e09", "function": "__NMSG_WRITE"}]}
+{"ea": "1000a870", "value": "EncodePointer", "length": 14, "xrefs": [{"from": "10003994", "function": "__initptd"}, {"from": "10003847", "function": "__encode_pointer"}]}
+{"ea": "1000a880", "value": "KERNEL32.DLL", "length": 26, "xrefs": [{"from": "10003c0c", "function": "__mtinit"}, {"from": "10003c17", "function": "__mtinit"}, {"from": "100038ac", "function": "__decode_pointer"}, {"from": "100038b7", "function": "__decode_pointer"}, {"from": "1000396b", "function": "__initptd"}, {"from": "10003976", "function": "__initptd"}, {"from": "10003831", "function": "__encode_pointer"}, {"from": "1000383c", "function": "__encode_pointer"}, {"from": "1000382c", "function": "__encode_pointer"}, {"from": "100038a7", "function": "__decode_pointer"}, {"from": "10003966", "function": "__initptd"}, {"from": "10003c07", "function": "__mtinit"}]}
+{"ea": "1000a89c", "value": "DecodePointer", "length": 14, "xrefs": [{"from": "100038c2", "function": "__decode_pointer"}, {"from": "100039a8", "function": "__initptd"}]}
+{"ea": "1000a8ac", "value": "FlsFree", "length": 8, "xrefs": [{"from": "10003c50", "function": "__mtinit"}]}
+{"ea": "1000a8b4", "value": "FlsSetValue", "length": 12, "xrefs": [{"from": "10003c43", "function": "__mtinit"}]}
+{"ea": "1000a8c0", "value": "FlsGetValue", "length": 12, "xrefs": [{"from": "10003c36", "function": "__mtinit"}]}
+{"ea": "1000a8cc", "value": "FlsAlloc", "length": 9, "xrefs": [{"from": "10003c2e", "function": "__mtinit"}]}
+{"ea": "1000a9b4", "value": "GetProcessWindowStation", "length": 24, "xrefs": [{"from": "10005ae8", "function": "___crtMessageBoxA"}]}
+{"ea": "1000a9cc", "value": "GetUserObjectInformationA", "length": 26, "xrefs": [{"from": "10005ac9", "function": "___crtMessageBoxA"}]}
+{"ea": "1000a9e8", "value": "GetLastActivePopup", "length": 19, "xrefs": [{"from": "10005ab4", "function": "___crtMessageBoxA"}]}
+{"ea": "1000a9fc", "value": "GetActiveWindow", "length": 16, "xrefs": [{"from": "10005a9f", "function": "___crtMessageBoxA"}]}
+{"ea": "1000aa0c", "value": "MessageBoxA", "length": 12, "xrefs": [{"from": "10005a89", "function": "___crtMessageBoxA"}]}
+{"ea": "1000aa18", "value": "USER32.DLL", "length": 11, "xrefs": [{"from": "10005a6e", "function": "___crtMessageBoxA"}]}
+{"ea": "1000b230", "value": "HH:mm:ss", "length": 9, "xrefs": [{"from": "1000dd40", "function": null}]}
+{"ea": "1000b23c", "value": "dddd, MMMM dd, yyyy", "length": 20, "xrefs": [{"from": "1000dd3c", "function": null}]}
+{"ea": "1000b250", "value": "MM/dd/yy", "length": 9, "xrefs": [{"from": "1000dd38", "function": null}]}
+{"ea": "1000b264", "value": "December", "length": 9, "xrefs": [{"from": "1000dd2c", "function": null}]}
+{"ea": "1000b270", "value": "November", "length": 9, "xrefs": [{"from": "1000dd28", "function": null}]}
+{"ea": "1000b27c", "value": "October", "length": 8, "xrefs": [{"from": "1000dd24", "function": null}]}
+{"ea": "1000b284", "value": "September", "length": 10, "xrefs": [{"from": "1000dd20", "function": null}]}
+{"ea": "1000b290", "value": "August", "length": 7, "xrefs": [{"from": "1000dd1c", "function": null}]}
+{"ea": "1000b2a8", "value": "April", "length": 6, "xrefs": [{"from": "1000dd0c", "function": null}]}
+{"ea": "1000b2b0", "value": "March", "length": 6, "xrefs": [{"from": "1000dd08", "function": null}]}
+{"ea": "1000b2b8", "value": "February", "length": 9, "xrefs": [{"from": "1000dd04", "function": null}]}
+{"ea": "1000b2c4", "value": "January", "length": 8, "xrefs": [{"from": "1000dd00", "function": null}]}
+{"ea": "1000b2fc", "value": "Saturday", "length": 9, "xrefs": [{"from": "1000dccc", "function": null}]}
+{"ea": "1000b308", "value": "Friday", "length": 7, "xrefs": [{"from": "1000dcc8", "function": null}]}
+{"ea": "1000b310", "value": "Thursday", "length": 9, "xrefs": [{"from": "1000dcc4", "function": null}]}
+{"ea": "1000b31c", "value": "Wednesday", "length": 10, "xrefs": [{"from": "1000dcc0", "function": null}]}
+{"ea": "1000b328", "value": "Tuesday", "length": 8, "xrefs": [{"from": "1000dcbc", "function": null}]}
+{"ea": "1000b330", "value": "Monday", "length": 7, "xrefs": [{"from": "1000dcb8", "function": null}]}
+{"ea": "1000b338", "value": "Sunday", "length": 7, "xrefs": [{"from": "1000dcb4", "function": null}]}
+{"ea": "1000b35c", "value": "SunMonTueWedThuFriSat", "length": 24, "xrefs": []}
+{"ea": "1000b374", "value": "JanFebMarAprMayJunJulAugSepOctNovDec", "length": 40, "xrefs": []}
+{"ea": "1000b39c", "value": "CONOUT$", "length": 8, "xrefs": [{"from": "10009a38", "function": "___initconout"}]}
+{"ea": "1000b794", "value": "hRes ERR!\n", "length": 11, "xrefs": [{"from": "1000103e", "function": "FUN_10001020"}]}
+{"ea": "1000b7a0", "value": "size 0 err!\n", "length": 13, "xrefs": [{"from": "10001067", "function": "FUN_10001020"}]}
+{"ea": "1000b7b0", "value": "load err!\n", "length": 11, "xrefs": [{"from": "10001090", "function": "FUN_10001020"}]}
+{"ea": "1000b7bc", "value": "locak err!\n", "length": 12, "xrefs": [{"from": "100010b7", "function": "FUN_10001020"}]}
+{"ea": "1000b810", "value": "RSDS", "length": 4, "xrefs": []}
+{"ea": "1000b828", "value": "E:\\shellcode\\shellcode\\Release\\shellcode.pdb", "length": 44, "xrefs": []}
+{"ea": "1000bd82", "value": "GetCurrentProcess", "length": 18, "xrefs": []}
+{"ea": "1000bd96", "value": "VirtualAllocEx", "length": 15, "xrefs": []}
+{"ea": "1000bda8", "value": "FindResourceA", "length": 14, "xrefs": []}
+{"ea": "1000bdb8", "value": "SizeofResource", "length": 15, "xrefs": []}
+{"ea": "1000bdca", "value": "LoadResource", "length": 13, "xrefs": []}
+{"ea": "1000bdda", "value": "LockResource", "length": 13, "xrefs": []}
+{"ea": "1000bdea", "value": "GetProcAddress", "length": 15, "xrefs": []}
+{"ea": "1000bdfc", "value": "LoadLibraryA", "length": 13, "xrefs": []}
+{"ea": "1000be0a", "value": "KERNEL32.dll", "length": 13, "xrefs": []}
+{"ea": "1000be1a", "value": "GetSystemTimeAsFileTime", "length": 24, "xrefs": []}
+{"ea": "1000be34", "value": "GetCommandLineA", "length": 16, "xrefs": []}
+{"ea": "1000be46", "value": "TerminateProcess", "length": 17, "xrefs": []}
+{"ea": "1000be5a", "value": "UnhandledExceptionFilter", "length": 25, "xrefs": []}
+{"ea": "1000be76", "value": "SetUnhandledExceptionFilter", "length": 28, "xrefs": []}
+{"ea": "1000be94", "value": "IsDebuggerPresent", "length": 18, "xrefs": []}
+{"ea": "1000bea8", "value": "EnterCriticalSection", "length": 21, "xrefs": []}
+{"ea": "1000bec0", "value": "LeaveCriticalSection", "length": 21, "xrefs": []}
+{"ea": "1000bed8", "value": "GetModuleHandleW", "length": 17, "xrefs": []}
+{"ea": "1000beec", "value": "Sleep", "length": 6, "xrefs": []}
+{"ea": "1000bef4", "value": "ExitProcess", "length": 12, "xrefs": []}
+{"ea": "1000bf02", "value": "WriteFile", "length": 10, "xrefs": []}
+{"ea": "1000bf0e", "value": "GetStdHandle", "length": 13, "xrefs": []}
+{"ea": "1000bf1e", "value": "GetModuleFileNameA", "length": 19, "xrefs": []}
+{"ea": "1000bf34", "value": "FreeEnvironmentStringsA", "length": 24, "xrefs": []}
+{"ea": "1000bf4e", "value": "GetEnvironmentStrings", "length": 22, "xrefs": []}
+{"ea": "1000bf66", "value": "FreeEnvironmentStringsW", "length": 24, "xrefs": []}
+{"ea": "1000bf80", "value": "WideCharToMultiByte", "length": 20, "xrefs": []}
+{"ea": "1000bf96", "value": "GetLastError", "length": 13, "xrefs": []}
+{"ea": "1000bfa6", "value": "GetEnvironmentStringsW", "length": 23, "xrefs": []}
+{"ea": "1000bfc0", "value": "SetHandleCount", "length": 15, "xrefs": []}
+{"ea": "1000bfd2", "value": "GetFileType", "length": 12, "xrefs": []}
+{"ea": "1000bfe0", "value": "GetStartupInfoA", "length": 16, "xrefs": []}
+{"ea": "1000bff2", "value": "DeleteCriticalSection", "length": 22, "xrefs": []}
+{"ea": "1000c00a", "value": "TlsGetValue", "length": 12, "xrefs": []}
+{"ea": "1000c018", "value": "TlsAlloc", "length": 9, "xrefs": []}
+{"ea": "1000c024", "value": "TlsSetValue", "length": 12, "xrefs": []}
+{"ea": "1000c032", "value": "TlsFree", "length": 8, "xrefs": []}
+{"ea": "1000c03c", "value": "InterlockedIncrement", "length": 21, "xrefs": []}
+{"ea": "1000c054", "value": "SetLastError", "length": 13, "xrefs": []}
+{"ea": "1000c064", "value": "GetCurrentThreadId", "length": 19, "xrefs": []}
+{"ea": "1000c07a", "value": "InterlockedDecrement", "length": 21, "xrefs": []}
+{"ea": "1000c092", "value": "HeapCreate", "length": 11, "xrefs": []}
+{"ea": "1000c0a0", "value": "VirtualFree", "length": 12, "xrefs": []}
+{"ea": "1000c0ae", "value": "HeapFree", "length": 9, "xrefs": []}
+{"ea": "1000c0ba", "value": "QueryPerformanceCounter", "length": 24, "xrefs": []}
+{"ea": "1000c0d4", "value": "GetTickCount", "length": 13, "xrefs": []}
+{"ea": "1000c0e4", "value": "GetCurrentProcessId", "length": 20, "xrefs": []}
+{"ea": "1000c0fa", "value": "GetCPInfo", "length": 10, "xrefs": []}
+{"ea": "1000c106", "value": "GetACP", "length": 7, "xrefs": []}
+{"ea": "1000c110", "value": "GetOEMCP", "length": 9, "xrefs": []}
+{"ea": "1000c11c", "value": "IsValidCodePage", "length": 16, "xrefs": []}
+{"ea": "1000c12e", "value": "RtlUnwind", "length": 10, "xrefs": []}
+{"ea": "1000c13a", "value": "InitializeCriticalSectionAndSpinCount", "length": 38, "xrefs": []}
+{"ea": "1000c162", "value": "HeapAlloc", "length": 10, "xrefs": []}
+{"ea": "1000c16e", "value": "VirtualAlloc", "length": 13, "xrefs": []}
+{"ea": "1000c17e", "value": "HeapReAlloc", "length": 12, "xrefs": []}
+{"ea": "1000c18c", "value": "GetConsoleCP", "length": 13, "xrefs": []}
+{"ea": "1000c19c", "value": "GetConsoleMode", "length": 15, "xrefs": []}
+{"ea": "1000c1ae", "value": "FlushFileBuffers", "length": 17, "xrefs": []}
+{"ea": "1000c1c2", "value": "LCMapStringA", "length": 13, "xrefs": []}
+{"ea": "1000c1d2", "value": "MultiByteToWideChar", "length": 20, "xrefs": []}
+{"ea": "1000c1e8", "value": "LCMapStringW", "length": 13, "xrefs": []}
+{"ea": "1000c1f8", "value": "GetStringTypeA", "length": 15, "xrefs": []}
+{"ea": "1000c20a", "value": "GetStringTypeW", "length": 15, "xrefs": []}
+{"ea": "1000c21c", "value": "GetLocaleInfoA", "length": 15, "xrefs": []}
+{"ea": "1000c22e", "value": "SetFilePointer", "length": 15, "xrefs": []}
+{"ea": "1000c240", "value": "HeapSize", "length": 9, "xrefs": []}
+{"ea": "1000c24c", "value": "CloseHandle", "length": 12, "xrefs": []}
+{"ea": "1000c25a", "value": "WriteConsoleA", "length": 14, "xrefs": []}
+{"ea": "1000c26a", "value": "GetConsoleOutputCP", "length": 19, "xrefs": []}
+{"ea": "1000c280", "value": "WriteConsoleW", "length": 14, "xrefs": []}
+{"ea": "1000c290", "value": "SetStdHandle", "length": 13, "xrefs": []}
+{"ea": "1000c2a0", "value": "CreateFileA", "length": 12, "xrefs": []}
+{"ea": "1000d7a6", "value": "abcdefghijklmnopqrstuvwxyz", "length": 30, "xrefs": []}
+{"ea": "1000d7c6", "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "length": 30, "xrefs": []}
+{"ea": "1000d9b1", "value": "abcdefghijklmnopqrstuvwxyz", "length": 27, "xrefs": []}
+{"ea": "1000d9d1", "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "length": 27, "xrefs": []}
+{"ea": "100100a2", "value": "DAT", "length": 6, "xrefs": []}
+{"ea": "ffdff1ac", "value": "", "length": 36, "xrefs": []}
+{"ea": "ffdffc00", "value": "", "length": 522, "xrefs": []}

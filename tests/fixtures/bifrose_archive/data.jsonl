@@ -1,0 +1,1696 @@
+{"ea": "10000000", "name": "IMAGE_DOS_HEADER_10000000", "type": "IMAGE_DOS_HEADER", "length": 128}
+{"ea": "10000080", "name": null, "type": "IMAGE_RICH_HEADER", "length": 88, "value": "IMAGE_RICH_HEADER[mask=f5308cc5h, numRecords=8]"}
+{"ea": "100000f0", "name": "IMAGE_NT_HEADERS32_100000f0", "type": "IMAGE_NT_HEADERS32", "length": 248}
+{"ea": "100001e8", "name": null, "type": "IMAGE_SECTION_HEADER", "length": 40}
+{"ea": "10000210", "name": null, "type": "IMAGE_SECTION_HEADER", "length": 40}
+{"ea": "10000238", "name": null, "type": "IMAGE_SECTION_HEADER", "length": 40}
+{"ea": "10000260", "name": null, "type": "IMAGE_SECTION_HEADER", "length": 40}
+{"ea": "10000288", "name": null, "type": "IMAGE_SECTION_HEADER", "length": 40}
+{"ea": "1000a000", "name": "PTR_GetCurrentProcess_1000a000", "type": "pointer", "length": 4, "value": "0000bd80"}
+{"ea": "1000a004", "name": null, "type": "pointer", "length": 4, "value": "0000bd94"}
+{"ea": "1000a008", "name": "PTR_FindResourceA_1000a008", "type": "pointer", "length": 4, "value": "0000bda6"}
+{"ea": "1000a00c", "name": "PTR_SizeofResource_1000a00c", "type": "pointer", "length": 4, "value": "0000bdb6"}
+{"ea": "1000a010", "name": "PTR_LoadResource_1000a010", "type": "pointer", "length": 4, "value": "0000bdc8"}
+{"ea": "1000a014", "name": "PTR_LockResource_1000a014", "type": "pointer", "length": 4, "value": "0000bdd8"}
+{"ea": "1000a018", "name": "PTR_GetProcAddress_1000a018", "type": "pointer", "length": 4, "value": "0000bde8"}
+{"ea": "1000a01c", "name": "PTR_LoadLibraryA_1000a01c", "type": "pointer", "length": 4, "value": "0000bdfa"}
+{"ea": "1000a020", "name": "PTR_GetSystemTimeAsFileTime_1000a020", "type": "pointer", "length": 4, "value": "0000be18"}
+{"ea": "1000a024", "name": "PTR_GetCommandLineA_1000a024", "type": "pointer", "length": 4, "value": "0000be32"}
+{"ea": "1000a028", "name": "PTR_TerminateProcess_1000a028", "type": "pointer", "length": 4, "value": "0000be44"}
+{"ea": "1000a02c", "name": "PTR_UnhandledExceptionFilter_1000a02c", "type": "pointer", "length": 4, "value": "0000be58"}
+{"ea": "1000a030", "name": "PTR_SetUnhandledExceptionFilter_1000a030", "type": "pointer", "length": 4, "value": "0000be74"}
+{"ea": "1000a034", "name": "PTR_IsDebuggerPresent_1000a034", "type": "pointer", "length": 4, "value": "0000be92"}
+{"ea": "1000a038", "name": "PTR_EnterCriticalSection_1000a038", "type": "pointer", "length": 4, "value": "0000bea6"}
+{"ea": "1000a03c", "name": "PTR_LeaveCriticalSection_1000a03c", "type": "pointer", "length": 4, "value": "0000bebe"}
+{"ea": "1000a040", "name": "PTR_GetModuleHandleW_1000a040", "type": "pointer", "length": 4, "value": "0000bed6"}
+{"ea": "1000a044", "name": "PTR_Sleep_1000a044", "type": "pointer", "length": 4, "value": "0000beea"}
+{"ea": "1000a048", "name": "PTR_ExitProcess_1000a048", "type": "pointer", "length": 4, "value": "0000bef2"}
+{"ea": "1000a04c", "name": "PTR_WriteFile_1000a04c", "type": "pointer", "length": 4, "value": "0000bf00"}
+{"ea": "1000a050", "name": "PTR_GetStdHandle_1000a050", "type": "pointer", "length": 4, "value": "0000bf0c"}
+{"ea": "1000a054", "name": "PTR_GetModuleFileNameA_1000a054", "type": "pointer", "length": 4, "value": "0000bf1c"}
+{"ea": "1000a058", "name": "PTR_FreeEnvironmentStringsA_1000a058", "type": "pointer", "length": 4, "value": "0000bf32"}
+{"ea": "1000a05c", "name": "PTR_GetEnvironmentStrings_1000a05c", "type": "pointer", "length": 4, "value": "0000bf4c"}
+{"ea": "1000a060", "name": "PTR_FreeEnvironmentStringsW_1000a060", "type": "pointer", "length": 4, "value": "0000bf64"}
+{"ea": "1000a064", "name": "PTR_WideCharToMultiByte_1000a064", "type": "pointer", "length": 4, "value": "0000bf7e"}
+{"ea": "1000a068", "name": "PTR_GetLastError_1000a068", "type": "pointer", "length": 4, "value": "0000bf94"}
+{"ea": "1000a06c", "name": "PTR_GetEnvironmentStringsW_1000a06c", "type": "pointer", "length": 4, "value": "0000bfa4"}
+{"ea": "1000a070", "name": "PTR_SetHandleCount_1000a070", "type": "pointer", "length": 4, "value": "0000bfbe"}
+{"ea": "1000a074", "name": "PTR_GetFileType_1000a074", "type": "pointer", "length": 4, "value": "0000bfd0"}
+{"ea": "1000a078", "name": "PTR_GetStartupInfoA_1000a078", "type": "pointer", "length": 4, "value": "0000bfde"}
+{"ea": "1000a07c", "name": "PTR_DeleteCriticalSection_1000a07c", "type": "pointer", "length": 4, "value": "0000bff0"}
+{"ea": "1000a080", "name": "PTR_TlsGetValue_1000a080", "type": "pointer", "length": 4, "value": "0000c008"}
+{"ea": "1000a084", "name": "PTR_TlsAlloc_1000a084", "type": "pointer", "length": 4, "value": "0000c016"}
+{"ea": "1000a088", "name": "PTR_TlsSetValue_1000a088", "type": "pointer", "length": 4, "value": "0000c022"}
+{"ea": "1000a08c", "name": "PTR_TlsFree_1000a08c", "type": "pointer", "length": 4, "value": "0000c030"}
+{"ea": "1000a090", "name": "PTR_InterlockedIncrement_1000a090", "type": "pointer", "length": 4, "value": "0000c03a"}
+{"ea": "1000a094", "name": "PTR_SetLastError_1000a094", "type": "pointer", "length": 4, "value": "0000c052"}
+{"ea": "1000a098", "name": "PTR_GetCurrentThreadId_1000a098", "type": "pointer", "length": 4, "value": "0000c062"}
+{"ea": "1000a09c", "name": "PTR_InterlockedDecrement_1000a09c", "type": "pointer", "length": 4, "value": "0000c078"}
+{"ea": "1000a0a0", "name": "PTR_HeapCreate_1000a0a0", "type": "pointer", "length": 4, "value": "0000c090"}
+{"ea": "1000a0a4", "name": "PTR_VirtualFree_1000a0a4", "type": "pointer", "length": 4, "value": "0000c09e"}
+{"ea": "1000a0a8", "name": "PTR_HeapFree_1000a0a8", "type": "pointer", "length": 4, "value": "0000c0ac"}
+{"ea": "1000a0ac", "name": "PTR_QueryPerformanceCounter_1000a0ac", "type": "pointer", "length": 4, "value": "0000c0b8"}
+{"ea": "1000a0b0", "name": "PTR_GetTickCount_1000a0b0", "type": "pointer", "length": 4, "value": "0000c0d2"}
+{"ea": "1000a0b4", "name": "PTR_GetCurrentProcessId_1000a0b4", "type": "pointer", "length": 4, "value": "0000c0e2"}
+{"ea": "1000a0b8", "name": "PTR_GetCPInfo_1000a0b8", "type": "pointer", "length": 4, "value": "0000c0f8"}
+{"ea": "1000a0bc", "name": "PTR_GetACP_1000a0bc", "type": "pointer", "length": 4, "value": "0000c104"}
+{"ea": "1000a0c0", "name": "PTR_GetOEMCP_1000a0c0", "type": "pointer", "length": 4, "value": "0000c10e"}
+{"ea": "1000a0c4", "name": "PTR_IsValidCodePage_1000a0c4", "type": "pointer", "length": 4, "value": "0000c11a"}
+{"ea": "1000a0c8", "name": "PTR_RtlUnwind_1000a0c8", "type": "pointer", "length": 4, "value": "0000c12c"}
+{"ea": "1000a0cc", "name": "PTR_InitializeCriticalSectionAndSpinCount_1000a0cc", "type": "pointer", "length": 4, "value": "0000c138"}
+{"ea": "1000a0d0", "name": "PTR_HeapAlloc_1000a0d0", "type": "pointer", "length": 4, "value": "0000c160"}
+{"ea": "1000a0d4", "name": "PTR_VirtualAlloc_1000a0d4", "type": "pointer", "length": 4, "value": "0000c16c"}
+{"ea": "1000a0d8", "name": "PTR_HeapReAlloc_1000a0d8", "type": "pointer", "length": 4, "value": "0000c17c"}
+{"ea": "1000a0dc", "name": "PTR_GetConsoleCP_1000a0dc", "type": "pointer", "length": 4, "value": "0000c18a"}
+{"ea": "1000a0e0", "name": "PTR_GetConsoleMode_1000a0e0", "type": "pointer", "length": 4, "value": "0000c19a"}
+{"ea": "1000a0e4", "name": "PTR_FlushFileBuffers_1000a0e4", "type": "pointer", "length": 4, "value": "0000c1ac"}
+{"ea": "1000a0e8", "name": "PTR_LCMapStringA_1000a0e8", "type": "pointer", "length": 4, "value": "0000c1c0"}
+{"ea": "1000a0ec", "name": "PTR_MultiByteToWideChar_1000a0ec", "type": "pointer", "length": 4, "value": "0000c1d0"}
+{"ea": "1000a0f0", "name": "PTR_LCMapStringW_1000a0f0", "type": "pointer", "length": 4, "value": "0000c1e6"}
+{"ea": "1000a0f4", "name": "PTR_GetStringTypeA_1000a0f4", "type": "pointer", "length": 4, "value": "0000c1f6"}
+{"ea": "1000a0f8", "name": "PTR_GetStringTypeW_1000a0f8", "type": "pointer", "length": 4, "value": "0000c208"}
+{"ea": "1000a0fc", "name": "PTR_GetLocaleInfoA_1000a0fc", "type": "pointer", "length": 4, "value": "0000c21a"}
+{"ea": "1000a100", "name": "PTR_SetFilePointer_1000a100", "type": "pointer", "length": 4, "value": "0000c22c"}
+{"ea": "1000a104", "name": "PTR_HeapSize_1000a104", "type": "pointer", "length": 4, "value": "0000c23e"}
+{"ea": "1000a108", "name": "PTR_CloseHandle_1000a108", "type": "pointer", "length": 4, "value": "0000c24a"}
+{"ea": "1000a10c", "name": "PTR_WriteConsoleA_1000a10c", "type": "pointer", "length": 4, "value": "0000c258"}
+{"ea": "1000a110", "name": "PTR_GetConsoleOutputCP_1000a110", "type": "pointer", "length": 4, "value": "0000c268"}
+{"ea": "1000a114", "name": "PTR_WriteConsoleW_1000a114", "type": "pointer", "length": 4, "value": "0000c27e"}
+{"ea": "1000a118", "name": "PTR_SetStdHandle_1000a118", "type": "pointer", "length": 4, "value": "0000c28e"}
+{"ea": "1000a11c", "name": "PTR_CreateFileA_1000a11c", "type": "pointer", "length": 4, "value": "0000c29e"}
+{"ea": "1000a130", "name": null, "type": "undefined *", "length": 4, "value": "100012be"}
+{"ea": "1000a134", "name": null, "type": "undefined *", "length": 4, "value": "100016fa"}
+{"ea": "1000a138", "name": null, "type": "undefined *", "length": 4, "value": "10004b07"}
+{"ea": "1000a13c", "name": null, "type": "undefined *", "length": 4, "value": "100056f1"}
+{"ea": "1000a140", "name": null, "type": "undefined *", "length": 4, "value": "10008778"}
+{"ea": "1000a144", "name": null, "type": "undefined *", "length": 4, "value": "10002a5e"}
+{"ea": "1000a150", "name": null, "type": "undefined *", "length": 4, "value": "10009a49"}
+{"ea": "1000a154", "name": null, "type": "undefined *", "length": 4, "value": "100017ab"}
+{"ea": "1000a170", "name": "IMAGE_DEBUG_DIRECTORY_1000a170", "type": "IMAGE_DEBUG_DIRECTORY", "length": 28}
+{"ea": "1000a18c", "name": "PTR_DAT_1000a18c", "type": "pointer", "length": 4, "value": "1000df18"}
+{"ea": "1000a190", "name": "PTR_DAT_1000a190", "type": "pointer", "length": 4, "value": "1000df70"}
+{"ea": "1000a194", "name": "u_(null)_1000a194", "type": "unicode", "length": 14, "value": "(null)"}
+{"ea": "1000a1a4", "name": "s_(null)_1000a1a4", "type": "string", "length": 7, "value": "(null)"}
+{"ea": "1000a20c", "name": "s_CorExitProcess_1000a20c", "type": "string", "length": 15, "value": "CorExitProcess"}
+{"ea": "1000a21c", "name": "u_mscoree.dll_1000a21c", "type": "unicode", "length": 24, "value": "mscoree.dll"}
+{"ea": "1000a234", "name": null, "type": "string", "length": 16, "value": "runtime error "}
+{"ea": "1000a248", "name": null, "type": "string", "length": 16, "value": "TLOSS error\r\n"}
+{"ea": "1000a258", "name": null, "type": "string", "length": 16, "value": "SING error\r\n"}
+{"ea": "1000a268", "name": null, "type": "string", "length": 16, "value": "DOMAIN error\r\n"}
+{"ea": "1000a278", "name": null, "type": "string", "length": 156, "value": "R6034\r\nAn application has made an attempt to load the C runtime library incorrectly.\nPlease contact the application's support team for more information.\r\n"}
+{"ea": "1000a318", "name": null, "type": "string", "length": 248, "value": "R6033\r\n- Attempt to use MSIL code from this assembly during native code initialization\nThis indicates a bug in your application. It is most likely the result of calling an MSIL-compiled (/clr) function from a native constructor or from DllMain.\r\n"}
+{"ea": "1000a410", "name": null, "type": "string", "length": 52, "value": "R6032\r\n- not enough space for locale information\r\n"}
+{"ea": "1000a448", "name": null, "type": "string", "length": 100, "value": "R6031\r\n- Attempt to initialize the CRT more than once.\nThis indicates a bug in your application.\r\n"}
+{"ea": "1000a4ac", "name": null, "type": "string", "length": 32, "value": "R6030\r\n- CRT not initialized\r\n"}
+{"ea": "1000a4cc", "name": null, "type": "string", "length": 40, "value": "R6028\r\n- unable to initialize heap\r\n"}
+{"ea": "1000a4f4", "name": null, "type": "string", "length": 56, "value": "R6027\r\n- not enough space for lowio initialization\r\n"}
+{"ea": "1000a52c", "name": null, "type": "string", "length": 56, "value": "R6026\r\n- not enough space for stdio initialization\r\n"}
+{"ea": "1000a564", "name": null, "type": "string", "length": 40, "value": "R6025\r\n- pure virtual function call\r\n"}
+{"ea": "1000a58c", "name": null, "type": "string", "length": 56, "value": "R6024\r\n- not enough space for _onexit/atexit table\r\n"}
+{"ea": "1000a5c4", "name": null, "type": "string", "length": 44, "value": "R6019\r\n- unable to open console device\r\n"}
+{"ea": "1000a5f0", "name": null, "type": "string", "length": 36, "value": "R6018\r\n- unexpected heap error\r\n"}
+{"ea": "1000a614", "name": null, "type": "string", "length": 48, "value": "R6017\r\n- unexpected multithread lock error\r\n"}
+{"ea": "1000a644", "name": null, "type": "string", "length": 44, "value": "R6016\r\n- not enough space for thread data\r\n"}
+{"ea": "1000a670", "name": null, "type": "string", "length": 152, "value": "\r\nThis application has requested the Runtime to terminate it in an unusual way.\nPlease contact the application's support team for more information.\r\n"}
+{"ea": "1000a708", "name": "s_R6009_-_not_enough_space_for_env_1000a708", "type": "string", "length": 44, "value": "R6009\r\n- not enough space for environment\r\n"}
+{"ea": "1000a734", "name": null, "type": "string", "length": 44, "value": "R6008\r\n- not enough space for arguments\r\n"}
+{"ea": "1000a760", "name": null, "type": "string", "length": 48, "value": "R6002\r\n- floating point support not loaded\r\n"}
+{"ea": "1000a790", "name": "s_Microsoft_Visual_C++_Runtime_Lib_1000a790", "type": "string", "length": 37, "value": "Microsoft Visual C++ Runtime Library"}
+{"ea": "1000a7c0", "name": "s_<program_name_unknown>_1000a7c0", "type": "string", "length": 23, "value": "<program name unknown>"}
+{"ea": "1000a7d8", "name": "s_Runtime_Error!_Program:_1000a7d8", "type": "string", "length": 26, "value": "Runtime Error!\n\nProgram: "}
+{"ea": "1000a870", "name": "s_EncodePointer_1000a870", "type": "string", "length": 14, "value": "EncodePointer"}
+{"ea": "1000a880", "name": "u_KERNEL32.DLL_1000a880", "type": "unicode", "length": 26, "value": "KERNEL32.DLL"}
+{"ea": "1000a89c", "name": "s_DecodePointer_1000a89c", "type": "string", "length": 14, "value": "DecodePointer"}
+{"ea": "1000a8ac", "name": "s_FlsFree_1000a8ac", "type": "string", "length": 8, "value": "FlsFree"}
+{"ea": "1000a8b4", "name": "s_FlsSetValue_1000a8b4", "type": "string", "length": 12, "value": "FlsSetValue"}
+{"ea": "1000a8c0", "name": "s_FlsGetValue_1000a8c0", "type": "string", "length": 12, "value": "FlsGetValue"}
+{"ea": "1000a8cc", "name": "s_FlsAlloc_1000a8cc", "type": "string", "length": 9, "value": "FlsAlloc"}
+{"ea": "1000a9b4", "name": "s_GetProcessWindowStation_1000a9b4", "type": "string", "length": 24, "value": "GetProcessWindowStation"}
+{"ea": "1000a9cc", "name": "s_GetUserObjectInformationA_1000a9cc", "type": "string", "length": 26, "value": "GetUserObjectInformationA"}
+{"ea": "1000a9e8", "name": "s_GetLastActivePopup_1000a9e8", "type": "string", "length": 19, "value": "GetLastActivePopup"}
+{"ea": "1000a9fc", "name": "s_GetActiveWindow_1000a9fc", "type": "string", "length": 16, "value": "GetActiveWindow"}
+{"ea": "1000aa0c", "name": "s_MessageBoxA_1000aa0c", "type": "string", "length": 12, "value": "MessageBoxA"}
+{"ea": "1000aa18", "name": "s_USER32.DLL_1000aa18", "type": "string", "length": 11, "value": "USER32.DLL"}
+{"ea": "1000b230", "name": "s_HH:mm:ss_1000b230", "type": "string", "length": 9, "value": "HH:mm:ss"}
+{"ea": "1000b23c", "name": "s_dddd,_MMMM_dd,_yyyy_1000b23c", "type": "string", "length": 20, "value": "dddd, MMMM dd, yyyy"}
+{"ea": "1000b250", "name": "s_MM/dd/yy_1000b250", "type": "string", "length": 9, "value": "MM/dd/yy"}
+{"ea": "1000b264", "name": "s_December_1000b264", "type": "string", "length": 9, "value": "December"}
+{"ea": "1000b270", "name": "s_November_1000b270", "type": "string", "length": 9, "value": "November"}
+{"ea": "1000b27c", "name": "s_October_1000b27c", "type": "string", "length": 8, "value": "October"}
+{"ea": "1000b284", "name": "s_September_1000b284", "type": "string", "length": 10, "value": "September"}
+{"ea": "1000b290", "name": "s_August_1000b290", "type": "string", "length": 7, "value": "August"}
+{"ea": "1000b2a8", "name": "s_April_1000b2a8", "type": "string", "length": 6, "value": "April"}
+{"ea": "1000b2b0", "name": "s_March_1000b2b0", "type": "string", "length": 6, "value": "March"}
+{"ea": "1000b2b8", "name": "s_February_1000b2b8", "type": "string", "length": 9, "value": "February"}
+{"ea": "1000b2c4", "name": "s_January_1000b2c4", "type": "string", "length": 8, "value": "January"}
+{"ea": "1000b2fc", "name": "s_Saturday_1000b2fc", "type": "string", "length": 9, "value": "Saturday"}
+{"ea": "1000b308", "name": "s_Friday_1000b308", "type": "string", "length": 7, "value": "Friday"}
+{"ea": "1000b310", "name": "s_Thursday_1000b310", "type": "string", "length": 9, "value": "Thursday"}
+{"ea": "1000b31c", "name": "s_Wednesday_1000b31c", "type": "string", "length": 10, "value": "Wednesday"}
+{"ea": "1000b328", "name": "s_Tuesday_1000b328", "type": "string", "length": 8, "value": "Tuesday"}
+{"ea": "1000b330", "name": "s_Monday_1000b330", "type": "string", "length": 7, "value": "Monday"}
+{"ea": "1000b338", "name": "s_Sunday_1000b338", "type": "string", "length": 7, "value": "Sunday"}
+{"ea": "1000b35c", "name": null, "type": "string", "length": 24, "value": "SunMonTueWedThuFriSat"}
+{"ea": "1000b374", "name": null, "type": "string", "length": 40, "value": "JanFebMarAprMayJunJulAugSepOctNovDec"}
+{"ea": "1000b39c", "name": "s_CONOUT$_1000b39c", "type": "string", "length": 8, "value": "CONOUT$"}
+{"ea": "1000b794", "name": "s_hRes_ERR!_1000b794", "type": "string", "length": 11, "value": "hRes ERR!\n"}
+{"ea": "1000b7a0", "name": "s_size_0_err!_1000b7a0", "type": "string", "length": 13, "value": "size 0 err!\n"}
+{"ea": "1000b7b0", "name": "s_load_err!_1000b7b0", "type": "string", "length": 11, "value": "load err!\n"}
+{"ea": "1000b7bc", "name": "s_locak_err!_1000b7bc", "type": "string", "length": 12, "value": "locak err!\n"}
+{"ea": "1000b7c8", "name": "IMAGE_LOAD_CONFIG_DIRECTORY32_1000b7c8", "type": "IMAGE_LOAD_CONFIG_DIRECTORY32", "length": 72}
+{"ea": "1000b810", "name": null, "type": "DotNetPdbInfo", "length": 68}
+{"ea": "1000b860", "name": "DAT_1000b860", "type": "ImageBaseOffset32", "length": 4, "value": "10002890"}
+{"ea": "1000b864", "name": null, "type": "ImageBaseOffset32", "length": 4, "value": "100053dc"}
+{"ea": "1000b868", "name": null, "type": "ImageBaseOffset32", "length": 4, "value": "100087a8"}
+{"ea": "1000b870", "name": "DAT_1000b870", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000b874", "name": "DAT_1000b874", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000b878", "name": "DAT_1000b878", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000b87c", "name": "DAT_1000b87c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000b8b4", "name": null, "type": "undefined *", "length": 4, "value": "100014f9"}
+{"ea": "1000b8b8", "name": null, "type": "undefined *", "length": 4, "value": "1000150d"}
+{"ea": "1000b8f4", "name": null, "type": "undefined *", "length": 4, "value": "10003790"}
+{"ea": "1000b8f8", "name": null, "type": "undefined *", "length": 4, "value": "10003794"}
+{"ea": "1000ba4c", "name": null, "type": "undefined *", "length": 4, "value": "100055bb"}
+{"ea": "1000ba50", "name": null, "type": "undefined *", "length": 4, "value": "100055cf"}
+{"ea": "1000ba6c", "name": null, "type": "undefined *", "length": 4, "value": "1000560d"}
+{"ea": "1000ba70", "name": null, "type": "undefined *", "length": 4, "value": "10005611"}
+{"ea": "1000bacc", "name": null, "type": "undefined *", "length": 4, "value": "100059d5"}
+{"ea": "1000bad0", "name": null, "type": "undefined *", "length": 4, "value": "100059ec"}
+{"ea": "1000bbcc", "name": null, "type": "undefined *", "length": 4, "value": "100086e3"}
+{"ea": "1000bbd0", "name": null, "type": "undefined *", "length": 4, "value": "100086ff"}
+{"ea": "1000bc34", "name": "DWORD_1000bc34", "type": "dword", "length": 4, "value": "0xbc5c"}
+{"ea": "1000bc38", "name": null, "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "1000bc3c", "name": null, "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "1000bc40", "name": null, "type": "dword", "length": 4, "value": "0xbe0a"}
+{"ea": "1000bc44", "name": null, "type": "dword", "length": 4, "value": "0xa000"}
+{"ea": "1000bc5c", "name": null, "type": "dword", "length": 4, "value": "0xbd80"}
+{"ea": "1000bc60", "name": null, "type": "dword", "length": 4, "value": "0xbd94"}
+{"ea": "1000bc64", "name": null, "type": "dword", "length": 4, "value": "0xbda6"}
+{"ea": "1000bc68", "name": null, "type": "dword", "length": 4, "value": "0xbdb6"}
+{"ea": "1000bc6c", "name": null, "type": "dword", "length": 4, "value": "0xbdc8"}
+{"ea": "1000bc70", "name": null, "type": "dword", "length": 4, "value": "0xbdd8"}
+{"ea": "1000bc74", "name": null, "type": "dword", "length": 4, "value": "0xbde8"}
+{"ea": "1000bc78", "name": null, "type": "dword", "length": 4, "value": "0xbdfa"}
+{"ea": "1000bc7c", "name": null, "type": "dword", "length": 4, "value": "0xbe18"}
+{"ea": "1000bc80", "name": null, "type": "dword", "length": 4, "value": "0xbe32"}
+{"ea": "1000bc84", "name": null, "type": "dword", "length": 4, "value": "0xbe44"}
+{"ea": "1000bc88", "name": null, "type": "dword", "length": 4, "value": "0xbe58"}
+{"ea": "1000bc8c", "name": null, "type": "dword", "length": 4, "value": "0xbe74"}
+{"ea": "1000bc90", "name": null, "type": "dword", "length": 4, "value": "0xbe92"}
+{"ea": "1000bc94", "name": null, "type": "dword", "length": 4, "value": "0xbea6"}
+{"ea": "1000bc98", "name": null, "type": "dword", "length": 4, "value": "0xbebe"}
+{"ea": "1000bc9c", "name": null, "type": "dword", "length": 4, "value": "0xbed6"}
+{"ea": "1000bca0", "name": null, "type": "dword", "length": 4, "value": "0xbeea"}
+{"ea": "1000bca4", "name": null, "type": "dword", "length": 4, "value": "0xbef2"}
+{"ea": "1000bca8", "name": null, "type": "dword", "length": 4, "value": "0xbf00"}
+{"ea": "1000bcac", "name": null, "type": "dword", "length": 4, "value": "0xbf0c"}
+{"ea": "1000bcb0", "name": null, "type": "dword", "length": 4, "value": "0xbf1c"}
+{"ea": "1000bcb4", "name": null, "type": "dword", "length": 4, "value": "0xbf32"}
+{"ea": "1000bcb8", "name": null, "type": "dword", "length": 4, "value": "0xbf4c"}
+{"ea": "1000bcbc", "name": null, "type": "dword", "length": 4, "value": "0xbf64"}
+{"ea": "1000bcc0", "name": null, "type": "dword", "length": 4, "value": "0xbf7e"}
+{"ea": "1000bcc4", "name": null, "type": "dword", "length": 4, "value": "0xbf94"}
+{"ea": "1000bcc8", "name": null, "type": "dword", "length": 4, "value": "0xbfa4"}
+{"ea": "1000bccc", "name": null, "type": "dword", "length": 4, "value": "0xbfbe"}
+{"ea": "1000bcd0", "name": null, "type": "dword", "length": 4, "value": "0xbfd0"}
+{"ea": "1000bcd4", "name": null, "type": "dword", "length": 4, "value": "0xbfde"}
+{"ea": "1000bcd8", "name": null, "type": "dword", "length": 4, "value": "0xbff0"}
+{"ea": "1000bcdc", "name": null, "type": "dword", "length": 4, "value": "0xc008"}
+{"ea": "1000bce0", "name": null, "type": "dword", "length": 4, "value": "0xc016"}
+{"ea": "1000bce4", "name": null, "type": "dword", "length": 4, "value": "0xc022"}
+{"ea": "1000bce8", "name": null, "type": "dword", "length": 4, "value": "0xc030"}
+{"ea": "1000bcec", "name": null, "type": "dword", "length": 4, "value": "0xc03a"}
+{"ea": "1000bcf0", "name": null, "type": "dword", "length": 4, "value": "0xc052"}
+{"ea": "1000bcf4", "name": null, "type": "dword", "length": 4, "value": "0xc062"}
+{"ea": "1000bcf8", "name": null, "type": "dword", "length": 4, "value": "0xc078"}
+{"ea": "1000bcfc", "name": null, "type": "dword", "length": 4, "value": "0xc090"}
+{"ea": "1000bd00", "name": null, "type": "dword", "length": 4, "value": "0xc09e"}
+{"ea": "1000bd04", "name": null, "type": "dword", "length": 4, "value": "0xc0ac"}
+{"ea": "1000bd08", "name": null, "type": "dword", "length": 4, "value": "0xc0b8"}
+{"ea": "1000bd0c", "name": null, "type": "dword", "length": 4, "value": "0xc0d2"}
+{"ea": "1000bd10", "name": null, "type": "dword", "length": 4, "value": "0xc0e2"}
+{"ea": "1000bd14", "name": null, "type": "dword", "length": 4, "value": "0xc0f8"}
+{"ea": "1000bd18", "name": null, "type": "dword", "length": 4, "value": "0xc104"}
+{"ea": "1000bd1c", "name": null, "type": "dword", "length": 4, "value": "0xc10e"}
+{"ea": "1000bd20", "name": null, "type": "dword", "length": 4, "value": "0xc11a"}
+{"ea": "1000bd24", "name": null, "type": "dword", "length": 4, "value": "0xc12c"}
+{"ea": "1000bd28", "name": null, "type": "dword", "length": 4, "value": "0xc138"}
+{"ea": "1000bd2c", "name": null, "type": "dword", "length": 4, "value": "0xc160"}
+{"ea": "1000bd30", "name": null, "type": "dword", "length": 4, "value": "0xc16c"}
+{"ea": "1000bd34", "name": null, "type": "dword", "length": 4, "value": "0xc17c"}
+{"ea": "1000bd38", "name": null, "type": "dword", "length": 4, "value": "0xc18a"}
+{"ea": "1000bd3c", "name": null, "type": "dword", "length": 4, "value": "0xc19a"}
+{"ea": "1000bd40", "name": null, "type": "dword", "length": 4, "value": "0xc1ac"}
+{"ea": "1000bd44", "name": null, "type": "dword", "length": 4, "value": "0xc1c0"}
+{"ea": "1000bd48", "name": null, "type": "dword", "length": 4, "value": "0xc1d0"}
+{"ea": "1000bd4c", "name": null, "type": "dword", "length": 4, "value": "0xc1e6"}
+{"ea": "1000bd50", "name": null, "type": "dword", "length": 4, "value": "0xc1f6"}
+{"ea": "1000bd54", "name": null, "type": "dword", "length": 4, "value": "0xc208"}
+{"ea": "1000bd58", "name": null, "type": "dword", "length": 4, "value": "0xc21a"}
+{"ea": "1000bd5c", "name": null, "type": "dword", "length": 4, "value": "0xc22c"}
+{"ea": "1000bd60", "name": null, "type": "dword", "length": 4, "value": "0xc23e"}
+{"ea": "1000bd64", "name": null, "type": "dword", "length": 4, "value": "0xc24a"}
+{"ea": "1000bd68", "name": null, "type": "dword", "length": 4, "value": "0xc258"}
+{"ea": "1000bd6c", "name": null, "type": "dword", "length": 4, "value": "0xc268"}
+{"ea": "1000bd70", "name": null, "type": "dword", "length": 4, "value": "0xc27e"}
+{"ea": "1000bd74", "name": null, "type": "dword", "length": 4, "value": "0xc28e"}
+{"ea": "1000bd78", "name": null, "type": "dword", "length": 4, "value": "0xc29e"}
+{"ea": "1000bd80", "name": null, "type": "word", "length": 2, "value": "0x1a9"}
+{"ea": "1000bd82", "name": null, "type": "TerminatedCString", "length": 18, "value": "GetCurrentProcess"}
+{"ea": "1000bd94", "name": null, "type": "word", "length": 2, "value": "0x455"}
+{"ea": "1000bd96", "name": null, "type": "TerminatedCString", "length": 15, "value": "VirtualAllocEx"}
+{"ea": "1000bda6", "name": null, "type": "word", "length": 2, "value": "0x136"}
+{"ea": "1000bda8", "name": null, "type": "TerminatedCString", "length": 14, "value": "FindResourceA"}
+{"ea": "1000bdb6", "name": null, "type": "word", "length": 2, "value": "0x420"}
+{"ea": "1000bdb8", "name": null, "type": "TerminatedCString", "length": 15, "value": "SizeofResource"}
+{"ea": "1000bdc8", "name": null, "type": "word", "length": 2, "value": "0x2f6"}
+{"ea": "1000bdca", "name": null, "type": "TerminatedCString", "length": 13, "value": "LoadResource"}
+{"ea": "1000bdd8", "name": null, "type": "word", "length": 2, "value": "0x307"}
+{"ea": "1000bdda", "name": null, "type": "TerminatedCString", "length": 13, "value": "LockResource"}
+{"ea": "1000bde8", "name": null, "type": "word", "length": 2, "value": "0x220"}
+{"ea": "1000bdea", "name": null, "type": "TerminatedCString", "length": 15, "value": "GetProcAddress"}
+{"ea": "1000bdfa", "name": null, "type": "word", "length": 2, "value": "0x2f1"}
+{"ea": "1000bdfc", "name": null, "type": "TerminatedCString", "length": 13, "value": "LoadLibraryA"}
+{"ea": "1000be0a", "name": null, "type": "TerminatedCString", "length": 13, "value": "KERNEL32.dll"}
+{"ea": "1000be18", "name": null, "type": "word", "length": 2, "value": "0x24f"}
+{"ea": "1000be1a", "name": null, "type": "TerminatedCString", "length": 24, "value": "GetSystemTimeAsFileTime"}
+{"ea": "1000be32", "name": null, "type": "word", "length": 2, "value": "0x16f"}
+{"ea": "1000be34", "name": null, "type": "TerminatedCString", "length": 16, "value": "GetCommandLineA"}
+{"ea": "1000be44", "name": null, "type": "word", "length": 2, "value": "0x42d"}
+{"ea": "1000be46", "name": null, "type": "TerminatedCString", "length": 17, "value": "TerminateProcess"}
+{"ea": "1000be58", "name": null, "type": "word", "length": 2, "value": "0x43e"}
+{"ea": "1000be5a", "name": null, "type": "TerminatedCString", "length": 25, "value": "UnhandledExceptionFilter"}
+{"ea": "1000be74", "name": null, "type": "word", "length": 2, "value": "0x415"}
+{"ea": "1000be76", "name": null, "type": "TerminatedCString", "length": 28, "value": "SetUnhandledExceptionFilter"}
+{"ea": "1000be92", "name": null, "type": "word", "length": 2, "value": "0x2d1"}
+{"ea": "1000be94", "name": null, "type": "TerminatedCString", "length": 18, "value": "IsDebuggerPresent"}
+{"ea": "1000bea6", "name": null, "type": "word", "length": 2, "value": "0xd9"}
+{"ea": "1000bea8", "name": null, "type": "TerminatedCString", "length": 21, "value": "EnterCriticalSection"}
+{"ea": "1000bebe", "name": null, "type": "word", "length": 2, "value": "0x2ef"}
+{"ea": "1000bec0", "name": null, "type": "TerminatedCString", "length": 21, "value": "LeaveCriticalSection"}
+{"ea": "1000bed6", "name": null, "type": "word", "length": 2, "value": "0x1f9"}
+{"ea": "1000bed8", "name": null, "type": "TerminatedCString", "length": 17, "value": "GetModuleHandleW"}
+{"ea": "1000beea", "name": null, "type": "word", "length": 2, "value": "0x421"}
+{"ea": "1000beec", "name": null, "type": "TerminatedCString", "length": 6, "value": "Sleep"}
+{"ea": "1000bef2", "name": null, "type": "word", "length": 2, "value": "0x104"}
+{"ea": "1000bef4", "name": null, "type": "TerminatedCString", "length": 12, "value": "ExitProcess"}
+{"ea": "1000bf00", "name": null, "type": "word", "length": 2, "value": "0x48d"}
+{"ea": "1000bf02", "name": null, "type": "TerminatedCString", "length": 10, "value": "WriteFile"}
+{"ea": "1000bf0c", "name": null, "type": "word", "length": 2, "value": "0x23b"}
+{"ea": "1000bf0e", "name": null, "type": "TerminatedCString", "length": 13, "value": "GetStdHandle"}
+{"ea": "1000bf1c", "name": null, "type": "word", "length": 2, "value": "0x1f4"}
+{"ea": "1000bf1e", "name": null, "type": "TerminatedCString", "length": 19, "value": "GetModuleFileNameA"}
+{"ea": "1000bf32", "name": null, "type": "word", "length": 2, "value": "0x14a"}
+{"ea": "1000bf34", "name": null, "type": "TerminatedCString", "length": 24, "value": "FreeEnvironmentStringsA"}
+{"ea": "1000bf4c", "name": null, "type": "word", "length": 2, "value": "0x1bf"}
+{"ea": "1000bf4e", "name": null, "type": "TerminatedCString", "length": 22, "value": "GetEnvironmentStrings"}
+{"ea": "1000bf64", "name": null, "type": "word", "length": 2, "value": "0x14b"}
+{"ea": "1000bf66", "name": null, "type": "TerminatedCString", "length": 24, "value": "FreeEnvironmentStringsW"}
+{"ea": "1000bf7e", "name": null, "type": "word", "length": 2, "value": "0x47a"}
+{"ea": "1000bf80", "name": null, "type": "TerminatedCString", "length": 20, "value": "WideCharToMultiByte"}
+{"ea": "1000bf94", "name": null, "type": "word", "length": 2, "value": "0x1e6"}
+{"ea": "1000bf96", "name": null, "type": "TerminatedCString", "length": 13, "value": "GetLastError"}
+{"ea": "1000bfa4", "name": null, "type": "word", "length": 2, "value": "0x1c1"}
+{"ea": "1000bfa6", "name": null, "type": "TerminatedCString", "length": 23, "value": "GetEnvironmentStringsW"}
+{"ea": "1000bfbe", "name": null, "type": "word", "length": 2, "value": "0x3e8"}
+{"ea": "1000bfc0", "name": null, "type": "TerminatedCString", "length": 15, "value": "SetHandleCount"}
+{"ea": "1000bfd0", "name": null, "type": "word", "length": 2, "value": "0x1d7"}
+{"ea": "1000bfd2", "name": null, "type": "TerminatedCString", "length": 12, "value": "GetFileType"}
+{"ea": "1000bfde", "name": null, "type": "word", "length": 2, "value": "0x239"}
+{"ea": "1000bfe0", "name": null, "type": "TerminatedCString", "length": 16, "value": "GetStartupInfoA"}
+{"ea": "1000bff0", "name": null, "type": "word", "length": 2, "value": "0xbe"}
+{"ea": "1000bff2", "name": null, "type": "TerminatedCString", "length": 22, "value": "DeleteCriticalSection"}
+{"ea": "1000c008", "name": null, "type": "word", "length": 2, "value": "0x434"}
+{"ea": "1000c00a", "name": null, "type": "TerminatedCString", "length": 12, "value": "TlsGetValue"}
+{"ea": "1000c016", "name": null, "type": "word", "length": 2, "value": "0x432"}
+{"ea": "1000c018", "name": null, "type": "TerminatedCString", "length": 9, "value": "TlsAlloc"}
+{"ea": "1000c022", "name": null, "type": "word", "length": 2, "value": "0x435"}
+{"ea": "1000c024", "name": null, "type": "TerminatedCString", "length": 12, "value": "TlsSetValue"}
+{"ea": "1000c030", "name": null, "type": "word", "length": 2, "value": "0x433"}
+{"ea": "1000c032", "name": null, "type": "TerminatedCString", "length": 8, "value": "TlsFree"}
+{"ea": "1000c03a", "name": null, "type": "word", "length": 2, "value": "0x2c0"}
+{"ea": "1000c03c", "name": null, "type": "TerminatedCString", "length": 21, "value": "InterlockedIncrement"}
+{"ea": "1000c052", "name": null, "type": "word", "length": 2, "value": "0x3ec"}
+{"ea": "1000c054", "name": null, "type": "TerminatedCString", "length": 13, "value": "SetLastError"}
+{"ea": "1000c062", "name": null, "type": "word", "length": 2, "value": "0x1ad"}
+{"ea": "1000c064", "name": null, "type": "TerminatedCString", "length": 19, "value": "GetCurrentThreadId"}
+{"ea": "1000c078", "name": null, "type": "word", "length": 2, "value": "0x2bc"}
+{"ea": "1000c07a", "name": null, "type": "TerminatedCString", "length": 21, "value": "InterlockedDecrement"}
+{"ea": "1000c090", "name": null, "type": "word", "length": 2, "value": "0x29f"}
+{"ea": "1000c092", "name": null, "type": "TerminatedCString", "length": 11, "value": "HeapCreate"}
+{"ea": "1000c09e", "name": null, "type": "word", "length": 2, "value": "0x457"}
+{"ea": "1000c0a0", "name": null, "type": "TerminatedCString", "length": 12, "value": "VirtualFree"}
+{"ea": "1000c0ac", "name": null, "type": "word", "length": 2, "value": "0x2a1"}
+{"ea": "1000c0ae", "name": null, "type": "TerminatedCString", "length": 9, "value": "HeapFree"}
+{"ea": "1000c0b8", "name": null, "type": "word", "length": 2, "value": "0x354"}
+{"ea": "1000c0ba", "name": null, "type": "TerminatedCString", "length": 24, "value": "QueryPerformanceCounter"}
+{"ea": "1000c0d2", "name": null, "type": "word", "length": 2, "value": "0x266"}
+{"ea": "1000c0d4", "name": null, "type": "TerminatedCString", "length": 13, "value": "GetTickCount"}
+{"ea": "1000c0e2", "name": null, "type": "word", "length": 2, "value": "0x1aa"}
+{"ea": "1000c0e4", "name": null, "type": "TerminatedCString", "length": 20, "value": "GetCurrentProcessId"}
+{"ea": "1000c0f8", "name": null, "type": "word", "length": 2, "value": "0x15b"}
+{"ea": "1000c0fa", "name": null, "type": "TerminatedCString", "length": 10, "value": "GetCPInfo"}
+{"ea": "1000c104", "name": null, "type": "word", "length": 2, "value": "0x152"}
+{"ea": "1000c106", "name": null, "type": "TerminatedCString", "length": 7, "value": "GetACP"}
+{"ea": "1000c10e", "name": null, "type": "word", "length": 2, "value": "0x213"}
+{"ea": "1000c110", "name": null, "type": "TerminatedCString", "length": 9, "value": "GetOEMCP"}
+{"ea": "1000c11a", "name": null, "type": "word", "length": 2, "value": "0x2db"}
+{"ea": "1000c11c", "name": null, "type": "TerminatedCString", "length": 16, "value": "IsValidCodePage"}
+{"ea": "1000c12c", "name": null, "type": "word", "length": 2, "value": "0x392"}
+{"ea": "1000c12e", "name": null, "type": "TerminatedCString", "length": 10, "value": "RtlUnwind"}
+{"ea": "1000c138", "name": null, "type": "word", "length": 2, "value": "0x2b5"}
+{"ea": "1000c13a", "name": null, "type": "TerminatedCString", "length": 38, "value": "InitializeCriticalSectionAndSpinCount"}
+{"ea": "1000c160", "name": null, "type": "word", "length": 2, "value": "0x29d"}
+{"ea": "1000c162", "name": null, "type": "TerminatedCString", "length": 10, "value": "HeapAlloc"}
+{"ea": "1000c16c", "name": null, "type": "word", "length": 2, "value": "0x454"}
+{"ea": "1000c16e", "name": null, "type": "TerminatedCString", "length": 13, "value": "VirtualAlloc"}
+{"ea": "1000c17c", "name": null, "type": "word", "length": 2, "value": "0x2a4"}
+{"ea": "1000c17e", "name": null, "type": "TerminatedCString", "length": 12, "value": "HeapReAlloc"}
+{"ea": "1000c18a", "name": null, "type": "word", "length": 2, "value": "0x183"}
+{"ea": "1000c18c", "name": null, "type": "TerminatedCString", "length": 13, "value": "GetConsoleCP"}
+{"ea": "1000c19a", "name": null, "type": "word", "length": 2, "value": "0x195"}
+{"ea": "1000c19c", "name": null, "type": "TerminatedCString", "length": 15, "value": "GetConsoleMode"}
+{"ea": "1000c1ac", "name": null, "type": "word", "length": 2, "value": "0x141"}
+{"ea": "1000c1ae", "name": null, "type": "TerminatedCString", "length": 17, "value": "FlushFileBuffers"}
+{"ea": "1000c1c0", "name": null, "type": "word", "length": 2, "value": "0x2e1"}
+{"ea": "1000c1c2", "name": null, "type": "TerminatedCString", "length": 13, "value": "LCMapStringA"}
+{"ea": "1000c1d0", "name": null, "type": "word", "length": 2, "value": "0x31a"}
+{"ea": "1000c1d2", "name": null, "type": "TerminatedCString", "length": 20, "value": "MultiByteToWideChar"}
+{"ea": "1000c1e6", "name": null, "type": "word", "length": 2, "value": "0x2e3"}
+{"ea": "1000c1e8", "name": null, "type": "TerminatedCString", "length": 13, "value": "LCMapStringW"}
+{"ea": "1000c1f6", "name": null, "type": "word", "length": 2, "value": "0x23d"}
+{"ea": "1000c1f8", "name": null, "type": "TerminatedCString", "length": 15, "value": "GetStringTypeA"}
+{"ea": "1000c208", "name": null, "type": "word", "length": 2, "value": "0x240"}
+{"ea": "1000c20a", "name": null, "type": "TerminatedCString", "length": 15, "value": "GetStringTypeW"}
+{"ea": "1000c21a", "name": null, "type": "word", "length": 2, "value": "0x1e8"}
+{"ea": "1000c21c", "name": null, "type": "TerminatedCString", "length": 15, "value": "GetLocaleInfoA"}
+{"ea": "1000c22c", "name": null, "type": "word", "length": 2, "value": "0x3df"}
+{"ea": "1000c22e", "name": null, "type": "TerminatedCString", "length": 15, "value": "SetFilePointer"}
+{"ea": "1000c23e", "name": null, "type": "word", "length": 2, "value": "0x2a6"}
+{"ea": "1000c240", "name": null, "type": "TerminatedCString", "length": 9, "value": "HeapSize"}
+{"ea": "1000c24a", "name": null, "type": "word", "length": 2, "value": "0x43"}
+{"ea": "1000c24c", "name": null, "type": "TerminatedCString", "length": 12, "value": "CloseHandle"}
+{"ea": "1000c258", "name": null, "type": "word", "length": 2, "value": "0x482"}
+{"ea": "1000c25a", "name": null, "type": "TerminatedCString", "length": 14, "value": "WriteConsoleA"}
+{"ea": "1000c268", "name": null, "type": "word", "length": 2, "value": "0x199"}
+{"ea": "1000c26a", "name": null, "type": "TerminatedCString", "length": 19, "value": "GetConsoleOutputCP"}
+{"ea": "1000c27e", "name": null, "type": "word", "length": 2, "value": "0x48c"}
+{"ea": "1000c280", "name": null, "type": "TerminatedCString", "length": 14, "value": "WriteConsoleW"}
+{"ea": "1000c28e", "name": null, "type": "word", "length": 2, "value": "0x3fc"}
+{"ea": "1000c290", "name": null, "type": "TerminatedCString", "length": 13, "value": "SetStdHandle"}
+{"ea": "1000c29e", "name": null, "type": "word", "length": 2, "value": "0x78"}
+{"ea": "1000c2a0", "name": null, "type": "TerminatedCString", "length": 12, "value": "CreateFileA"}
+{"ea": "1000d000", "name": "DAT_1000d000", "type": "undefined4", "length": 4, "value": "0x1"}
+{"ea": "1000d004", "name": "DAT_1000d004", "type": "undefined4", "length": 4, "value": "-0x44bf19b2"}
+{"ea": "1000d008", "name": "DAT_1000d008", "type": "undefined4", "length": 4, "value": "0x44bf19b1"}
+{"ea": "1000d010", "name": "PTR_DAT_1000d010", "type": "pointer", "length": 4, "value": "1000eac0"}
+{"ea": "1000d020", "name": "DAT_1000d020", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000d040", "name": "DAT_1000d040", "type": "undefined4", "length": 4, "value": "0x1"}
+{"ea": "1000d290", "name": "PTR_s_(null)_1000d290", "type": "pointer", "length": 4, "value": "1000a1a4"}
+{"ea": "1000d294", "name": "PTR_u_(null)_1000d294", "type": "pointer", "length": 4, "value": "1000a194"}
+{"ea": "1000d298", "name": "DAT_1000d298", "type": "undefined4", "length": 4, "value": "0x1"}
+{"ea": "1000d2a0", "name": "DAT_1000d2a0", "type": "undefined4", "length": 4, "value": "0x2"}
+{"ea": "1000d2a4", "name": "DAT_1000d2a4", "type": "undefined4", "length": 4, "value": "0x2"}
+{"ea": "1000d408", "name": "PTR___exit_1000d408", "type": "pointer", "length": 4, "value": "10002d22"}
+{"ea": "1000d410", "name": "DAT_1000d410", "type": "undefined4", "length": 4, "value": "0x2"}
+{"ea": "1000d418", "name": "DAT_1000d418", "type": "undefined4", "length": 4, "value": "0x8"}
+{"ea": "1000d424", "name": "PTR_s_R6009_-_not_enough_space_for_env_1000d424", "type": "pointer", "length": 4, "value": "1000a708"}
+{"ea": "1000d4c8", "name": "DAT_1000d4c8", "type": "undefined4", "length": 4, "value": "0x3"}
+{"ea": "1000d4cc", "name": "DAT_1000d4cc", "type": "undefined4", "length": 4, "value": "0x7"}
+{"ea": "1000d4d4", "name": "DAT_1000d4d4", "type": "undefined4", "length": 4, "value": "0xa"}
+{"ea": "1000d4dc", "name": "DAT_1000d4dc", "type": "undefined1", "length": 1, "value": "-0x80"}
+{"ea": "1000d4fc", "name": "DAT_1000d4fc", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000d518", "name": "DAT_1000d518", "type": "undefined4", "length": 4, "value": "-0x1"}
+{"ea": "1000d51c", "name": "DAT_1000d51c", "type": "undefined4", "length": 4, "value": "-0x1"}
+{"ea": "1000d528", "name": "DAT_1000d528", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000d52c", "name": "DAT_1000d52c", "type": "undefined4", "length": 4, "value": "0x1"}
+{"ea": "1000d530", "name": "DAT_1000d530", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000d534", "name": "DAT_1000d534", "type": "undefined4", "length": 4, "value": "0x1"}
+{"ea": "1000d7a6", "name": null, "type": "string", "length": 30, "value": "abcdefghijklmnopqrstuvwxyz"}
+{"ea": "1000d7c6", "name": null, "type": "string", "length": 30, "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
+{"ea": "1000d868", "name": "DAT_1000d868", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000d869", "name": "DAT_1000d869", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000d970", "name": "DAT_1000d970", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000d971", "name": "DAT_1000d971", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000d9b1", "name": null, "type": "string", "length": 27, "value": "abcdefghijklmnopqrstuvwxyz"}
+{"ea": "1000d9d1", "name": null, "type": "string", "length": 27, "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"}
+{"ea": "1000da70", "name": "PTR_DAT_1000da70", "type": "pointer", "length": 4, "value": "1000d648"}
+{"ea": "1000da78", "name": "DAT_1000da78", "type": "undefined4", "length": 4, "value": "0x3a4"}
+{"ea": "1000daa8", "name": "DAT_1000daa8", "type": "undefined4", "length": 4, "value": "0x3a8"}
+{"ea": "1000db6c", "name": "DAT_1000db6c", "type": "undefined4", "length": 4, "value": "-0x2"}
+{"ea": "1000dc40", "name": null, "type": "undefined *", "length": 4, "value": "1000ab28"}
+{"ea": "1000dc44", "name": null, "type": "undefined *", "length": 4, "value": "1000afb0"}
+{"ea": "1000dc48", "name": null, "type": "undefined *", "length": 4, "value": "1000b130"}
+{"ea": "1000dc4c", "name": null, "type": "undefined *", "length": 4, "value": "1000dc98"}
+{"ea": "1000dc50", "name": "PTR_DAT_1000dc50", "type": "pointer", "length": 4, "value": "1000db78"}
+{"ea": "1000dc58", "name": "PTR_DAT_1000dc58", "type": "pointer", "length": 4, "value": "1000db78"}
+{"ea": "1000dc5c", "name": null, "type": "undefined *", "length": 4, "value": "1000d648"}
+{"ea": "1000dc60", "name": "PTR_LAB_1000dc60", "type": "pointer", "length": 4, "value": "100085d7"}
+{"ea": "1000dc64", "name": "PTR_LAB_1000dc64", "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc68", "name": null, "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc6c", "name": null, "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc70", "name": null, "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc74", "name": null, "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc78", "name": "PTR_LAB_1000dc78", "type": "pointer", "length": 4, "value": "100085d7"}
+{"ea": "1000dc7c", "name": null, "type": "undefined *", "length": 4, "value": "100085d7"}
+{"ea": "1000dc80", "name": "PTR_LAB_1000dc80", "type": "pointer", "length": 4, "value": "100085d7"}
+{"ea": "1000dc84", "name": "PTR_LAB_1000dc84", "type": "pointer", "length": 4, "value": "100085d7"}
+{"ea": "1000dc90", "name": null, "type": "undefined *", "length": 4, "value": "1000ab28"}
+{"ea": "1000dc94", "name": null, "type": "undefined *", "length": 4, "value": "1000ad2a"}
+{"ea": "1000dc98", "name": "PTR_DAT_1000dc98", "type": "undefined *", "length": 4, "value": "1000b358"}
+{"ea": "1000dc9c", "name": null, "type": "undefined *", "length": 4, "value": "1000b354"}
+{"ea": "1000dca0", "name": null, "type": "undefined *", "length": 4, "value": "1000b350"}
+{"ea": "1000dca4", "name": null, "type": "undefined *", "length": 4, "value": "1000b34c"}
+{"ea": "1000dca8", "name": null, "type": "undefined *", "length": 4, "value": "1000b348"}
+{"ea": "1000dcac", "name": null, "type": "undefined *", "length": 4, "value": "1000b344"}
+{"ea": "1000dcb0", "name": null, "type": "undefined *", "length": 4, "value": "1000b340"}
+{"ea": "1000dcb4", "name": null, "type": "undefined *", "length": 4, "value": "1000b338"}
+{"ea": "1000dcb8", "name": null, "type": "undefined *", "length": 4, "value": "1000b330"}
+{"ea": "1000dcbc", "name": null, "type": "undefined *", "length": 4, "value": "1000b328"}
+{"ea": "1000dcc0", "name": null, "type": "undefined *", "length": 4, "value": "1000b31c"}
+{"ea": "1000dcc4", "name": null, "type": "undefined *", "length": 4, "value": "1000b310"}
+{"ea": "1000dcc8", "name": null, "type": "undefined *", "length": 4, "value": "1000b308"}
+{"ea": "1000dccc", "name": null, "type": "undefined *", "length": 4, "value": "1000b2fc"}
+{"ea": "1000dcd0", "name": null, "type": "undefined *", "length": 4, "value": "1000b2f8"}
+{"ea": "1000dcd4", "name": null, "type": "undefined *", "length": 4, "value": "1000b2f4"}
+{"ea": "1000dcd8", "name": null, "type": "undefined *", "length": 4, "value": "1000b2f0"}
+{"ea": "1000dcdc", "name": null, "type": "undefined *", "length": 4, "value": "1000b2ec"}
+{"ea": "1000dce0", "name": null, "type": "undefined *", "length": 4, "value": "1000b2e8"}
+{"ea": "1000dce4", "name": null, "type": "undefined *", "length": 4, "value": "1000b2e4"}
+{"ea": "1000dce8", "name": null, "type": "undefined *", "length": 4, "value": "1000b2e0"}
+{"ea": "1000dcec", "name": null, "type": "undefined *", "length": 4, "value": "1000b2dc"}
+{"ea": "1000dcf0", "name": null, "type": "undefined *", "length": 4, "value": "1000b2d8"}
+{"ea": "1000dcf4", "name": null, "type": "undefined *", "length": 4, "value": "1000b2d4"}
+{"ea": "1000dcf8", "name": null, "type": "undefined *", "length": 4, "value": "1000b2d0"}
+{"ea": "1000dcfc", "name": null, "type": "undefined *", "length": 4, "value": "1000b2cc"}
+{"ea": "1000dd00", "name": null, "type": "undefined *", "length": 4, "value": "1000b2c4"}
+{"ea": "1000dd04", "name": null, "type": "undefined *", "length": 4, "value": "1000b2b8"}
+{"ea": "1000dd08", "name": null, "type": "undefined *", "length": 4, "value": "1000b2b0"}
+{"ea": "1000dd0c", "name": null, "type": "undefined *", "length": 4, "value": "1000b2a8"}
+{"ea": "1000dd10", "name": null, "type": "undefined *", "length": 4, "value": "1000b2e8"}
+{"ea": "1000dd14", "name": null, "type": "undefined *", "length": 4, "value": "1000b2a0"}
+{"ea": "1000dd18", "name": null, "type": "undefined *", "length": 4, "value": "1000b298"}
+{"ea": "1000dd1c", "name": null, "type": "undefined *", "length": 4, "value": "1000b290"}
+{"ea": "1000dd20", "name": null, "type": "undefined *", "length": 4, "value": "1000b284"}
+{"ea": "1000dd24", "name": null, "type": "undefined *", "length": 4, "value": "1000b27c"}
+{"ea": "1000dd28", "name": null, "type": "undefined *", "length": 4, "value": "1000b270"}
+{"ea": "1000dd2c", "name": null, "type": "undefined *", "length": 4, "value": "1000b264"}
+{"ea": "1000dd30", "name": null, "type": "undefined *", "length": 4, "value": "1000b260"}
+{"ea": "1000dd34", "name": null, "type": "undefined *", "length": 4, "value": "1000b25c"}
+{"ea": "1000dd38", "name": null, "type": "undefined *", "length": 4, "value": "1000b250"}
+{"ea": "1000dd3c", "name": null, "type": "undefined *", "length": 4, "value": "1000b23c"}
+{"ea": "1000dd40", "name": null, "type": "undefined *", "length": 4, "value": "1000b230"}
+{"ea": "1000dd58", "name": "PTR_DAT_1000dd58", "type": "pointer", "length": 4, "value": "1000dd54"}
+{"ea": "1000dd5c", "name": "PTR_DAT_1000dd5c", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd60", "name": "PTR_DAT_1000dd60", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd64", "name": "PTR_DAT_1000dd64", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd68", "name": "PTR_DAT_1000dd68", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd6c", "name": "PTR_DAT_1000dd6c", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd70", "name": "PTR_DAT_1000dd70", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd74", "name": "PTR_DAT_1000dd74", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd78", "name": "PTR_DAT_1000dd78", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dd7c", "name": "PTR_DAT_1000dd7c", "type": "pointer", "length": 4, "value": "1000e8a0"}
+{"ea": "1000dda4", "name": "DAT_1000dda4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000dda8", "name": "DAT_1000dda8", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000ddac", "name": "DAT_1000ddac", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000ddc0", "name": "DAT_1000ddc0", "type": "undefined4", "length": 4, "value": "0x2"}
+{"ea": "1000de60", "name": null, "type": "undefined *", "length": 4, "value": "1000dde0"}
+{"ea": "1000de64", "name": null, "type": "undefined *", "length": 4, "value": "1000de20"}
+{"ea": "1000de80", "name": "DAT_1000de80", "type": "undefined4", "length": 4, "value": "-0x2"}
+{"ea": "1000de84", "name": "DAT_1000de84", "type": "undefined4", "length": 4, "value": "-0x2"}
+{"ea": "1000df08", "name": "DAT_1000df08", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000df0c", "name": "DAT_1000df0c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000df14", "name": "DAT_1000df14", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000df68", "name": "DAT_1000df68", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e028", "name": "DAT_1000e028", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e240", "name": "DAT_1000e240", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e244", "name": "DAT_1000e244", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e248", "name": "DAT_1000e248", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e250", "name": "DAT_1000e250", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e254", "name": "DAT_1000e254", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e25c", "name": "DAT_1000e25c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e274", "name": "DAT_1000e274", "type": "undefined1", "length": 1, "value": "0x0"}
+{"ea": "1000e27c", "name": "DAT_1000e27c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6a0", "name": "DAT_1000e6a0", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6a4", "name": "DAT_1000e6a4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6a8", "name": "DAT_1000e6a8", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6ac", "name": "DAT_1000e6ac", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6b0", "name": "DAT_1000e6b0", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6b4", "name": "DAT_1000e6b4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e6b8", "name": "DAT_1000e6b8", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e810", "name": "DAT_1000e810", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e814", "name": "DAT_1000e814", "type": "undefined2", "length": 2, "value": "0x0"}
+{"ea": "1000e816", "name": "DAT_1000e816", "type": "undefined2", "length": 2, "value": "0x0"}
+{"ea": "1000e82c", "name": "DAT_1000e82c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e854", "name": "DAT_1000e854", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e858", "name": "DAT_1000e858", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e85c", "name": "DAT_1000e85c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e860", "name": "DAT_1000e860", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e87c", "name": "DAT_1000e87c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e880", "name": "DAT_1000e880", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e884", "name": "DAT_1000e884", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e888", "name": "DAT_1000e888", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e88c", "name": "DAT_1000e88c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e890", "name": "DAT_1000e890", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e894", "name": "DAT_1000e894", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e898", "name": "DAT_1000e898", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e89c", "name": "DAT_1000e89c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e8a4", "name": "DAT_1000e8a4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e970", "name": "DAT_1000e970", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e974", "name": "DAT_1000e974", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e978", "name": "DAT_1000e978", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e97c", "name": "DAT_1000e97c", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e980", "name": "DAT_1000e980", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e984", "name": "DAT_1000e984", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e988", "name": "DAT_1000e988", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e990", "name": "DAT_1000e990", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e994", "name": "DAT_1000e994", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e9a0", "name": "DAT_1000e9a0", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000e9a4", "name": "DAT_1000e9a4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eaa4", "name": "DAT_1000eaa4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eaa8", "name": "DAT_1000eaa8", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eaac", "name": "DAT_1000eaac", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eab0", "name": "DAT_1000eab0", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eab4", "name": "DAT_1000eab4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eab8", "name": "DAT_1000eab8", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000eabc", "name": "DAT_1000eabc", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000fac0", "name": "DAT_1000fac0", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "1000fac4", "name": "DAT_1000fac4", "type": "undefined4", "length": 4, "value": "0x0"}
+{"ea": "10018000", "name": "DWORD_10018000", "type": "dword", "length": 4, "value": "0x1000"}
+{"ea": "10018004", "name": null, "type": "dword", "length": 4, "value": "0x100"}
+{"ea": "10018008", "name": null, "type": "word", "length": 2, "value": "0x3027"}
+{"ea": "1001800a", "name": null, "type": "word", "length": 2, "value": "0x3031"}
+{"ea": "1001800c", "name": null, "type": "word", "length": 2, "value": "0x303f"}
+{"ea": "1001800e", "name": null, "type": "word", "length": 2, "value": "0x305a"}
+{"ea": "10018010", "name": null, "type": "word", "length": 2, "value": "0x3068"}
+{"ea": "10018012", "name": null, "type": "word", "length": 2, "value": "0x3083"}
+{"ea": "10018014", "name": null, "type": "word", "length": 2, "value": "0x3091"}
+{"ea": "10018016", "name": null, "type": "word", "length": 2, "value": "0x30aa"}
+{"ea": "10018018", "name": null, "type": "word", "length": 2, "value": "0x30b8"}
+{"ea": "1001801a", "name": null, "type": "word", "length": 2, "value": "0x30e7"}
+{"ea": "1001801c", "name": null, "type": "word", "length": 2, "value": "0x30ed"}
+{"ea": "1001801e", "name": null, "type": "word", "length": 2, "value": "0x30f9"}
+{"ea": "10018020", "name": null, "type": "word", "length": 2, "value": "0x3144"}
+{"ea": "10018022", "name": null, "type": "word", "length": 2, "value": "0x314a"}
+{"ea": "10018024", "name": null, "type": "word", "length": 2, "value": "0x3161"}
+{"ea": "10018026", "name": null, "type": "word", "length": 2, "value": "0x31ad"}
+{"ea": "10018028", "name": null, "type": "word", "length": 2, "value": "0x31b2"}
+{"ea": "1001802a", "name": null, "type": "word", "length": 2, "value": "0x31ca"}
+{"ea": "1001802c", "name": null, "type": "word", "length": 2, "value": "0x31e2"}
+{"ea": "1001802e", "name": null, "type": "word", "length": 2, "value": "0x31eb"}
+{"ea": "10018030", "name": null, "type": "word", "length": 2, "value": "0x31f4"}
+{"ea": "10018032", "name": null, "type": "word", "length": 2, "value": "0x3200"}
+{"ea": "10018034", "name": null, "type": "word", "length": 2, "value": "0x3210"}
+{"ea": "10018036", "name": null, "type": "word", "length": 2, "value": "0x3219"}
+{"ea": "10018038", "name": null, "type": "word", "length": 2, "value": "0x3220"}
+{"ea": "1001803a", "name": null, "type": "word", "length": 2, "value": "0x3225"}
+{"ea": "1001803c", "name": null, "type": "word", "length": 2, "value": "0x322b"}
+{"ea": "1001803e", "name": null, "type": "word", "length": 2, "value": "0x3231"}
+{"ea": "10018040", "name": null, "type": "word", "length": 2, "value": "0x3238"}
+{"ea": "10018042", "name": null, "type": "word", "length": 2, "value": "0x3247"}
+{"ea": "10018044", "name": null, "type": "word", "length": 2, "value": "0x3254"}
+{"ea": "10018046", "name": null, "type": "word", "length": 2, "value": "0x326c"}
+{"ea": "10018048", "name": null, "type": "word", "length": 2, "value": "0x3287"}
+{"ea": "1001804a", "name": null, "type": "word", "length": 2, "value": "0x329b"}
+{"ea": "1001804c", "name": null, "type": "word", "length": 2, "value": "0x32a4"}
+{"ea": "1001804e", "name": null, "type": "word", "length": 2, "value": "0x32cc"}
+{"ea": "10018050", "name": null, "type": "word", "length": 2, "value": "0x32e8"}
+{"ea": "10018052", "name": null, "type": "word", "length": 2, "value": "0x32ee"}
+{"ea": "10018054", "name": null, "type": "word", "length": 2, "value": "0x32fa"}
+{"ea": "10018056", "name": null, "type": "word", "length": 2, "value": "0x33a7"}
+{"ea": "10018058", "name": null, "type": "word", "length": 2, "value": "0x33b2"}
+{"ea": "1001805a", "name": null, "type": "word", "length": 2, "value": "0x33c3"}
+{"ea": "1001805c", "name": null, "type": "word", "length": 2, "value": "0x33e8"}
+{"ea": "1001805e", "name": null, "type": "word", "length": 2, "value": "0x33f9"}
+{"ea": "10018060", "name": null, "type": "word", "length": 2, "value": "0x3400"}
+{"ea": "10018062", "name": null, "type": "word", "length": 2, "value": "0x3406"}
+{"ea": "10018064", "name": null, "type": "word", "length": 2, "value": "0x3418"}
+{"ea": "10018066", "name": null, "type": "word", "length": 2, "value": "0x3420"}
+{"ea": "10018068", "name": null, "type": "word", "length": 2, "value": "0x342b"}
+{"ea": "1001806a", "name": null, "type": "word", "length": 2, "value": "0x347c"}
+{"ea": "1001806c", "name": null, "type": "word", "length": 2, "value": "0x3481"}
+{"ea": "1001806e", "name": null, "type": "word", "length": 2, "value": "0x348b"}
+{"ea": "10018070", "name": null, "type": "word", "length": 2, "value": "0x34c5"}
+{"ea": "10018072", "name": null, "type": "word", "length": 2, "value": "0x34ca"}
+{"ea": "10018074", "name": null, "type": "word", "length": 2, "value": "0x34d1"}
+{"ea": "10018076", "name": null, "type": "word", "length": 2, "value": "0x34d7"}
+{"ea": "10018078", "name": null, "type": "word", "length": 2, "value": "0x354d"}
+{"ea": "1001807a", "name": null, "type": "word", "length": 2, "value": "0x3553"}
+{"ea": "1001807c", "name": null, "type": "word", "length": 2, "value": "0x3559"}
+{"ea": "1001807e", "name": null, "type": "word", "length": 2, "value": "0x355f"}
+{"ea": "10018080", "name": null, "type": "word", "length": 2, "value": "0x3565"}
+{"ea": "10018082", "name": null, "type": "word", "length": 2, "value": "0x356b"}
+{"ea": "10018084", "name": null, "type": "word", "length": 2, "value": "0x3572"}
+{"ea": "10018086", "name": null, "type": "word", "length": 2, "value": "0x3579"}
+{"ea": "10018088", "name": null, "type": "word", "length": 2, "value": "0x3580"}
+{"ea": "1001808a", "name": null, "type": "word", "length": 2, "value": "0x3587"}
+{"ea": "1001808c", "name": null, "type": "word", "length": 2, "value": "0x358e"}
+{"ea": "1001808e", "name": null, "type": "word", "length": 2, "value": "0x3595"}
+{"ea": "10018090", "name": null, "type": "word", "length": 2, "value": "0x359c"}
+{"ea": "10018092", "name": null, "type": "word", "length": 2, "value": "0x35a4"}
+{"ea": "10018094", "name": null, "type": "word", "length": 2, "value": "0x35ac"}
+{"ea": "10018096", "name": null, "type": "word", "length": 2, "value": "0x35b4"}
+{"ea": "10018098", "name": null, "type": "word", "length": 2, "value": "0x35c0"}
+{"ea": "1001809a", "name": null, "type": "word", "length": 2, "value": "0x35c9"}
+{"ea": "1001809c", "name": null, "type": "word", "length": 2, "value": "0x35ce"}
+{"ea": "1001809e", "name": null, "type": "word", "length": 2, "value": "0x35d4"}
+{"ea": "100180a0", "name": null, "type": "word", "length": 2, "value": "0x35de"}
+{"ea": "100180a2", "name": null, "type": "word", "length": 2, "value": "0x35e7"}
+{"ea": "100180a4", "name": null, "type": "word", "length": 2, "value": "0x35f2"}
+{"ea": "100180a6", "name": null, "type": "word", "length": 2, "value": "0x35fe"}
+{"ea": "100180a8", "name": null, "type": "word", "length": 2, "value": "0x3603"}
+{"ea": "100180aa", "name": null, "type": "word", "length": 2, "value": "0x3613"}
+{"ea": "100180ac", "name": null, "type": "word", "length": 2, "value": "0x3618"}
+{"ea": "100180ae", "name": null, "type": "word", "length": 2, "value": "0x361e"}
+{"ea": "100180b0", "name": null, "type": "word", "length": 2, "value": "0x3624"}
+{"ea": "100180b2", "name": null, "type": "word", "length": 2, "value": "0x363a"}
+{"ea": "100180b4", "name": null, "type": "word", "length": 2, "value": "0x3641"}
+{"ea": "100180b6", "name": null, "type": "word", "length": 2, "value": "0x36f5"}
+{"ea": "100180b8", "name": null, "type": "word", "length": 2, "value": "0x36fb"}
+{"ea": "100180ba", "name": null, "type": "word", "length": 2, "value": "0x3715"}
+{"ea": "100180bc", "name": null, "type": "word", "length": 2, "value": "0x3724"}
+{"ea": "100180be", "name": null, "type": "word", "length": 2, "value": "0x3731"}
+{"ea": "100180c0", "name": null, "type": "word", "length": 2, "value": "0x373d"}
+{"ea": "100180c2", "name": null, "type": "word", "length": 2, "value": "0x374d"}
+{"ea": "100180c4", "name": null, "type": "word", "length": 2, "value": "0x3754"}
+{"ea": "100180c6", "name": null, "type": "word", "length": 2, "value": "0x3763"}
+{"ea": "100180c8", "name": null, "type": "word", "length": 2, "value": "0x376f"}
+{"ea": "100180ca", "name": null, "type": "word", "length": 2, "value": "0x377c"}
+{"ea": "100180cc", "name": null, "type": "word", "length": 2, "value": "0x37a0"}
+{"ea": "100180ce", "name": null, "type": "word", "length": 2, "value": "0x37b2"}
+{"ea": "100180d0", "name": null, "type": "word", "length": 2, "value": "0x37c0"}
+{"ea": "100180d2", "name": null, "type": "word", "length": 2, "value": "0x37d5"}
+{"ea": "100180d4", "name": null, "type": "word", "length": 2, "value": "0x37df"}
+{"ea": "100180d6", "name": null, "type": "word", "length": 2, "value": "0x3805"}
+{"ea": "100180d8", "name": null, "type": "word", "length": 2, "value": "0x3838"}
+{"ea": "100180da", "name": null, "type": "word", "length": 2, "value": "0x3847"}
+{"ea": "100180dc", "name": null, "type": "word", "length": 2, "value": "0x3850"}
+{"ea": "100180de", "name": null, "type": "word", "length": 2, "value": "0x3874"}
+{"ea": "100180e0", "name": null, "type": "word", "length": 2, "value": "0x38a3"}
+{"ea": "100180e2", "name": null, "type": "word", "length": 2, "value": "0x38e5"}
+{"ea": "100180e4", "name": null, "type": "word", "length": 2, "value": "0x38f7"}
+{"ea": "100180e6", "name": null, "type": "word", "length": 2, "value": "0x39a3"}
+{"ea": "100180e8", "name": null, "type": "word", "length": 2, "value": "0x39ab"}
+{"ea": "100180ea", "name": null, "type": "word", "length": 2, "value": "0x39c0"}
+{"ea": "100180ec", "name": null, "type": "word", "length": 2, "value": "0x39cb"}
+{"ea": "100180ee", "name": null, "type": "word", "length": 2, "value": "0x3ab2"}
+{"ea": "100180f0", "name": null, "type": "word", "length": 2, "value": "0x3b54"}
+{"ea": "100180f2", "name": null, "type": "word", "length": 2, "value": "0x3b72"}
+{"ea": "100180f4", "name": null, "type": "word", "length": 2, "value": "0x3b98"}
+{"ea": "100180f6", "name": null, "type": "word", "length": 2, "value": "0x3bf8"}
+{"ea": "100180f8", "name": null, "type": "word", "length": 2, "value": "0x3c0b"}
+{"ea": "100180fa", "name": null, "type": "word", "length": 2, "value": "0x3c26"}
+{"ea": "100180fc", "name": null, "type": "word", "length": 2, "value": "0x3f71"}
+{"ea": "100180fe", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "10018100", "name": null, "type": "dword", "length": 4, "value": "0x2000"}
+{"ea": "10018104", "name": null, "type": "dword", "length": 4, "value": "0xb8"}
+{"ea": "10018108", "name": null, "type": "word", "length": 2, "value": "0x3061"}
+{"ea": "1001810a", "name": null, "type": "word", "length": 2, "value": "0x31eb"}
+{"ea": "1001810c", "name": null, "type": "word", "length": 2, "value": "0x321a"}
+{"ea": "1001810e", "name": null, "type": "word", "length": 2, "value": "0x323f"}
+{"ea": "10018110", "name": null, "type": "word", "length": 2, "value": "0x3422"}
+{"ea": "10018112", "name": null, "type": "word", "length": 2, "value": "0x361e"}
+{"ea": "10018114", "name": null, "type": "word", "length": 2, "value": "0x3622"}
+{"ea": "10018116", "name": null, "type": "word", "length": 2, "value": "0x3626"}
+{"ea": "10018118", "name": null, "type": "word", "length": 2, "value": "0x362a"}
+{"ea": "1001811a", "name": null, "type": "word", "length": 2, "value": "0x362e"}
+{"ea": "1001811c", "name": null, "type": "word", "length": 2, "value": "0x3632"}
+{"ea": "1001811e", "name": null, "type": "word", "length": 2, "value": "0x3636"}
+{"ea": "10018120", "name": null, "type": "word", "length": 2, "value": "0x363a"}
+{"ea": "10018122", "name": null, "type": "word", "length": 2, "value": "0x3647"}
+{"ea": "10018124", "name": null, "type": "word", "length": 2, "value": "0x3659"}
+{"ea": "10018126", "name": null, "type": "word", "length": 2, "value": "0x372b"}
+{"ea": "10018128", "name": null, "type": "word", "length": 2, "value": "0x3735"}
+{"ea": "1001812a", "name": null, "type": "word", "length": 2, "value": "0x3742"}
+{"ea": "1001812c", "name": null, "type": "word", "length": 2, "value": "0x375d"}
+{"ea": "1001812e", "name": null, "type": "word", "length": 2, "value": "0x3764"}
+{"ea": "10018130", "name": null, "type": "word", "length": 2, "value": "0x377c"}
+{"ea": "10018132", "name": null, "type": "word", "length": 2, "value": "0x37a8"}
+{"ea": "10018134", "name": null, "type": "word", "length": 2, "value": "0x37c4"}
+{"ea": "10018136", "name": null, "type": "word", "length": 2, "value": "0x37e7"}
+{"ea": "10018138", "name": null, "type": "word", "length": 2, "value": "0x37fa"}
+{"ea": "1001813a", "name": null, "type": "word", "length": 2, "value": "0x3829"}
+{"ea": "1001813c", "name": null, "type": "word", "length": 2, "value": "0x3846"}
+{"ea": "1001813e", "name": null, "type": "word", "length": 2, "value": "0x38a2"}
+{"ea": "10018140", "name": null, "type": "word", "length": 2, "value": "0x397c"}
+{"ea": "10018142", "name": null, "type": "word", "length": 2, "value": "0x3984"}
+{"ea": "10018144", "name": null, "type": "word", "length": 2, "value": "0x399c"}
+{"ea": "10018146", "name": null, "type": "word", "length": 2, "value": "0x39b4"}
+{"ea": "10018148", "name": null, "type": "word", "length": 2, "value": "0x3a0b"}
+{"ea": "1001814a", "name": null, "type": "word", "length": 2, "value": "0x3a5f"}
+{"ea": "1001814c", "name": null, "type": "word", "length": 2, "value": "0x3a65"}
+{"ea": "1001814e", "name": null, "type": "word", "length": 2, "value": "0x3a7a"}
+{"ea": "10018150", "name": null, "type": "word", "length": 2, "value": "0x3a83"}
+{"ea": "10018152", "name": null, "type": "word", "length": 2, "value": "0x3ab0"}
+{"ea": "10018154", "name": null, "type": "word", "length": 2, "value": "0x3acb"}
+{"ea": "10018156", "name": null, "type": "word", "length": 2, "value": "0x3ad1"}
+{"ea": "10018158", "name": null, "type": "word", "length": 2, "value": "0x3ada"}
+{"ea": "1001815a", "name": null, "type": "word", "length": 2, "value": "0x3ae1"}
+{"ea": "1001815c", "name": null, "type": "word", "length": 2, "value": "0x3b03"}
+{"ea": "1001815e", "name": null, "type": "word", "length": 2, "value": "0x3b62"}
+{"ea": "10018160", "name": null, "type": "word", "length": 2, "value": "0x3b6a"}
+{"ea": "10018162", "name": null, "type": "word", "length": 2, "value": "0x3b7d"}
+{"ea": "10018164", "name": null, "type": "word", "length": 2, "value": "0x3b88"}
+{"ea": "10018166", "name": null, "type": "word", "length": 2, "value": "0x3b8d"}
+{"ea": "10018168", "name": null, "type": "word", "length": 2, "value": "0x3b9d"}
+{"ea": "1001816a", "name": null, "type": "word", "length": 2, "value": "0x3ba7"}
+{"ea": "1001816c", "name": null, "type": "word", "length": 2, "value": "0x3bae"}
+{"ea": "1001816e", "name": null, "type": "word", "length": 2, "value": "0x3bb9"}
+{"ea": "10018170", "name": null, "type": "word", "length": 2, "value": "0x3bc2"}
+{"ea": "10018172", "name": null, "type": "word", "length": 2, "value": "0x3bd8"}
+{"ea": "10018174", "name": null, "type": "word", "length": 2, "value": "0x3be3"}
+{"ea": "10018176", "name": null, "type": "word", "length": 2, "value": "0x3bfd"}
+{"ea": "10018178", "name": null, "type": "word", "length": 2, "value": "0x3c09"}
+{"ea": "1001817a", "name": null, "type": "word", "length": 2, "value": "0x3c11"}
+{"ea": "1001817c", "name": null, "type": "word", "length": 2, "value": "0x3c21"}
+{"ea": "1001817e", "name": null, "type": "word", "length": 2, "value": "0x3c36"}
+{"ea": "10018180", "name": null, "type": "word", "length": 2, "value": "0x3c76"}
+{"ea": "10018182", "name": null, "type": "word", "length": 2, "value": "0x3c83"}
+{"ea": "10018184", "name": null, "type": "word", "length": 2, "value": "0x3cad"}
+{"ea": "10018186", "name": null, "type": "word", "length": 2, "value": "0x3cb2"}
+{"ea": "10018188", "name": null, "type": "word", "length": 2, "value": "0x3cbd"}
+{"ea": "1001818a", "name": null, "type": "word", "length": 2, "value": "0x3cc2"}
+{"ea": "1001818c", "name": null, "type": "word", "length": 2, "value": "0x3ce0"}
+{"ea": "1001818e", "name": null, "type": "word", "length": 2, "value": "0x3d91"}
+{"ea": "10018190", "name": null, "type": "word", "length": 2, "value": "0x3d9e"}
+{"ea": "10018192", "name": null, "type": "word", "length": 2, "value": "0x3dbb"}
+{"ea": "10018194", "name": null, "type": "word", "length": 2, "value": "0x3df2"}
+{"ea": "10018196", "name": null, "type": "word", "length": 2, "value": "0x3e0a"}
+{"ea": "10018198", "name": null, "type": "word", "length": 2, "value": "0x3e15"}
+{"ea": "1001819a", "name": null, "type": "word", "length": 2, "value": "0x3e39"}
+{"ea": "1001819c", "name": null, "type": "word", "length": 2, "value": "0x3e42"}
+{"ea": "1001819e", "name": null, "type": "word", "length": 2, "value": "0x3e49"}
+{"ea": "100181a0", "name": null, "type": "word", "length": 2, "value": "0x3e52"}
+{"ea": "100181a2", "name": null, "type": "word", "length": 2, "value": "0x3e92"}
+{"ea": "100181a4", "name": null, "type": "word", "length": 2, "value": "0x3e97"}
+{"ea": "100181a6", "name": null, "type": "word", "length": 2, "value": "0x3ebf"}
+{"ea": "100181a8", "name": null, "type": "word", "length": 2, "value": "0x3ee4"}
+{"ea": "100181aa", "name": null, "type": "word", "length": 2, "value": "0x3f09"}
+{"ea": "100181ac", "name": null, "type": "word", "length": 2, "value": "0x3f1c"}
+{"ea": "100181ae", "name": null, "type": "word", "length": 2, "value": "0x3f34"}
+{"ea": "100181b0", "name": null, "type": "word", "length": 2, "value": "0x3f46"}
+{"ea": "100181b2", "name": null, "type": "word", "length": 2, "value": "0x3f6a"}
+{"ea": "100181b4", "name": null, "type": "word", "length": 2, "value": "0x3fa4"}
+{"ea": "100181b6", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "100181b8", "name": null, "type": "dword", "length": 4, "value": "0x3000"}
+{"ea": "100181bc", "name": null, "type": "dword", "length": 4, "value": "0x160"}
+{"ea": "100181c0", "name": null, "type": "word", "length": 2, "value": "0x301d"}
+{"ea": "100181c2", "name": null, "type": "word", "length": 2, "value": "0x3023"}
+{"ea": "100181c4", "name": null, "type": "word", "length": 2, "value": "0x303c"}
+{"ea": "100181c6", "name": null, "type": "word", "length": 2, "value": "0x3042"}
+{"ea": "100181c8", "name": null, "type": "word", "length": 2, "value": "0x30eb"}
+{"ea": "100181ca", "name": null, "type": "word", "length": 2, "value": "0x30fa"}
+{"ea": "100181cc", "name": null, "type": "word", "length": 2, "value": "0x3132"}
+{"ea": "100181ce", "name": null, "type": "word", "length": 2, "value": "0x313c"}
+{"ea": "100181d0", "name": null, "type": "word", "length": 2, "value": "0x318c"}
+{"ea": "100181d2", "name": null, "type": "word", "length": 2, "value": "0x3197"}
+{"ea": "100181d4", "name": null, "type": "word", "length": 2, "value": "0x31a1"}
+{"ea": "100181d6", "name": null, "type": "word", "length": 2, "value": "0x31b2"}
+{"ea": "100181d8", "name": null, "type": "word", "length": 2, "value": "0x31bd"}
+{"ea": "100181da", "name": null, "type": "word", "length": 2, "value": "0x3370"}
+{"ea": "100181dc", "name": null, "type": "word", "length": 2, "value": "0x3381"}
+{"ea": "100181de", "name": null, "type": "word", "length": 2, "value": "0x3389"}
+{"ea": "100181e0", "name": null, "type": "word", "length": 2, "value": "0x338f"}
+{"ea": "100181e2", "name": null, "type": "word", "length": 2, "value": "0x3394"}
+{"ea": "100181e4", "name": null, "type": "word", "length": 2, "value": "0x339a"}
+{"ea": "100181e6", "name": null, "type": "word", "length": 2, "value": "0x3406"}
+{"ea": "100181e8", "name": null, "type": "word", "length": 2, "value": "0x340c"}
+{"ea": "100181ea", "name": null, "type": "word", "length": 2, "value": "0x3422"}
+{"ea": "100181ec", "name": null, "type": "word", "length": 2, "value": "0x342d"}
+{"ea": "100181ee", "name": null, "type": "word", "length": 2, "value": "0x3444"}
+{"ea": "100181f0", "name": null, "type": "word", "length": 2, "value": "0x3450"}
+{"ea": "100181f2", "name": null, "type": "word", "length": 2, "value": "0x345d"}
+{"ea": "100181f4", "name": null, "type": "word", "length": 2, "value": "0x3464"}
+{"ea": "100181f6", "name": null, "type": "word", "length": 2, "value": "0x349b"}
+{"ea": "100181f8", "name": null, "type": "word", "length": 2, "value": "0x34ea"}
+{"ea": "100181fa", "name": null, "type": "word", "length": 2, "value": "0x34fd"}
+{"ea": "100181fc", "name": null, "type": "word", "length": 2, "value": "0x352f"}
+{"ea": "100181fe", "name": null, "type": "word", "length": 2, "value": "0x3548"}
+{"ea": "10018200", "name": null, "type": "word", "length": 2, "value": "0x3556"}
+{"ea": "10018202", "name": null, "type": "word", "length": 2, "value": "0x356a"}
+{"ea": "10018204", "name": null, "type": "word", "length": 2, "value": "0x358b"}
+{"ea": "10018206", "name": null, "type": "word", "length": 2, "value": "0x3591"}
+{"ea": "10018208", "name": null, "type": "word", "length": 2, "value": "0x35c3"}
+{"ea": "1001820a", "name": null, "type": "word", "length": 2, "value": "0x361a"}
+{"ea": "1001820c", "name": null, "type": "word", "length": 2, "value": "0x3622"}
+{"ea": "1001820e", "name": null, "type": "word", "length": 2, "value": "0x3662"}
+{"ea": "10018210", "name": null, "type": "word", "length": 2, "value": "0x366c"}
+{"ea": "10018212", "name": null, "type": "word", "length": 2, "value": "0x3694"}
+{"ea": "10018214", "name": null, "type": "word", "length": 2, "value": "0x36ad"}
+{"ea": "10018216", "name": null, "type": "word", "length": 2, "value": "0x36ee"}
+{"ea": "10018218", "name": null, "type": "word", "length": 2, "value": "0x371e"}
+{"ea": "1001821a", "name": null, "type": "word", "length": 2, "value": "0x3730"}
+{"ea": "1001821c", "name": null, "type": "word", "length": 2, "value": "0x3782"}
+{"ea": "1001821e", "name": null, "type": "word", "length": 2, "value": "0x3788"}
+{"ea": "10018220", "name": null, "type": "word", "length": 2, "value": "0x37ab"}
+{"ea": "10018222", "name": null, "type": "word", "length": 2, "value": "0x37b0"}
+{"ea": "10018224", "name": null, "type": "word", "length": 2, "value": "0x37d1"}
+{"ea": "10018226", "name": null, "type": "word", "length": 2, "value": "0x37d6"}
+{"ea": "10018228", "name": null, "type": "word", "length": 2, "value": "0x37fb"}
+{"ea": "1001822a", "name": null, "type": "word", "length": 2, "value": "0x3801"}
+{"ea": "1001822c", "name": null, "type": "word", "length": 2, "value": "0x380c"}
+{"ea": "1001822e", "name": null, "type": "word", "length": 2, "value": "0x3818"}
+{"ea": "10018230", "name": null, "type": "word", "length": 2, "value": "0x382d"}
+{"ea": "10018232", "name": null, "type": "word", "length": 2, "value": "0x3834"}
+{"ea": "10018234", "name": null, "type": "word", "length": 2, "value": "0x3848"}
+{"ea": "10018236", "name": null, "type": "word", "length": 2, "value": "0x384f"}
+{"ea": "10018238", "name": null, "type": "word", "length": 2, "value": "0x3876"}
+{"ea": "1001823a", "name": null, "type": "word", "length": 2, "value": "0x387c"}
+{"ea": "1001823c", "name": null, "type": "word", "length": 2, "value": "0x3887"}
+{"ea": "1001823e", "name": null, "type": "word", "length": 2, "value": "0x3893"}
+{"ea": "10018240", "name": null, "type": "word", "length": 2, "value": "0x38a8"}
+{"ea": "10018242", "name": null, "type": "word", "length": 2, "value": "0x38af"}
+{"ea": "10018244", "name": null, "type": "word", "length": 2, "value": "0x38c3"}
+{"ea": "10018246", "name": null, "type": "word", "length": 2, "value": "0x38ca"}
+{"ea": "10018248", "name": null, "type": "word", "length": 2, "value": "0x38e2"}
+{"ea": "1001824a", "name": null, "type": "word", "length": 2, "value": "0x38ee"}
+{"ea": "1001824c", "name": null, "type": "word", "length": 2, "value": "0x38f4"}
+{"ea": "1001824e", "name": null, "type": "word", "length": 2, "value": "0x3900"}
+{"ea": "10018250", "name": null, "type": "word", "length": 2, "value": "0x390f"}
+{"ea": "10018252", "name": null, "type": "word", "length": 2, "value": "0x3915"}
+{"ea": "10018254", "name": null, "type": "word", "length": 2, "value": "0x391e"}
+{"ea": "10018256", "name": null, "type": "word", "length": 2, "value": "0x392a"}
+{"ea": "10018258", "name": null, "type": "word", "length": 2, "value": "0x3938"}
+{"ea": "1001825a", "name": null, "type": "word", "length": 2, "value": "0x393e"}
+{"ea": "1001825c", "name": null, "type": "word", "length": 2, "value": "0x394a"}
+{"ea": "1001825e", "name": null, "type": "word", "length": 2, "value": "0x3950"}
+{"ea": "10018260", "name": null, "type": "word", "length": 2, "value": "0x395d"}
+{"ea": "10018262", "name": null, "type": "word", "length": 2, "value": "0x3967"}
+{"ea": "10018264", "name": null, "type": "word", "length": 2, "value": "0x396e"}
+{"ea": "10018266", "name": null, "type": "word", "length": 2, "value": "0x3986"}
+{"ea": "10018268", "name": null, "type": "word", "length": 2, "value": "0x3995"}
+{"ea": "1001826a", "name": null, "type": "word", "length": 2, "value": "0x399c"}
+{"ea": "1001826c", "name": null, "type": "word", "length": 2, "value": "0x39a9"}
+{"ea": "1001826e", "name": null, "type": "word", "length": 2, "value": "0x39cc"}
+{"ea": "10018270", "name": null, "type": "word", "length": 2, "value": "0x39e1"}
+{"ea": "10018272", "name": null, "type": "word", "length": 2, "value": "0x3a07"}
+{"ea": "10018274", "name": null, "type": "word", "length": 2, "value": "0x3a47"}
+{"ea": "10018276", "name": null, "type": "word", "length": 2, "value": "0x3a4d"}
+{"ea": "10018278", "name": null, "type": "word", "length": 2, "value": "0x3a77"}
+{"ea": "1001827a", "name": null, "type": "word", "length": 2, "value": "0x3a7d"}
+{"ea": "1001827c", "name": null, "type": "word", "length": 2, "value": "0x3a99"}
+{"ea": "1001827e", "name": null, "type": "word", "length": 2, "value": "0x3ab1"}
+{"ea": "10018280", "name": null, "type": "word", "length": 2, "value": "0x3ad7"}
+{"ea": "10018282", "name": null, "type": "word", "length": 2, "value": "0x3b51"}
+{"ea": "10018284", "name": null, "type": "word", "length": 2, "value": "0x3b74"}
+{"ea": "10018286", "name": null, "type": "word", "length": 2, "value": "0x3b7e"}
+{"ea": "10018288", "name": null, "type": "word", "length": 2, "value": "0x3bb6"}
+{"ea": "1001828a", "name": null, "type": "word", "length": 2, "value": "0x3bbe"}
+{"ea": "1001828c", "name": null, "type": "word", "length": 2, "value": "0x3c08"}
+{"ea": "1001828e", "name": null, "type": "word", "length": 2, "value": "0x3c0f"}
+{"ea": "10018290", "name": null, "type": "word", "length": 2, "value": "0x3c2a"}
+{"ea": "10018292", "name": null, "type": "word", "length": 2, "value": "0x3c2f"}
+{"ea": "10018294", "name": null, "type": "word", "length": 2, "value": "0x3c37"}
+{"ea": "10018296", "name": null, "type": "word", "length": 2, "value": "0x3c3d"}
+{"ea": "10018298", "name": null, "type": "word", "length": 2, "value": "0x3c44"}
+{"ea": "1001829a", "name": null, "type": "word", "length": 2, "value": "0x3c4a"}
+{"ea": "1001829c", "name": null, "type": "word", "length": 2, "value": "0x3c51"}
+{"ea": "1001829e", "name": null, "type": "word", "length": 2, "value": "0x3c57"}
+{"ea": "100182a0", "name": null, "type": "word", "length": 2, "value": "0x3c5f"}
+{"ea": "100182a2", "name": null, "type": "word", "length": 2, "value": "0x3c66"}
+{"ea": "100182a4", "name": null, "type": "word", "length": 2, "value": "0x3c6b"}
+{"ea": "100182a6", "name": null, "type": "word", "length": 2, "value": "0x3c73"}
+{"ea": "100182a8", "name": null, "type": "word", "length": 2, "value": "0x3c7c"}
+{"ea": "100182aa", "name": null, "type": "word", "length": 2, "value": "0x3c88"}
+{"ea": "100182ac", "name": null, "type": "word", "length": 2, "value": "0x3c8d"}
+{"ea": "100182ae", "name": null, "type": "word", "length": 2, "value": "0x3c92"}
+{"ea": "100182b0", "name": null, "type": "word", "length": 2, "value": "0x3c98"}
+{"ea": "100182b2", "name": null, "type": "word", "length": 2, "value": "0x3c9c"}
+{"ea": "100182b4", "name": null, "type": "word", "length": 2, "value": "0x3ca2"}
+{"ea": "100182b6", "name": null, "type": "word", "length": 2, "value": "0x3ca7"}
+{"ea": "100182b8", "name": null, "type": "word", "length": 2, "value": "0x3cad"}
+{"ea": "100182ba", "name": null, "type": "word", "length": 2, "value": "0x3cb2"}
+{"ea": "100182bc", "name": null, "type": "word", "length": 2, "value": "0x3cc1"}
+{"ea": "100182be", "name": null, "type": "word", "length": 2, "value": "0x3cd7"}
+{"ea": "100182c0", "name": null, "type": "word", "length": 2, "value": "0x3ce2"}
+{"ea": "100182c2", "name": null, "type": "word", "length": 2, "value": "0x3ce7"}
+{"ea": "100182c4", "name": null, "type": "word", "length": 2, "value": "0x3cf2"}
+{"ea": "100182c6", "name": null, "type": "word", "length": 2, "value": "0x3cf7"}
+{"ea": "100182c8", "name": null, "type": "word", "length": 2, "value": "0x3d02"}
+{"ea": "100182ca", "name": null, "type": "word", "length": 2, "value": "0x3d07"}
+{"ea": "100182cc", "name": null, "type": "word", "length": 2, "value": "0x3d14"}
+{"ea": "100182ce", "name": null, "type": "word", "length": 2, "value": "0x3d22"}
+{"ea": "100182d0", "name": null, "type": "word", "length": 2, "value": "0x3d28"}
+{"ea": "100182d2", "name": null, "type": "word", "length": 2, "value": "0x3d35"}
+{"ea": "100182d4", "name": null, "type": "word", "length": 2, "value": "0x3d55"}
+{"ea": "100182d6", "name": null, "type": "word", "length": 2, "value": "0x3d5b"}
+{"ea": "100182d8", "name": null, "type": "word", "length": 2, "value": "0x3d77"}
+{"ea": "100182da", "name": null, "type": "word", "length": 2, "value": "0x3da7"}
+{"ea": "100182dc", "name": null, "type": "word", "length": 2, "value": "0x3dac"}
+{"ea": "100182de", "name": null, "type": "word", "length": 2, "value": "0x3dba"}
+{"ea": "100182e0", "name": null, "type": "word", "length": 2, "value": "0x3dc9"}
+{"ea": "100182e2", "name": null, "type": "word", "length": 2, "value": "0x3dec"}
+{"ea": "100182e4", "name": null, "type": "word", "length": 2, "value": "0x3df9"}
+{"ea": "100182e6", "name": null, "type": "word", "length": 2, "value": "0x3e05"}
+{"ea": "100182e8", "name": null, "type": "word", "length": 2, "value": "0x3e0d"}
+{"ea": "100182ea", "name": null, "type": "word", "length": 2, "value": "0x3e15"}
+{"ea": "100182ec", "name": null, "type": "word", "length": 2, "value": "0x3e21"}
+{"ea": "100182ee", "name": null, "type": "word", "length": 2, "value": "0x3e45"}
+{"ea": "100182f0", "name": null, "type": "word", "length": 2, "value": "0x3e4d"}
+{"ea": "100182f2", "name": null, "type": "word", "length": 2, "value": "0x3e58"}
+{"ea": "100182f4", "name": null, "type": "word", "length": 2, "value": "0x3e78"}
+{"ea": "100182f6", "name": null, "type": "word", "length": 2, "value": "0x3e81"}
+{"ea": "100182f8", "name": null, "type": "word", "length": 2, "value": "0x3e8d"}
+{"ea": "100182fa", "name": null, "type": "word", "length": 2, "value": "0x3ec4"}
+{"ea": "100182fc", "name": null, "type": "word", "length": 2, "value": "0x3ecd"}
+{"ea": "100182fe", "name": null, "type": "word", "length": 2, "value": "0x3ed9"}
+{"ea": "10018300", "name": null, "type": "word", "length": 2, "value": "0x3f12"}
+{"ea": "10018302", "name": null, "type": "word", "length": 2, "value": "0x3f1b"}
+{"ea": "10018304", "name": null, "type": "word", "length": 2, "value": "0x3f27"}
+{"ea": "10018306", "name": null, "type": "word", "length": 2, "value": "0x3f40"}
+{"ea": "10018308", "name": null, "type": "word", "length": 2, "value": "0x3f52"}
+{"ea": "1001830a", "name": null, "type": "word", "length": 2, "value": "0x3fa1"}
+{"ea": "1001830c", "name": null, "type": "word", "length": 2, "value": "0x3fa7"}
+{"ea": "1001830e", "name": null, "type": "word", "length": 2, "value": "0x3fb8"}
+{"ea": "10018310", "name": null, "type": "word", "length": 2, "value": "0x3fce"}
+{"ea": "10018312", "name": null, "type": "word", "length": 2, "value": "0x3fef"}
+{"ea": "10018314", "name": null, "type": "word", "length": 2, "value": "0x3ffb"}
+{"ea": "10018316", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "10018318", "name": null, "type": "dword", "length": 4, "value": "0x4000"}
+{"ea": "1001831c", "name": null, "type": "dword", "length": 4, "value": "0xb4"}
+{"ea": "10018320", "name": null, "type": "word", "length": 2, "value": "0x3022"}
+{"ea": "10018322", "name": null, "type": "word", "length": 2, "value": "0x302f"}
+{"ea": "10018324", "name": null, "type": "word", "length": 2, "value": "0x3034"}
+{"ea": "10018326", "name": null, "type": "word", "length": 2, "value": "0x3042"}
+{"ea": "10018328", "name": null, "type": "word", "length": 2, "value": "0x311d"}
+{"ea": "1001832a", "name": null, "type": "word", "length": 2, "value": "0x3140"}
+{"ea": "1001832c", "name": null, "type": "word", "length": 2, "value": "0x314b"}
+{"ea": "1001832e", "name": null, "type": "word", "length": 2, "value": "0x316e"}
+{"ea": "10018330", "name": null, "type": "word", "length": 2, "value": "0x31bd"}
+{"ea": "10018332", "name": null, "type": "word", "length": 2, "value": "0x3204"}
+{"ea": "10018334", "name": null, "type": "word", "length": 2, "value": "0x320b"}
+{"ea": "10018336", "name": null, "type": "word", "length": 2, "value": "0x3215"}
+{"ea": "10018338", "name": null, "type": "word", "length": 2, "value": "0x323f"}
+{"ea": "1001833a", "name": null, "type": "word", "length": 2, "value": "0x324d"}
+{"ea": "1001833c", "name": null, "type": "word", "length": 2, "value": "0x3253"}
+{"ea": "1001833e", "name": null, "type": "word", "length": 2, "value": "0x3276"}
+{"ea": "10018340", "name": null, "type": "word", "length": 2, "value": "0x327d"}
+{"ea": "10018342", "name": null, "type": "word", "length": 2, "value": "0x3296"}
+{"ea": "10018344", "name": null, "type": "word", "length": 2, "value": "0x32aa"}
+{"ea": "10018346", "name": null, "type": "word", "length": 2, "value": "0x32b0"}
+{"ea": "10018348", "name": null, "type": "word", "length": 2, "value": "0x32b9"}
+{"ea": "1001834a", "name": null, "type": "word", "length": 2, "value": "0x32cc"}
+{"ea": "1001834c", "name": null, "type": "word", "length": 2, "value": "0x32f0"}
+{"ea": "1001834e", "name": null, "type": "word", "length": 2, "value": "0x3385"}
+{"ea": "10018350", "name": null, "type": "word", "length": 2, "value": "0x33a5"}
+{"ea": "10018352", "name": null, "type": "word", "length": 2, "value": "0x33d1"}
+{"ea": "10018354", "name": null, "type": "word", "length": 2, "value": "0x33fe"}
+{"ea": "10018356", "name": null, "type": "word", "length": 2, "value": "0x34a4"}
+{"ea": "10018358", "name": null, "type": "word", "length": 2, "value": "0x34e1"}
+{"ea": "1001835a", "name": null, "type": "word", "length": 2, "value": "0x34f8"}
+{"ea": "1001835c", "name": null, "type": "word", "length": 2, "value": "0x366b"}
+{"ea": "1001835e", "name": null, "type": "word", "length": 2, "value": "0x367c"}
+{"ea": "10018360", "name": null, "type": "word", "length": 2, "value": "0x36b6"}
+{"ea": "10018362", "name": null, "type": "word", "length": 2, "value": "0x36c3"}
+{"ea": "10018364", "name": null, "type": "word", "length": 2, "value": "0x36cd"}
+{"ea": "10018366", "name": null, "type": "word", "length": 2, "value": "0x36db"}
+{"ea": "10018368", "name": null, "type": "word", "length": 2, "value": "0x36e4"}
+{"ea": "1001836a", "name": null, "type": "word", "length": 2, "value": "0x36ee"}
+{"ea": "1001836c", "name": null, "type": "word", "length": 2, "value": "0x3722"}
+{"ea": "1001836e", "name": null, "type": "word", "length": 2, "value": "0x372d"}
+{"ea": "10018370", "name": null, "type": "word", "length": 2, "value": "0x3737"}
+{"ea": "10018372", "name": null, "type": "word", "length": 2, "value": "0x3750"}
+{"ea": "10018374", "name": null, "type": "word", "length": 2, "value": "0x375a"}
+{"ea": "10018376", "name": null, "type": "word", "length": 2, "value": "0x376d"}
+{"ea": "10018378", "name": null, "type": "word", "length": 2, "value": "0x3791"}
+{"ea": "1001837a", "name": null, "type": "word", "length": 2, "value": "0x37c8"}
+{"ea": "1001837c", "name": null, "type": "word", "length": 2, "value": "0x37fd"}
+{"ea": "1001837e", "name": null, "type": "word", "length": 2, "value": "0x3810"}
+{"ea": "10018380", "name": null, "type": "word", "length": 2, "value": "0x3880"}
+{"ea": "10018382", "name": null, "type": "word", "length": 2, "value": "0x389d"}
+{"ea": "10018384", "name": null, "type": "word", "length": 2, "value": "0x38e5"}
+{"ea": "10018386", "name": null, "type": "word", "length": 2, "value": "0x3951"}
+{"ea": "10018388", "name": null, "type": "word", "length": 2, "value": "0x3970"}
+{"ea": "1001838a", "name": null, "type": "word", "length": 2, "value": "0x39e5"}
+{"ea": "1001838c", "name": null, "type": "word", "length": 2, "value": "0x39f1"}
+{"ea": "1001838e", "name": null, "type": "word", "length": 2, "value": "0x3a04"}
+{"ea": "10018390", "name": null, "type": "word", "length": 2, "value": "0x3a16"}
+{"ea": "10018392", "name": null, "type": "word", "length": 2, "value": "0x3a31"}
+{"ea": "10018394", "name": null, "type": "word", "length": 2, "value": "0x3a39"}
+{"ea": "10018396", "name": null, "type": "word", "length": 2, "value": "0x3a41"}
+{"ea": "10018398", "name": null, "type": "word", "length": 2, "value": "0x3a58"}
+{"ea": "1001839a", "name": null, "type": "word", "length": 2, "value": "0x3a71"}
+{"ea": "1001839c", "name": null, "type": "word", "length": 2, "value": "0x3a8d"}
+{"ea": "1001839e", "name": null, "type": "word", "length": 2, "value": "0x3a96"}
+{"ea": "100183a0", "name": null, "type": "word", "length": 2, "value": "0x3a9c"}
+{"ea": "100183a2", "name": null, "type": "word", "length": 2, "value": "0x3aa5"}
+{"ea": "100183a4", "name": null, "type": "word", "length": 2, "value": "0x3aaa"}
+{"ea": "100183a6", "name": null, "type": "word", "length": 2, "value": "0x3ab9"}
+{"ea": "100183a8", "name": null, "type": "word", "length": 2, "value": "0x3ae0"}
+{"ea": "100183aa", "name": null, "type": "word", "length": 2, "value": "0x3b09"}
+{"ea": "100183ac", "name": null, "type": "word", "length": 2, "value": "0x3b1a"}
+{"ea": "100183ae", "name": null, "type": "word", "length": 2, "value": "0x3b3d"}
+{"ea": "100183b0", "name": null, "type": "word", "length": 2, "value": "0x3c02"}
+{"ea": "100183b2", "name": null, "type": "word", "length": 2, "value": "0x3c2c"}
+{"ea": "100183b4", "name": null, "type": "word", "length": 2, "value": "0x3c77"}
+{"ea": "100183b6", "name": null, "type": "word", "length": 2, "value": "0x3cc3"}
+{"ea": "100183b8", "name": null, "type": "word", "length": 2, "value": "0x3d12"}
+{"ea": "100183ba", "name": null, "type": "word", "length": 2, "value": "0x3d5a"}
+{"ea": "100183bc", "name": null, "type": "word", "length": 2, "value": "0x3dc0"}
+{"ea": "100183be", "name": null, "type": "word", "length": 2, "value": "0x3dd7"}
+{"ea": "100183c0", "name": null, "type": "word", "length": 2, "value": "0x3de8"}
+{"ea": "100183c2", "name": null, "type": "word", "length": 2, "value": "0x3e24"}
+{"ea": "100183c4", "name": null, "type": "word", "length": 2, "value": "0x3f4e"}
+{"ea": "100183c6", "name": null, "type": "word", "length": 2, "value": "0x3f55"}
+{"ea": "100183c8", "name": null, "type": "word", "length": 2, "value": "0x3fb6"}
+{"ea": "100183ca", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "100183cc", "name": null, "type": "dword", "length": 4, "value": "0x5000"}
+{"ea": "100183d0", "name": null, "type": "dword", "length": 4, "value": "0xcc"}
+{"ea": "100183d4", "name": null, "type": "word", "length": 2, "value": "0x317c"}
+{"ea": "100183d6", "name": null, "type": "word", "length": 2, "value": "0x319a"}
+{"ea": "100183d8", "name": null, "type": "word", "length": 2, "value": "0x32f0"}
+{"ea": "100183da", "name": null, "type": "word", "length": 2, "value": "0x3361"}
+{"ea": "100183dc", "name": null, "type": "word", "length": 2, "value": "0x336d"}
+{"ea": "100183de", "name": null, "type": "word", "length": 2, "value": "0x3479"}
+{"ea": "100183e0", "name": null, "type": "word", "length": 2, "value": "0x3538"}
+{"ea": "100183e2", "name": null, "type": "word", "length": 2, "value": "0x353d"}
+{"ea": "100183e4", "name": null, "type": "word", "length": 2, "value": "0x354f"}
+{"ea": "100183e6", "name": null, "type": "word", "length": 2, "value": "0x356d"}
+{"ea": "100183e8", "name": null, "type": "word", "length": 2, "value": "0x3581"}
+{"ea": "100183ea", "name": null, "type": "word", "length": 2, "value": "0x3587"}
+{"ea": "100183ec", "name": null, "type": "word", "length": 2, "value": "0x35f0"}
+{"ea": "100183ee", "name": null, "type": "word", "length": 2, "value": "0x3627"}
+{"ea": "100183f0", "name": null, "type": "word", "length": 2, "value": "0x3632"}
+{"ea": "100183f2", "name": null, "type": "word", "length": 2, "value": "0x3642"}
+{"ea": "100183f4", "name": null, "type": "word", "length": 2, "value": "0x364d"}
+{"ea": "100183f6", "name": null, "type": "word", "length": 2, "value": "0x36c7"}
+{"ea": "100183f8", "name": null, "type": "word", "length": 2, "value": "0x36e0"}
+{"ea": "100183fa", "name": null, "type": "word", "length": 2, "value": "0x3709"}
+{"ea": "100183fc", "name": null, "type": "word", "length": 2, "value": "0x370e"}
+{"ea": "100183fe", "name": null, "type": "word", "length": 2, "value": "0x3725"}
+{"ea": "10018400", "name": null, "type": "word", "length": 2, "value": "0x377e"}
+{"ea": "10018402", "name": null, "type": "word", "length": 2, "value": "0x3783"}
+{"ea": "10018404", "name": null, "type": "word", "length": 2, "value": "0x3788"}
+{"ea": "10018406", "name": null, "type": "word", "length": 2, "value": "0x378d"}
+{"ea": "10018408", "name": null, "type": "word", "length": 2, "value": "0x379d"}
+{"ea": "1001840a", "name": null, "type": "word", "length": 2, "value": "0x37cc"}
+{"ea": "1001840c", "name": null, "type": "word", "length": 2, "value": "0x37da"}
+{"ea": "1001840e", "name": null, "type": "word", "length": 2, "value": "0x3821"}
+{"ea": "10018410", "name": null, "type": "word", "length": 2, "value": "0x3826"}
+{"ea": "10018412", "name": null, "type": "word", "length": 2, "value": "0x386b"}
+{"ea": "10018414", "name": null, "type": "word", "length": 2, "value": "0x3870"}
+{"ea": "10018416", "name": null, "type": "word", "length": 2, "value": "0x3877"}
+{"ea": "10018418", "name": null, "type": "word", "length": 2, "value": "0x387c"}
+{"ea": "1001841a", "name": null, "type": "word", "length": 2, "value": "0x3883"}
+{"ea": "1001841c", "name": null, "type": "word", "length": 2, "value": "0x3888"}
+{"ea": "1001841e", "name": null, "type": "word", "length": 2, "value": "0x38f7"}
+{"ea": "10018420", "name": null, "type": "word", "length": 2, "value": "0x3900"}
+{"ea": "10018422", "name": null, "type": "word", "length": 2, "value": "0x3906"}
+{"ea": "10018424", "name": null, "type": "word", "length": 2, "value": "0x3990"}
+{"ea": "10018426", "name": null, "type": "word", "length": 2, "value": "0x399f"}
+{"ea": "10018428", "name": null, "type": "word", "length": 2, "value": "0x39ae"}
+{"ea": "1001842a", "name": null, "type": "word", "length": 2, "value": "0x39b7"}
+{"ea": "1001842c", "name": null, "type": "word", "length": 2, "value": "0x39cc"}
+{"ea": "1001842e", "name": null, "type": "word", "length": 2, "value": "0x39fc"}
+{"ea": "10018430", "name": null, "type": "word", "length": 2, "value": "0x3a1d"}
+{"ea": "10018432", "name": null, "type": "word", "length": 2, "value": "0x3a2a"}
+{"ea": "10018434", "name": null, "type": "word", "length": 2, "value": "0x3a61"}
+{"ea": "10018436", "name": null, "type": "word", "length": 2, "value": "0x3a6f"}
+{"ea": "10018438", "name": null, "type": "word", "length": 2, "value": "0x3a75"}
+{"ea": "1001843a", "name": null, "type": "word", "length": 2, "value": "0x3a85"}
+{"ea": "1001843c", "name": null, "type": "word", "length": 2, "value": "0x3a8a"}
+{"ea": "1001843e", "name": null, "type": "word", "length": 2, "value": "0x3aa2"}
+{"ea": "10018440", "name": null, "type": "word", "length": 2, "value": "0x3aa8"}
+{"ea": "10018442", "name": null, "type": "word", "length": 2, "value": "0x3ab7"}
+{"ea": "10018444", "name": null, "type": "word", "length": 2, "value": "0x3abd"}
+{"ea": "10018446", "name": null, "type": "word", "length": 2, "value": "0x3acc"}
+{"ea": "10018448", "name": null, "type": "word", "length": 2, "value": "0x3ad2"}
+{"ea": "1001844a", "name": null, "type": "word", "length": 2, "value": "0x3ae0"}
+{"ea": "1001844c", "name": null, "type": "word", "length": 2, "value": "0x3ae9"}
+{"ea": "1001844e", "name": null, "type": "word", "length": 2, "value": "0x3af8"}
+{"ea": "10018450", "name": null, "type": "word", "length": 2, "value": "0x3afd"}
+{"ea": "10018452", "name": null, "type": "word", "length": 2, "value": "0x3b07"}
+{"ea": "10018454", "name": null, "type": "word", "length": 2, "value": "0x3b15"}
+{"ea": "10018456", "name": null, "type": "word", "length": 2, "value": "0x3b55"}
+{"ea": "10018458", "name": null, "type": "word", "length": 2, "value": "0x3b72"}
+{"ea": "1001845a", "name": null, "type": "word", "length": 2, "value": "0x3b8f"}
+{"ea": "1001845c", "name": null, "type": "word", "length": 2, "value": "0x3d5f"}
+{"ea": "1001845e", "name": null, "type": "word", "length": 2, "value": "0x3d66"}
+{"ea": "10018460", "name": null, "type": "word", "length": 2, "value": "0x3d6c"}
+{"ea": "10018462", "name": null, "type": "word", "length": 2, "value": "0x3e2a"}
+{"ea": "10018464", "name": null, "type": "word", "length": 2, "value": "0x3e5f"}
+{"ea": "10018466", "name": null, "type": "word", "length": 2, "value": "0x3e78"}
+{"ea": "10018468", "name": null, "type": "word", "length": 2, "value": "0x3e7f"}
+{"ea": "1001846a", "name": null, "type": "word", "length": 2, "value": "0x3e87"}
+{"ea": "1001846c", "name": null, "type": "word", "length": 2, "value": "0x3e8c"}
+{"ea": "1001846e", "name": null, "type": "word", "length": 2, "value": "0x3e90"}
+{"ea": "10018470", "name": null, "type": "word", "length": 2, "value": "0x3e94"}
+{"ea": "10018472", "name": null, "type": "word", "length": 2, "value": "0x3ebd"}
+{"ea": "10018474", "name": null, "type": "word", "length": 2, "value": "0x3ee3"}
+{"ea": "10018476", "name": null, "type": "word", "length": 2, "value": "0x3f01"}
+{"ea": "10018478", "name": null, "type": "word", "length": 2, "value": "0x3f08"}
+{"ea": "1001847a", "name": null, "type": "word", "length": 2, "value": "0x3f0c"}
+{"ea": "1001847c", "name": null, "type": "word", "length": 2, "value": "0x3f10"}
+{"ea": "1001847e", "name": null, "type": "word", "length": 2, "value": "0x3f14"}
+{"ea": "10018480", "name": null, "type": "word", "length": 2, "value": "0x3f18"}
+{"ea": "10018482", "name": null, "type": "word", "length": 2, "value": "0x3f1c"}
+{"ea": "10018484", "name": null, "type": "word", "length": 2, "value": "0x3f20"}
+{"ea": "10018486", "name": null, "type": "word", "length": 2, "value": "0x3f24"}
+{"ea": "10018488", "name": null, "type": "word", "length": 2, "value": "0x3f6e"}
+{"ea": "1001848a", "name": null, "type": "word", "length": 2, "value": "0x3f74"}
+{"ea": "1001848c", "name": null, "type": "word", "length": 2, "value": "0x3f78"}
+{"ea": "1001848e", "name": null, "type": "word", "length": 2, "value": "0x3f7c"}
+{"ea": "10018490", "name": null, "type": "word", "length": 2, "value": "0x3f80"}
+{"ea": "10018492", "name": null, "type": "word", "length": 2, "value": "0x3fe6"}
+{"ea": "10018494", "name": null, "type": "word", "length": 2, "value": "0x3ff1"}
+{"ea": "10018496", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "10018498", "name": null, "type": "dword", "length": 4, "value": "0x6000"}
+{"ea": "1001849c", "name": null, "type": "dword", "length": 4, "value": "0xc0"}
+{"ea": "100184a0", "name": null, "type": "word", "length": 2, "value": "0x300c"}
+{"ea": "100184a2", "name": null, "type": "word", "length": 2, "value": "0x3013"}
+{"ea": "100184a4", "name": null, "type": "word", "length": 2, "value": "0x3018"}
+{"ea": "100184a6", "name": null, "type": "word", "length": 2, "value": "0x301c"}
+{"ea": "100184a8", "name": null, "type": "word", "length": 2, "value": "0x3020"}
+{"ea": "100184aa", "name": null, "type": "word", "length": 2, "value": "0x3041"}
+{"ea": "100184ac", "name": null, "type": "word", "length": 2, "value": "0x306b"}
+{"ea": "100184ae", "name": null, "type": "word", "length": 2, "value": "0x309d"}
+{"ea": "100184b0", "name": null, "type": "word", "length": 2, "value": "0x30a4"}
+{"ea": "100184b2", "name": null, "type": "word", "length": 2, "value": "0x30a8"}
+{"ea": "100184b4", "name": null, "type": "word", "length": 2, "value": "0x30ac"}
+{"ea": "100184b6", "name": null, "type": "word", "length": 2, "value": "0x30b0"}
+{"ea": "100184b8", "name": null, "type": "word", "length": 2, "value": "0x30b4"}
+{"ea": "100184ba", "name": null, "type": "word", "length": 2, "value": "0x30b8"}
+{"ea": "100184bc", "name": null, "type": "word", "length": 2, "value": "0x30bc"}
+{"ea": "100184be", "name": null, "type": "word", "length": 2, "value": "0x30c0"}
+{"ea": "100184c0", "name": null, "type": "word", "length": 2, "value": "0x310a"}
+{"ea": "100184c2", "name": null, "type": "word", "length": 2, "value": "0x3110"}
+{"ea": "100184c4", "name": null, "type": "word", "length": 2, "value": "0x3114"}
+{"ea": "100184c6", "name": null, "type": "word", "length": 2, "value": "0x3118"}
+{"ea": "100184c8", "name": null, "type": "word", "length": 2, "value": "0x311c"}
+{"ea": "100184ca", "name": null, "type": "word", "length": 2, "value": "0x316c"}
+{"ea": "100184cc", "name": null, "type": "word", "length": 2, "value": "0x3171"}
+{"ea": "100184ce", "name": null, "type": "word", "length": 2, "value": "0x33b4"}
+{"ea": "100184d0", "name": null, "type": "word", "length": 2, "value": "0x33c2"}
+{"ea": "100184d2", "name": null, "type": "word", "length": 2, "value": "0x33c8"}
+{"ea": "100184d4", "name": null, "type": "word", "length": 2, "value": "0x33e2"}
+{"ea": "100184d6", "name": null, "type": "word", "length": 2, "value": "0x33e7"}
+{"ea": "100184d8", "name": null, "type": "word", "length": 2, "value": "0x33f6"}
+{"ea": "100184da", "name": null, "type": "word", "length": 2, "value": "0x33ff"}
+{"ea": "100184dc", "name": null, "type": "word", "length": 2, "value": "0x340c"}
+{"ea": "100184de", "name": null, "type": "word", "length": 2, "value": "0x3417"}
+{"ea": "100184e0", "name": null, "type": "word", "length": 2, "value": "0x3429"}
+{"ea": "100184e2", "name": null, "type": "word", "length": 2, "value": "0x343c"}
+{"ea": "100184e4", "name": null, "type": "word", "length": 2, "value": "0x3447"}
+{"ea": "100184e6", "name": null, "type": "word", "length": 2, "value": "0x344d"}
+{"ea": "100184e8", "name": null, "type": "word", "length": 2, "value": "0x3453"}
+{"ea": "100184ea", "name": null, "type": "word", "length": 2, "value": "0x3458"}
+{"ea": "100184ec", "name": null, "type": "word", "length": 2, "value": "0x3461"}
+{"ea": "100184ee", "name": null, "type": "word", "length": 2, "value": "0x347e"}
+{"ea": "100184f0", "name": null, "type": "word", "length": 2, "value": "0x3484"}
+{"ea": "100184f2", "name": null, "type": "word", "length": 2, "value": "0x348f"}
+{"ea": "100184f4", "name": null, "type": "word", "length": 2, "value": "0x3494"}
+{"ea": "100184f6", "name": null, "type": "word", "length": 2, "value": "0x349c"}
+{"ea": "100184f8", "name": null, "type": "word", "length": 2, "value": "0x34a2"}
+{"ea": "100184fa", "name": null, "type": "word", "length": 2, "value": "0x34ac"}
+{"ea": "100184fc", "name": null, "type": "word", "length": 2, "value": "0x34b3"}
+{"ea": "100184fe", "name": null, "type": "word", "length": 2, "value": "0x34c7"}
+{"ea": "10018500", "name": null, "type": "word", "length": 2, "value": "0x34ce"}
+{"ea": "10018502", "name": null, "type": "word", "length": 2, "value": "0x34d4"}
+{"ea": "10018504", "name": null, "type": "word", "length": 2, "value": "0x34e2"}
+{"ea": "10018506", "name": null, "type": "word", "length": 2, "value": "0x34e9"}
+{"ea": "10018508", "name": null, "type": "word", "length": 2, "value": "0x34ee"}
+{"ea": "1001850a", "name": null, "type": "word", "length": 2, "value": "0x34f7"}
+{"ea": "1001850c", "name": null, "type": "word", "length": 2, "value": "0x3504"}
+{"ea": "1001850e", "name": null, "type": "word", "length": 2, "value": "0x350a"}
+{"ea": "10018510", "name": null, "type": "word", "length": 2, "value": "0x3524"}
+{"ea": "10018512", "name": null, "type": "word", "length": 2, "value": "0x3535"}
+{"ea": "10018514", "name": null, "type": "word", "length": 2, "value": "0x353b"}
+{"ea": "10018516", "name": null, "type": "word", "length": 2, "value": "0x354c"}
+{"ea": "10018518", "name": null, "type": "word", "length": 2, "value": "0x35b1"}
+{"ea": "1001851a", "name": null, "type": "word", "length": 2, "value": "0x394d"}
+{"ea": "1001851c", "name": null, "type": "word", "length": 2, "value": "0x3959"}
+{"ea": "1001851e", "name": null, "type": "word", "length": 2, "value": "0x398c"}
+{"ea": "10018520", "name": null, "type": "word", "length": 2, "value": "0x39b2"}
+{"ea": "10018522", "name": null, "type": "word", "length": 2, "value": "0x39ec"}
+{"ea": "10018524", "name": null, "type": "word", "length": 2, "value": "0x3a31"}
+{"ea": "10018526", "name": null, "type": "word", "length": 2, "value": "0x3c04"}
+{"ea": "10018528", "name": null, "type": "word", "length": 2, "value": "0x3c0f"}
+{"ea": "1001852a", "name": null, "type": "word", "length": 2, "value": "0x3c17"}
+{"ea": "1001852c", "name": null, "type": "word", "length": 2, "value": "0x3c2c"}
+{"ea": "1001852e", "name": null, "type": "word", "length": 2, "value": "0x3c3e"}
+{"ea": "10018530", "name": null, "type": "word", "length": 2, "value": "0x3c8e"}
+{"ea": "10018532", "name": null, "type": "word", "length": 2, "value": "0x3c94"}
+{"ea": "10018534", "name": null, "type": "word", "length": 2, "value": "0x3cb4"}
+{"ea": "10018536", "name": null, "type": "word", "length": 2, "value": "0x3ceb"}
+{"ea": "10018538", "name": null, "type": "word", "length": 2, "value": "0x3cfc"}
+{"ea": "1001853a", "name": null, "type": "word", "length": 2, "value": "0x3d45"}
+{"ea": "1001853c", "name": null, "type": "word", "length": 2, "value": "0x3da1"}
+{"ea": "1001853e", "name": null, "type": "word", "length": 2, "value": "0x3db6"}
+{"ea": "10018540", "name": null, "type": "word", "length": 2, "value": "0x3dfc"}
+{"ea": "10018542", "name": null, "type": "word", "length": 2, "value": "0x3e02"}
+{"ea": "10018544", "name": null, "type": "word", "length": 2, "value": "0x3e0e"}
+{"ea": "10018546", "name": null, "type": "word", "length": 2, "value": "0x3e63"}
+{"ea": "10018548", "name": null, "type": "word", "length": 2, "value": "0x3e96"}
+{"ea": "1001854a", "name": null, "type": "word", "length": 2, "value": "0x3ece"}
+{"ea": "1001854c", "name": null, "type": "word", "length": 2, "value": "0x3f39"}
+{"ea": "1001854e", "name": null, "type": "word", "length": 2, "value": "0x3f3f"}
+{"ea": "10018550", "name": null, "type": "word", "length": 2, "value": "0x3f90"}
+{"ea": "10018552", "name": null, "type": "word", "length": 2, "value": "0x3f96"}
+{"ea": "10018554", "name": null, "type": "word", "length": 2, "value": "0x3fba"}
+{"ea": "10018556", "name": null, "type": "word", "length": 2, "value": "0x3fdd"}
+{"ea": "10018558", "name": null, "type": "dword", "length": 4, "value": "0x7000"}
+{"ea": "1001855c", "name": null, "type": "dword", "length": 4, "value": "0x70"}
+{"ea": "10018560", "name": null, "type": "word", "length": 2, "value": "0x3011"}
+{"ea": "10018562", "name": null, "type": "word", "length": 2, "value": "0x3017"}
+{"ea": "10018564", "name": null, "type": "word", "length": 2, "value": "0x3023"}
+{"ea": "10018566", "name": null, "type": "word", "length": 2, "value": "0x306a"}
+{"ea": "10018568", "name": null, "type": "word", "length": 2, "value": "0x30f5"}
+{"ea": "1001856a", "name": null, "type": "word", "length": 2, "value": "0x317e"}
+{"ea": "1001856c", "name": null, "type": "word", "length": 2, "value": "0x31e3"}
+{"ea": "1001856e", "name": null, "type": "word", "length": 2, "value": "0x3297"}
+{"ea": "10018570", "name": null, "type": "word", "length": 2, "value": "0x32b7"}
+{"ea": "10018572", "name": null, "type": "word", "length": 2, "value": "0x33a7"}
+{"ea": "10018574", "name": null, "type": "word", "length": 2, "value": "0x33d0"}
+{"ea": "10018576", "name": null, "type": "word", "length": 2, "value": "0x3429"}
+{"ea": "10018578", "name": null, "type": "word", "length": 2, "value": "0x35b7"}
+{"ea": "1001857a", "name": null, "type": "word", "length": 2, "value": "0x3697"}
+{"ea": "1001857c", "name": null, "type": "word", "length": 2, "value": "0x3760"}
+{"ea": "1001857e", "name": null, "type": "word", "length": 2, "value": "0x3791"}
+{"ea": "10018580", "name": null, "type": "word", "length": 2, "value": "0x37a7"}
+{"ea": "10018582", "name": null, "type": "word", "length": 2, "value": "0x37e8"}
+{"ea": "10018584", "name": null, "type": "word", "length": 2, "value": "0x3807"}
+{"ea": "10018586", "name": null, "type": "word", "length": 2, "value": "0x38a4"}
+{"ea": "10018588", "name": null, "type": "word", "length": 2, "value": "0x38d8"}
+{"ea": "1001858a", "name": null, "type": "word", "length": 2, "value": "0x3907"}
+{"ea": "1001858c", "name": null, "type": "word", "length": 2, "value": "0x3980"}
+{"ea": "1001858e", "name": null, "type": "word", "length": 2, "value": "0x39ac"}
+{"ea": "10018590", "name": null, "type": "word", "length": 2, "value": "0x39d4"}
+{"ea": "10018592", "name": null, "type": "word", "length": 2, "value": "0x3a0b"}
+{"ea": "10018594", "name": null, "type": "word", "length": 2, "value": "0x3a15"}
+{"ea": "10018596", "name": null, "type": "word", "length": 2, "value": "0x3a87"}
+{"ea": "10018598", "name": null, "type": "word", "length": 2, "value": "0x3a99"}
+{"ea": "1001859a", "name": null, "type": "word", "length": 2, "value": "0x3aa6"}
+{"ea": "1001859c", "name": null, "type": "word", "length": 2, "value": "0x3ab2"}
+{"ea": "1001859e", "name": null, "type": "word", "length": 2, "value": "0x3abc"}
+{"ea": "100185a0", "name": null, "type": "word", "length": 2, "value": "0x3ac4"}
+{"ea": "100185a2", "name": null, "type": "word", "length": 2, "value": "0x3acf"}
+{"ea": "100185a4", "name": null, "type": "word", "length": 2, "value": "0x3aff"}
+{"ea": "100185a6", "name": null, "type": "word", "length": 2, "value": "0x3b2f"}
+{"ea": "100185a8", "name": null, "type": "word", "length": 2, "value": "0x3bc6"}
+{"ea": "100185aa", "name": null, "type": "word", "length": 2, "value": "0x3c76"}
+{"ea": "100185ac", "name": null, "type": "word", "length": 2, "value": "0x3c99"}
+{"ea": "100185ae", "name": null, "type": "word", "length": 2, "value": "0x3d17"}
+{"ea": "100185b0", "name": null, "type": "word", "length": 2, "value": "0x3de8"}
+{"ea": "100185b2", "name": null, "type": "word", "length": 2, "value": "0x3e73"}
+{"ea": "100185b4", "name": null, "type": "word", "length": 2, "value": "0x3e7d"}
+{"ea": "100185b6", "name": null, "type": "word", "length": 2, "value": "0x3e95"}
+{"ea": "100185b8", "name": null, "type": "word", "length": 2, "value": "0x3e9c"}
+{"ea": "100185ba", "name": null, "type": "word", "length": 2, "value": "0x3ea6"}
+{"ea": "100185bc", "name": null, "type": "word", "length": 2, "value": "0x3eae"}
+{"ea": "100185be", "name": null, "type": "word", "length": 2, "value": "0x3ebb"}
+{"ea": "100185c0", "name": null, "type": "word", "length": 2, "value": "0x3ec2"}
+{"ea": "100185c2", "name": null, "type": "word", "length": 2, "value": "0x3ef2"}
+{"ea": "100185c4", "name": null, "type": "word", "length": 2, "value": "0x3f8b"}
+{"ea": "100185c6", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "100185c8", "name": null, "type": "dword", "length": 4, "value": "0x8000"}
+{"ea": "100185cc", "name": null, "type": "dword", "length": 4, "value": "0x84"}
+{"ea": "100185d0", "name": null, "type": "word", "length": 2, "value": "0x3000"}
+{"ea": "100185d2", "name": null, "type": "word", "length": 2, "value": "0x320d"}
+{"ea": "100185d4", "name": null, "type": "word", "length": 2, "value": "0x321f"}
+{"ea": "100185d6", "name": null, "type": "word", "length": 2, "value": "0x3231"}
+{"ea": "100185d8", "name": null, "type": "word", "length": 2, "value": "0x3253"}
+{"ea": "100185da", "name": null, "type": "word", "length": 2, "value": "0x3265"}
+{"ea": "100185dc", "name": null, "type": "word", "length": 2, "value": "0x3277"}
+{"ea": "100185de", "name": null, "type": "word", "length": 2, "value": "0x3289"}
+{"ea": "100185e0", "name": null, "type": "word", "length": 2, "value": "0x329b"}
+{"ea": "100185e2", "name": null, "type": "word", "length": 2, "value": "0x32ad"}
+{"ea": "100185e4", "name": null, "type": "word", "length": 2, "value": "0x32bf"}
+{"ea": "100185e6", "name": null, "type": "word", "length": 2, "value": "0x3434"}
+{"ea": "100185e8", "name": null, "type": "word", "length": 2, "value": "0x3441"}
+{"ea": "100185ea", "name": null, "type": "word", "length": 2, "value": "0x345a"}
+{"ea": "100185ec", "name": null, "type": "word", "length": 2, "value": "0x3478"}
+{"ea": "100185ee", "name": null, "type": "word", "length": 2, "value": "0x34b6"}
+{"ea": "100185f0", "name": null, "type": "word", "length": 2, "value": "0x34e5"}
+{"ea": "100185f2", "name": null, "type": "word", "length": 2, "value": "0x3595"}
+{"ea": "100185f4", "name": null, "type": "word", "length": 2, "value": "0x36c9"}
+{"ea": "100185f6", "name": null, "type": "word", "length": 2, "value": "0x377e"}
+{"ea": "100185f8", "name": null, "type": "word", "length": 2, "value": "0x3794"}
+{"ea": "100185fa", "name": null, "type": "word", "length": 2, "value": "0x37f9"}
+{"ea": "100185fc", "name": null, "type": "word", "length": 2, "value": "0x3805"}
+{"ea": "100185fe", "name": null, "type": "word", "length": 2, "value": "0x387d"}
+{"ea": "10018600", "name": null, "type": "word", "length": 2, "value": "0x3897"}
+{"ea": "10018602", "name": null, "type": "word", "length": 2, "value": "0x38a0"}
+{"ea": "10018604", "name": null, "type": "word", "length": 2, "value": "0x3b01"}
+{"ea": "10018606", "name": null, "type": "word", "length": 2, "value": "0x3b08"}
+{"ea": "10018608", "name": null, "type": "word", "length": 2, "value": "0x3b25"}
+{"ea": "1001860a", "name": null, "type": "word", "length": 2, "value": "0x3b30"}
+{"ea": "1001860c", "name": null, "type": "word", "length": 2, "value": "0x3b53"}
+{"ea": "1001860e", "name": null, "type": "word", "length": 2, "value": "0x3c17"}
+{"ea": "10018610", "name": null, "type": "word", "length": 2, "value": "0x3c24"}
+{"ea": "10018612", "name": null, "type": "word", "length": 2, "value": "0x3c33"}
+{"ea": "10018614", "name": null, "type": "word", "length": 2, "value": "0x3c6b"}
+{"ea": "10018616", "name": null, "type": "word", "length": 2, "value": "0x3cae"}
+{"ea": "10018618", "name": null, "type": "word", "length": 2, "value": "0x3cb4"}
+{"ea": "1001861a", "name": null, "type": "word", "length": 2, "value": "0x3e6a"}
+{"ea": "1001861c", "name": null, "type": "word", "length": 2, "value": "0x3e9f"}
+{"ea": "1001861e", "name": null, "type": "word", "length": 2, "value": "0x3eb8"}
+{"ea": "10018620", "name": null, "type": "word", "length": 2, "value": "0x3ebf"}
+{"ea": "10018622", "name": null, "type": "word", "length": 2, "value": "0x3ec7"}
+{"ea": "10018624", "name": null, "type": "word", "length": 2, "value": "0x3ecc"}
+{"ea": "10018626", "name": null, "type": "word", "length": 2, "value": "0x3ed0"}
+{"ea": "10018628", "name": null, "type": "word", "length": 2, "value": "0x3ed4"}
+{"ea": "1001862a", "name": null, "type": "word", "length": 2, "value": "0x3efd"}
+{"ea": "1001862c", "name": null, "type": "word", "length": 2, "value": "0x3f23"}
+{"ea": "1001862e", "name": null, "type": "word", "length": 2, "value": "0x3f41"}
+{"ea": "10018630", "name": null, "type": "word", "length": 2, "value": "0x3f48"}
+{"ea": "10018632", "name": null, "type": "word", "length": 2, "value": "0x3f4c"}
+{"ea": "10018634", "name": null, "type": "word", "length": 2, "value": "0x3f50"}
+{"ea": "10018636", "name": null, "type": "word", "length": 2, "value": "0x3f54"}
+{"ea": "10018638", "name": null, "type": "word", "length": 2, "value": "0x3f58"}
+{"ea": "1001863a", "name": null, "type": "word", "length": 2, "value": "0x3f5c"}
+{"ea": "1001863c", "name": null, "type": "word", "length": 2, "value": "0x3f60"}
+{"ea": "1001863e", "name": null, "type": "word", "length": 2, "value": "0x3f64"}
+{"ea": "10018640", "name": null, "type": "word", "length": 2, "value": "0x3fae"}
+{"ea": "10018642", "name": null, "type": "word", "length": 2, "value": "0x3fb4"}
+{"ea": "10018644", "name": null, "type": "word", "length": 2, "value": "0x3fb8"}
+{"ea": "10018646", "name": null, "type": "word", "length": 2, "value": "0x3fbc"}
+{"ea": "10018648", "name": null, "type": "word", "length": 2, "value": "0x3fc0"}
+{"ea": "1001864a", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "1001864c", "name": null, "type": "dword", "length": 4, "value": "0x9000"}
+{"ea": "10018650", "name": null, "type": "dword", "length": 4, "value": "0x98"}
+{"ea": "10018654", "name": null, "type": "word", "length": 2, "value": "0x3026"}
+{"ea": "10018656", "name": null, "type": "word", "length": 2, "value": "0x3031"}
+{"ea": "10018658", "name": null, "type": "word", "length": 2, "value": "0x304c"}
+{"ea": "1001865a", "name": null, "type": "word", "length": 2, "value": "0x3053"}
+{"ea": "1001865c", "name": null, "type": "word", "length": 2, "value": "0x3058"}
+{"ea": "1001865e", "name": null, "type": "word", "length": 2, "value": "0x305c"}
+{"ea": "10018660", "name": null, "type": "word", "length": 2, "value": "0x3060"}
+{"ea": "10018662", "name": null, "type": "word", "length": 2, "value": "0x3081"}
+{"ea": "10018664", "name": null, "type": "word", "length": 2, "value": "0x30ab"}
+{"ea": "10018666", "name": null, "type": "word", "length": 2, "value": "0x30dd"}
+{"ea": "10018668", "name": null, "type": "word", "length": 2, "value": "0x30e4"}
+{"ea": "1001866a", "name": null, "type": "word", "length": 2, "value": "0x30e8"}
+{"ea": "1001866c", "name": null, "type": "word", "length": 2, "value": "0x30ec"}
+{"ea": "1001866e", "name": null, "type": "word", "length": 2, "value": "0x30f0"}
+{"ea": "10018670", "name": null, "type": "word", "length": 2, "value": "0x30f4"}
+{"ea": "10018672", "name": null, "type": "word", "length": 2, "value": "0x30f8"}
+{"ea": "10018674", "name": null, "type": "word", "length": 2, "value": "0x30fc"}
+{"ea": "10018676", "name": null, "type": "word", "length": 2, "value": "0x3100"}
+{"ea": "10018678", "name": null, "type": "word", "length": 2, "value": "0x314a"}
+{"ea": "1001867a", "name": null, "type": "word", "length": 2, "value": "0x3150"}
+{"ea": "1001867c", "name": null, "type": "word", "length": 2, "value": "0x3154"}
+{"ea": "1001867e", "name": null, "type": "word", "length": 2, "value": "0x3158"}
+{"ea": "10018680", "name": null, "type": "word", "length": 2, "value": "0x315c"}
+{"ea": "10018682", "name": null, "type": "word", "length": 2, "value": "0x31bc"}
+{"ea": "10018684", "name": null, "type": "word", "length": 2, "value": "0x31f9"}
+{"ea": "10018686", "name": null, "type": "word", "length": 2, "value": "0x3203"}
+{"ea": "10018688", "name": null, "type": "word", "length": 2, "value": "0x321b"}
+{"ea": "1001868a", "name": null, "type": "word", "length": 2, "value": "0x3244"}
+{"ea": "1001868c", "name": null, "type": "word", "length": 2, "value": "0x3278"}
+{"ea": "1001868e", "name": null, "type": "word", "length": 2, "value": "0x32a7"}
+{"ea": "10018690", "name": null, "type": "word", "length": 2, "value": "0x3348"}
+{"ea": "10018692", "name": null, "type": "word", "length": 2, "value": "0x3356"}
+{"ea": "10018694", "name": null, "type": "word", "length": 2, "value": "0x335e"}
+{"ea": "10018696", "name": null, "type": "word", "length": 2, "value": "0x336b"}
+{"ea": "10018698", "name": null, "type": "word", "length": 2, "value": "0x3389"}
+{"ea": "1001869a", "name": null, "type": "word", "length": 2, "value": "0x3393"}
+{"ea": "1001869c", "name": null, "type": "word", "length": 2, "value": "0x339c"}
+{"ea": "1001869e", "name": null, "type": "word", "length": 2, "value": "0x33a7"}
+{"ea": "100186a0", "name": null, "type": "word", "length": 2, "value": "0x33bc"}
+{"ea": "100186a2", "name": null, "type": "word", "length": 2, "value": "0x33c3"}
+{"ea": "100186a4", "name": null, "type": "word", "length": 2, "value": "0x33c9"}
+{"ea": "100186a6", "name": null, "type": "word", "length": 2, "value": "0x33df"}
+{"ea": "100186a8", "name": null, "type": "word", "length": 2, "value": "0x33fa"}
+{"ea": "100186aa", "name": null, "type": "word", "length": 2, "value": "0x349f"}
+{"ea": "100186ac", "name": null, "type": "word", "length": 2, "value": "0x350d"}
+{"ea": "100186ae", "name": null, "type": "word", "length": 2, "value": "0x357e"}
+{"ea": "100186b0", "name": null, "type": "word", "length": 2, "value": "0x358e"}
+{"ea": "100186b2", "name": null, "type": "word", "length": 2, "value": "0x35a9"}
+{"ea": "100186b4", "name": null, "type": "word", "length": 2, "value": "0x35c9"}
+{"ea": "100186b6", "name": null, "type": "word", "length": 2, "value": "0x361f"}
+{"ea": "100186b8", "name": null, "type": "word", "length": 2, "value": "0x3630"}
+{"ea": "100186ba", "name": null, "type": "word", "length": 2, "value": "0x366b"}
+{"ea": "100186bc", "name": null, "type": "word", "length": 2, "value": "0x3687"}
+{"ea": "100186be", "name": null, "type": "word", "length": 2, "value": "0x36e2"}
+{"ea": "100186c0", "name": null, "type": "word", "length": 2, "value": "0x36ed"}
+{"ea": "100186c2", "name": null, "type": "word", "length": 2, "value": "0x371b"}
+{"ea": "100186c4", "name": null, "type": "word", "length": 2, "value": "0x3729"}
+{"ea": "100186c6", "name": null, "type": "word", "length": 2, "value": "0x3738"}
+{"ea": "100186c8", "name": null, "type": "word", "length": 2, "value": "0x3755"}
+{"ea": "100186ca", "name": null, "type": "word", "length": 2, "value": "0x3781"}
+{"ea": "100186cc", "name": null, "type": "word", "length": 2, "value": "0x37ba"}
+{"ea": "100186ce", "name": null, "type": "word", "length": 2, "value": "0x37c7"}
+{"ea": "100186d0", "name": null, "type": "word", "length": 2, "value": "0x38a6"}
+{"ea": "100186d2", "name": null, "type": "word", "length": 2, "value": "0x38b5"}
+{"ea": "100186d4", "name": null, "type": "word", "length": 2, "value": "0x3a39"}
+{"ea": "100186d6", "name": null, "type": "word", "length": 2, "value": "0x3a3f"}
+{"ea": "100186d8", "name": null, "type": "word", "length": 2, "value": "0x3a44"}
+{"ea": "100186da", "name": null, "type": "word", "length": 2, "value": "0x3a4a"}
+{"ea": "100186dc", "name": null, "type": "word", "length": 2, "value": "0x3a51"}
+{"ea": "100186de", "name": null, "type": "word", "length": 2, "value": "0x3a63"}
+{"ea": "100186e0", "name": null, "type": "word", "length": 2, "value": "0x3bc0"}
+{"ea": "100186e2", "name": null, "type": "word", "length": 2, "value": "0x0"}
+{"ea": "100186e4", "name": null, "type": "dword", "length": 4, "value": "0xa000"}
+{"ea": "100186e8", "name": null, "type": "dword", "length": 4, "value": "0x1c"}
+{"ea": "100186ec", "name": null, "type": "word", "length": 2, "value": "0x3130"}
+{"ea": "100186ee", "name": null, "type": "word", "length": 2, "value": "0x3134"}
+{"ea": "100186f0", "name": null, "type": "word", "length": 2, "value": "0x3138"}
+{"ea": "100186f2", "name": null, "type": "word", "length": 2, "value": "0x313c"}
+{"ea": "100186f4", "name": null, "type": "word", "length": 2, "value": "0x3140"}
+{"ea": "100186f6", "name": null, "type": "word", "length": 2, "value": "0x3144"}
+{"ea": "100186f8", "name": null, "type": "word", "length": 2, "value": "0x3150"}
+{"ea": "100186fa", "name": null, "type": "word", "length": 2, "value": "0x3154"}
+{"ea": "100186fc", "name": null, "type": "word", "length": 2, "value": "0x318c"}
+{"ea": "100186fe", "name": null, "type": "word", "length": 2, "value": "0x3190"}
+{"ea": "10018700", "name": null, "type": "dword", "length": 4, "value": "0xb000"}
+{"ea": "10018704", "name": null, "type": "dword", "length": 4, "value": "0x58"}
+{"ea": "10018708", "name": null, "type": "word", "length": 2, "value": "0x3804"}
+{"ea": "1001870a", "name": null, "type": "word", "length": 2, "value": "0x3808"}
+{"ea": "1001870c", "name": null, "type": "word", "length": 2, "value": "0x3898"}
+{"ea": "1001870e", "name": null, "type": "word", "length": 2, "value": "0x38b4"}
+{"ea": "10018710", "name": null, "type": "word", "length": 2, "value": "0x38b8"}
+{"ea": "10018712", "name": null, "type": "word", "length": 2, "value": "0x38d8"}
+{"ea": "10018714", "name": null, "type": "word", "length": 2, "value": "0x38f4"}
+{"ea": "10018716", "name": null, "type": "word", "length": 2, "value": "0x38f8"}
+{"ea": "10018718", "name": null, "type": "word", "length": 2, "value": "0x3918"}
+{"ea": "1001871a", "name": null, "type": "word", "length": 2, "value": "0x3924"}
+{"ea": "1001871c", "name": null, "type": "word", "length": 2, "value": "0x3940"}
+{"ea": "1001871e", "name": null, "type": "word", "length": 2, "value": "0x394c"}
+{"ea": "10018720", "name": null, "type": "word", "length": 2, "value": "0x3968"}
+{"ea": "10018722", "name": null, "type": "word", "length": 2, "value": "0x3988"}
+{"ea": "10018724", "name": null, "type": "word", "length": 2, "value": "0x39a8"}
+{"ea": "10018726", "name": null, "type": "word", "length": 2, "value": "0x39b4"}
+{"ea": "10018728", "name": null, "type": "word", "length": 2, "value": "0x39d0"}
+{"ea": "1001872a", "name": null, "type": "word", "length": 2, "value": "0x39f0"}
+{"ea": "1001872c", "name": null, "type": "word", "length": 2, "value": "0x3a10"}
+{"ea": "1001872e", "name": null, "type": "word", "length": 2, "value": "0x3a30"}
+{"ea": "10018730", "name": null, "type": "word", "length": 2, "value": "0x3a4c"}
+{"ea": "10018732", "name": null, "type": "word", "length": 2, "value": "0x3a50"}
+{"ea": "10018734", "name": null, "type": "word", "length": 2, "value": "0x3a6c"}
+{"ea": "10018736", "name": null, "type": "word", "length": 2, "value": "0x3a70"}
+{"ea": "10018738", "name": null, "type": "word", "length": 2, "value": "0x3a90"}
+{"ea": "1001873a", "name": null, "type": "word", "length": 2, "value": "0x3ab0"}
+{"ea": "1001873c", "name": null, "type": "word", "length": 2, "value": "0x3acc"}
+{"ea": "1001873e", "name": null, "type": "word", "length": 2, "value": "0x3ad0"}
+{"ea": "10018740", "name": null, "type": "word", "length": 2, "value": "0x3af0"}
+{"ea": "10018742", "name": null, "type": "word", "length": 2, "value": "0x3b10"}
+{"ea": "10018744", "name": null, "type": "word", "length": 2, "value": "0x3b30"}
+{"ea": "10018746", "name": null, "type": "word", "length": 2, "value": "0x3b50"}
+{"ea": "10018748", "name": null, "type": "word", "length": 2, "value": "0x3b70"}
+{"ea": "1001874a", "name": null, "type": "word", "length": 2, "value": "0x3b90"}
+{"ea": "1001874c", "name": null, "type": "word", "length": 2, "value": "0x3bb0"}
+{"ea": "1001874e", "name": null, "type": "word", "length": 2, "value": "0x3bcc"}
+{"ea": "10018750", "name": null, "type": "word", "length": 2, "value": "0x3bd0"}
+{"ea": "10018752", "name": null, "type": "word", "length": 2, "value": "0x3bf0"}
+{"ea": "10018754", "name": null, "type": "word", "length": 2, "value": "0x3c10"}
+{"ea": "10018756", "name": null, "type": "word", "length": 2, "value": "0x3c30"}
+{"ea": "10018758", "name": null, "type": "dword", "length": 4, "value": "0xd000"}
+{"ea": "1001875c", "name": null, "type": "dword", "length": 4, "value": "0xe8"}
+{"ea": "10018760", "name": null, "type": "word", "length": 2, "value": "0x3010"}
+{"ea": "10018762", "name": null, "type": "word", "length": 2, "value": "0x3018"}
+{"ea": "10018764", "name": null, "type": "word", "length": 2, "value": "0x3290"}
+{"ea": "10018766", "name": null, "type": "word", "length": 2, "value": "0x3294"}
+{"ea": "10018768", "name": null, "type": "word", "length": 2, "value": "0x3408"}
+{"ea": "1001876a", "name": null, "type": "word", "length": 2, "value": "0x3414"}
+{"ea": "1001876c", "name": null, "type": "word", "length": 2, "value": "0x341c"}
+{"ea": "1001876e", "name": null, "type": "word", "length": 2, "value": "0x3424"}
+{"ea": "10018770", "name": null, "type": "word", "length": 2, "value": "0x342c"}
+{"ea": "10018772", "name": null, "type": "word", "length": 2, "value": "0x3434"}
+{"ea": "10018774", "name": null, "type": "word", "length": 2, "value": "0x343c"}
+{"ea": "10018776", "name": null, "type": "word", "length": 2, "value": "0x3444"}
+{"ea": "10018778", "name": null, "type": "word", "length": 2, "value": "0x344c"}
+{"ea": "1001877a", "name": null, "type": "word", "length": 2, "value": "0x3454"}
+{"ea": "1001877c", "name": null, "type": "word", "length": 2, "value": "0x345c"}
+{"ea": "1001877e", "name": null, "type": "word", "length": 2, "value": "0x3464"}
+{"ea": "10018780", "name": null, "type": "word", "length": 2, "value": "0x346c"}
+{"ea": "10018782", "name": null, "type": "word", "length": 2, "value": "0x3474"}
+{"ea": "10018784", "name": null, "type": "word", "length": 2, "value": "0x347c"}
+{"ea": "10018786", "name": null, "type": "word", "length": 2, "value": "0x3484"}
+{"ea": "10018788", "name": null, "type": "word", "length": 2, "value": "0x348c"}
+{"ea": "1001878a", "name": null, "type": "word", "length": 2, "value": "0x3494"}
+{"ea": "1001878c", "name": null, "type": "word", "length": 2, "value": "0x349c"}
+{"ea": "1001878e", "name": null, "type": "word", "length": 2, "value": "0x34a4"}
+{"ea": "10018790", "name": null, "type": "word", "length": 2, "value": "0x34ac"}
+{"ea": "10018792", "name": null, "type": "word", "length": 2, "value": "0x34b4"}
+{"ea": "10018794", "name": null, "type": "word", "length": 2, "value": "0x34bc"}
+{"ea": "10018796", "name": null, "type": "word", "length": 2, "value": "0x34c4"}
+{"ea": "10018798", "name": null, "type": "word", "length": 2, "value": "0x3a70"}
+{"ea": "1001879a", "name": null, "type": "word", "length": 2, "value": "0x3b68"}
+{"ea": "1001879c", "name": null, "type": "word", "length": 2, "value": "0x3bd0"}
+{"ea": "1001879e", "name": null, "type": "word", "length": 2, "value": "0x3be0"}
+{"ea": "100187a0", "name": null, "type": "word", "length": 2, "value": "0x3bf0"}
+{"ea": "100187a2", "name": null, "type": "word", "length": 2, "value": "0x3c00"}
+{"ea": "100187a4", "name": null, "type": "word", "length": 2, "value": "0x3c10"}
+{"ea": "100187a6", "name": null, "type": "word", "length": 2, "value": "0x3c34"}
+{"ea": "100187a8", "name": null, "type": "word", "length": 2, "value": "0x3c40"}
+{"ea": "100187aa", "name": null, "type": "word", "length": 2, "value": "0x3c44"}
+{"ea": "100187ac", "name": null, "type": "word", "length": 2, "value": "0x3c48"}
+{"ea": "100187ae", "name": null, "type": "word", "length": 2, "value": "0x3c4c"}
+{"ea": "100187b0", "name": null, "type": "word", "length": 2, "value": "0x3c50"}
+{"ea": "100187b2", "name": null, "type": "word", "length": 2, "value": "0x3c58"}
+{"ea": "100187b4", "name": null, "type": "word", "length": 2, "value": "0x3c5c"}
+{"ea": "100187b6", "name": null, "type": "word", "length": 2, "value": "0x3c60"}
+{"ea": "100187b8", "name": null, "type": "word", "length": 2, "value": "0x3c64"}
+{"ea": "100187ba", "name": null, "type": "word", "length": 2, "value": "0x3c68"}
+{"ea": "100187bc", "name": null, "type": "word", "length": 2, "value": "0x3c6c"}
+{"ea": "100187be", "name": null, "type": "word", "length": 2, "value": "0x3c70"}
+{"ea": "100187c0", "name": null, "type": "word", "length": 2, "value": "0x3c74"}
+{"ea": "100187c2", "name": null, "type": "word", "length": 2, "value": "0x3c78"}
+{"ea": "100187c4", "name": null, "type": "word", "length": 2, "value": "0x3c7c"}
+{"ea": "100187c6", "name": null, "type": "word", "length": 2, "value": "0x3c80"}
+{"ea": "100187c8", "name": null, "type": "word", "length": 2, "value": "0x3c84"}
+{"ea": "100187ca", "name": null, "type": "word", "length": 2, "value": "0x3c90"}
+{"ea": "100187cc", "name": null, "type": "word", "length": 2, "value": "0x3c94"}
+{"ea": "100187ce", "name": null, "type": "word", "length": 2, "value": "0x3c98"}
+{"ea": "100187d0", "name": null, "type": "word", "length": 2, "value": "0x3c9c"}
+{"ea": "100187d2", "name": null, "type": "word", "length": 2, "value": "0x3ca0"}
+{"ea": "100187d4", "name": null, "type": "word", "length": 2, "value": "0x3ca4"}
+{"ea": "100187d6", "name": null, "type": "word", "length": 2, "value": "0x3ca8"}
+{"ea": "100187d8", "name": null, "type": "word", "length": 2, "value": "0x3cac"}
+{"ea": "100187da", "name": null, "type": "word", "length": 2, "value": "0x3cb0"}
+{"ea": "100187dc", "name": null, "type": "word", "length": 2, "value": "0x3cb4"}
+{"ea": "100187de", "name": null, "type": "word", "length": 2, "value": "0x3cb8"}
+{"ea": "100187e0", "name": null, "type": "word", "length": 2, "value": "0x3cbc"}
+{"ea": "100187e2", "name": null, "type": "word", "length": 2, "value": "0x3cc0"}
+{"ea": "100187e4", "name": null, "type": "word", "length": 2, "value": "0x3cc4"}
+{"ea": "100187e6", "name": null, "type": "word", "length": 2, "value": "0x3cc8"}
+{"ea": "100187e8", "name": null, "type": "word", "length": 2, "value": "0x3ccc"}
+{"ea": "100187ea", "name": null, "type": "word", "length": 2, "value": "0x3cd0"}
+{"ea": "100187ec", "name": null, "type": "word", "length": 2, "value": "0x3cd4"}
+{"ea": "100187ee", "name": null, "type": "word", "length": 2, "value": "0x3cd8"}
+{"ea": "100187f0", "name": null, "type": "word", "length": 2, "value": "0x3cdc"}
+{"ea": "100187f2", "name": null, "type": "word", "length": 2, "value": "0x3ce0"}
+{"ea": "100187f4", "name": null, "type": "word", "length": 2, "value": "0x3ce4"}
+{"ea": "100187f6", "name": null, "type": "word", "length": 2, "value": "0x3ce8"}
+{"ea": "100187f8", "name": null, "type": "word", "length": 2, "value": "0x3cec"}
+{"ea": "100187fa", "name": null, "type": "word", "length": 2, "value": "0x3cf0"}
+{"ea": "100187fc", "name": null, "type": "word", "length": 2, "value": "0x3cf4"}
+{"ea": "100187fe", "name": null, "type": "word", "length": 2, "value": "0x3cf8"}
+{"ea": "10018800", "name": null, "type": "word", "length": 2, "value": "0x3cfc"}
+{"ea": "10018802", "name": null, "type": "word", "length": 2, "value": "0x3d00"}
+{"ea": "10018804", "name": null, "type": "word", "length": 2, "value": "0x3d04"}
+{"ea": "10018806", "name": null, "type": "word", "length": 2, "value": "0x3d08"}
+{"ea": "10018808", "name": null, "type": "word", "length": 2, "value": "0x3d0c"}
+{"ea": "1001880a", "name": null, "type": "word", "length": 2, "value": "0x3d10"}
+{"ea": "1001880c", "name": null, "type": "word", "length": 2, "value": "0x3d14"}
+{"ea": "1001880e", "name": null, "type": "word", "length": 2, "value": "0x3d18"}
+{"ea": "10018810", "name": null, "type": "word", "length": 2, "value": "0x3d1c"}
+{"ea": "10018812", "name": null, "type": "word", "length": 2, "value": "0x3d20"}
+{"ea": "10018814", "name": null, "type": "word", "length": 2, "value": "0x3d24"}
+{"ea": "10018816", "name": null, "type": "word", "length": 2, "value": "0x3d28"}
+{"ea": "10018818", "name": null, "type": "word", "length": 2, "value": "0x3d2c"}
+{"ea": "1001881a", "name": null, "type": "word", "length": 2, "value": "0x3d30"}
+{"ea": "1001881c", "name": null, "type": "word", "length": 2, "value": "0x3d34"}
+{"ea": "1001881e", "name": null, "type": "word", "length": 2, "value": "0x3d38"}
+{"ea": "10018820", "name": null, "type": "word", "length": 2, "value": "0x3d3c"}
+{"ea": "10018822", "name": null, "type": "word", "length": 2, "value": "0x3d40"}
+{"ea": "10018824", "name": null, "type": "word", "length": 2, "value": "0x3d50"}
+{"ea": "10018826", "name": null, "type": "word", "length": 2, "value": "0x3d58"}
+{"ea": "10018828", "name": null, "type": "word", "length": 2, "value": "0x3d5c"}
+{"ea": "1001882a", "name": null, "type": "word", "length": 2, "value": "0x3d60"}
+{"ea": "1001882c", "name": null, "type": "word", "length": 2, "value": "0x3d64"}
+{"ea": "1001882e", "name": null, "type": "word", "length": 2, "value": "0x3d68"}
+{"ea": "10018830", "name": null, "type": "word", "length": 2, "value": "0x3d6c"}
+{"ea": "10018832", "name": null, "type": "word", "length": 2, "value": "0x3d70"}
+{"ea": "10018834", "name": null, "type": "word", "length": 2, "value": "0x3d74"}
+{"ea": "10018836", "name": null, "type": "word", "length": 2, "value": "0x3d78"}
+{"ea": "10018838", "name": null, "type": "word", "length": 2, "value": "0x3d7c"}
+{"ea": "1001883a", "name": null, "type": "word", "length": 2, "value": "0x3d88"}
+{"ea": "1001883c", "name": null, "type": "word", "length": 2, "value": "0x3e60"}
+{"ea": "1001883e", "name": null, "type": "word", "length": 2, "value": "0x3e64"}
+{"ea": "ffdff000", "name": "ExceptionList", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff004", "name": "StackBase", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff008", "name": "StackLimit", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff00c", "name": "SubSystemTib", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff010", "name": "FiberData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff014", "name": "ArbitraryUserPointer", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff018", "name": "Self", "type": "void *32", "length": 4, "value": "ffdff000"}
+{"ea": "ffdff01c", "name": "EnvironmentPointer", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff020", "name": "ClientId", "type": "CLIENT_ID", "length": 8}
+{"ea": "ffdff028", "name": "ActiveRpcHandle", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff02c", "name": "ThreadLocalStoragePointer", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff030", "name": "ProcessEnvironmentBlock", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff034", "name": "LastErrorValue", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff038", "name": "CountOfOwnedCriticalSections", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff03c", "name": "CsrClientThread", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff040", "name": "Win32ThreadInfo", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff044", "name": "User32Reserved", "type": "dword[26]", "length": 104}
+{"ea": "ffdff0ac", "name": "UserReserved", "type": "dword[5]", "length": 20}
+{"ea": "ffdff0c0", "name": "WOW32Reserved", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff0c4", "name": "CurrentLocale", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff0c8", "name": "FpSoftwareStatusRegister", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff0cc", "name": "SystemReserved1", "type": "void *32[54]", "length": 216}
+{"ea": "ffdff1a4", "name": "ExceptionCode", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff1a8", "name": "ActivationContextStackPointer", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff1ac", "name": "SpareBytes", "type": "uchar[36]", "length": 36, "value": ""}
+{"ea": "ffdff1d0", "name": "TxFsContext", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff1d4", "name": "GdiTebBatch", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff6b4", "name": "RealClientId", "type": "CLIENT_ID", "length": 8}
+{"ea": "ffdff6bc", "name": "GdiCachedProcessHandle", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff6c0", "name": "GdiClientPID", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff6c4", "name": "GdiCLientTID", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdff6c8", "name": "GdiThreadLocalInfo", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdff6cc", "name": "Win32ClientInfo", "type": "void *32[62]", "length": 248}
+{"ea": "ffdff7c4", "name": "glDispatchTable", "type": "void *32[233]", "length": 932}
+{"ea": "ffdffb68", "name": "glReserved1", "type": "void *32[29]", "length": 116}
+{"ea": "ffdffbdc", "name": "glReserved2", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbe0", "name": "glSectionInfo", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbe4", "name": "glSection", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbe8", "name": "glTable", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbec", "name": "glCurrentRC", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbf0", "name": "glContext", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffbf4", "name": "LastStatusValue", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdffc00", "name": "StaticUnicodeBuffer", "type": "wchar16[261]", "length": 522, "value": ""}
+{"ea": "ffdffe0c", "name": "DeallocationStack", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdffe10", "name": "TlsSlots", "type": "void *32[64]", "length": 256}
+{"ea": "ffdfff10", "name": "TlsLinks.Flink", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff14", "name": "TlsLinks.Blink", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff18", "name": "Vdm", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff1c", "name": "ReservedForNtRpc", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff20", "name": "DbgSsReserved", "type": "void *32[2]", "length": 8}
+{"ea": "ffdfff28", "name": "HardErrorMode", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff2c", "name": "Instrumentation", "type": "void *32[9]", "length": 36}
+{"ea": "ffdfff50", "name": "ActivityId", "type": "GUID", "length": 16, "value": "00000000-0000-0000-0000-000000000000"}
+{"ea": "ffdfff60", "name": "SubProcessTag", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff64", "name": "EtwLocalData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff68", "name": "EtwTraceData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff6c", "name": "WinSockData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff70", "name": "GdiBatchCount", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff74", "name": "IdealProcessorValue", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff78", "name": "GuaranteedStackBytes", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff7c", "name": "ReservedForPerf", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff80", "name": "ReservedForOle", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff84", "name": "WaitingOnLoaderLock", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff88", "name": "SavedPriorityState", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff8c", "name": "SoftPatchPtr1", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff90", "name": "ThreadPoolData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff94", "name": "TlsExpansionSlots", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfff98", "name": "MuiGeneration", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfff9c", "name": "IsImpersonating", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfffa0", "name": "NlsCache", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffa4", "name": "pShimData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffa8", "name": "HeapVirtualAffinity", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfffac", "name": "CurrentTransactionHandle", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffb0", "name": "ActiveFrame", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffb4", "name": "FlsData", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffb8", "name": "PreferredLanguages", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffbc", "name": "UserPrefLanguages", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffc0", "name": "MergedPrefLanguages", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffc4", "name": "MuiImpersonation", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfffc8", "name": "CrossTebFlags", "type": "ushort", "length": 2, "value": "0x0"}
+{"ea": "ffdfffca", "name": "SameTebFlags", "type": "ushort", "length": 2, "value": "0x0"}
+{"ea": "ffdfffcc", "name": "TxnScopeEnterCallback", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffd0", "name": "TxnScopeExitCallback", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffd4", "name": "TxnScopeContext", "type": "void *32", "length": 4, "value": "00000000"}
+{"ea": "ffdfffd8", "name": "LockCount", "type": "dword", "length": 4, "value": "0x0"}
+{"ea": "ffdfffe0", "name": "ResourceRetValue", "type": "void *32", "length": 4, "value": "00000000"}

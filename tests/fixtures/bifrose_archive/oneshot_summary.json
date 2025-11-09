@@ -1,0 +1,1689 @@
+{
+  "file": {
+    "sha256": "f7f193e94e6c43ff8196621172db8a0484123b1baac9264412d52feb764a764b",
+    "name": "bifrose.exe",
+    "size": 85373,
+    "format": "pe",
+    "arch": "x86",
+    "language_id": "x86:LE:32:default",
+    "image_base": "0x10000000",
+    "endian": "little"
+  },
+  "sections": {
+    "has_rwx": true,
+    "suspicious": [
+      {
+        "name": ".rsrc",
+        "start": "0x10010000",
+        "end": "0x100177ff",
+        "size": 30720,
+        "permissions": "rwx"
+      },
+      {
+        "name": "tdb",
+        "start": "0xffdff000",
+        "end": "0xffdfffff",
+        "size": 4096,
+        "permissions": "rw-"
+      }
+    ]
+  },
+  "imports": {
+    "network": [],
+    "filesystem": [
+      "KERNEL32.DLL!WriteFile",
+      "KERNEL32.DLL!GetFileType",
+      "KERNEL32.DLL!SetFilePointer",
+      "KERNEL32.DLL!CreateFileA",
+      "__crtLCMapStringA_stat",
+      "?__crtLCMapStringA_stat@@YAHPAUlocaleinfo_struct@@KKPBDHPADHHH@Z",
+      "__crtGetStringTypeA_stat",
+      "?__crtGetStringTypeA_stat@@YAHPAUlocaleinfo_struct@@KPBDHPAGHHH@Z",
+      "FpSoftwareStatusRegister",
+      "LastStatusValue",
+      "StaticUnicodeBuffer",
+      "SavedPriorityState"
+    ],
+    "process": [
+      "KERNEL32.DLL!TerminateProcess"
+    ],
+    "memory_injection": [
+      "KERNEL32.DLL!VirtualAlloc",
+      "KERNEL32.DLL!VirtualAllocEx"
+    ],
+    "crypto": [
+      "GdiCachedProcessHandle"
+    ],
+    "persistence": [],
+    "privilege": [
+      "KERNEL32.DLL!IsDebuggerPresent",
+      "KERNEL32.DLL!SetUnhandledExceptionFilter",
+      "KERNEL32.DLL!EnterCriticalSection",
+      "KERNEL32.DLL!LeaveCriticalSection",
+      "KERNEL32.DLL!SetHandleCount",
+      "KERNEL32.DLL!TlsSetValue",
+      "KERNEL32.DLL!SetLastError",
+      "KERNEL32.DLL!DeleteCriticalSection",
+      "KERNEL32.DLL!InitializeCriticalSectionAndSpinCount",
+      "KERNEL32.DLL!SetFilePointer",
+      "KERNEL32.DLL!CloseHandle",
+      "KERNEL32.DLL!SetStdHandle",
+      "__security_check_cookie",
+      "@__security_check_cookie@4",
+      "__get_errno_from_oserr",
+      "___doserrno",
+      "__SEH_prolog4",
+      "__SEH_epilog4",
+      "__setenvp",
+      "parse_cmdline",
+      "_parse_cmdline",
+      "__setargv",
+      "___set_flsgetvalue",
+      "___security_init_cookie",
+      "setSBCS",
+      "?setSBCS@@YAXPAUthreadmbcinfostruct@@@Z",
+      "setSBUpLow",
+      "?setSBUpLow@@YAXPAUthreadmbcinfostruct@@@Z",
+      "__setmbcp_nolock",
+      "__setmbcp"
+    ],
+    "anti_debug_vm": [
+      "KERNEL32.DLL!IsDebuggerPresent",
+      "KERNEL32.DLL!GetTickCount",
+      "KERNEL32.DLL!QueryPerformanceCounter"
+    ],
+    "user_cred_phishing": [],
+    "scripting_shell": [
+      "KERNEL32.DLL!GetSystemTimeAsFileTime",
+      "getSystemCP",
+      "?getSystemCP@@YAHH@Z",
+      "SubSystemTib",
+      "SystemReserved1"
+    ],
+    "ipc_ipc": []
+  },
+  "interesting_strings": [
+    {
+      "value": "E:\\shellcode\\shellcode\\Release\\shellcode.pdb",
+      "ea": "1000b828",
+      "used_in": [],
+      "kind": "path"
+    },
+    {
+      "value": "IsDebuggerPresent",
+      "ea": "1000be94",
+      "used_in": [],
+      "kind": "keyword"
+    },
+    {
+      "value": "LeaveCriticalSection",
+      "ea": "1000bec0",
+      "used_in": [],
+      "kind": "keyword"
+    },
+    {
+      "value": "GetStartupInfoA",
+      "ea": "1000bfe0",
+      "used_in": [],
+      "kind": "auth"
+    },
+    {
+      "value": "GetCPInfo",
+      "ea": "1000c0fa",
+      "used_in": [],
+      "kind": "auth"
+    },
+    {
+      "value": "InitializeCriticalSectionAndSpinCount",
+      "ea": "1000c13a",
+      "used_in": [],
+      "kind": "auth"
+    }
+  ],
+  "key_functions": [
+    {
+      "ea": "10001aa6",
+      "name": "__output_l",
+      "size_bytes": 2935,
+      "cyclomatic_complexity": 137,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "_printf",
+          "ea": "100012f7"
+        }
+      ],
+      "callees": [
+        {
+          "name": "_LocaleUpdate",
+          "ea": "10001979"
+        },
+        {
+          "name": "__aulldvrm",
+          "ea": "10005230"
+        },
+        {
+          "name": "__decode_pointer",
+          "ea": "1000386e"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        },
+        {
+          "name": "__fileno",
+          "ea": "10004410"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000716e",
+      "name": "__write_nolock",
+      "size_bytes": 1843,
+      "cyclomatic_complexity": 65,
+      "capabilities": [
+        "filesystem",
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__write",
+          "ea": "100078a1"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "__alloca_probe",
+          "ea": "10009540"
+        },
+        {
+          "name": "__dosmaperr",
+          "ea": "10002803"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        },
+        {
+          "name": "__getptd",
+          "ea": "10003aba"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10007a7e",
+      "name": "__crtLCMapStringA_stat",
+      "size_bytes": 933,
+      "cyclomatic_complexity": 48,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "___crtLCMapStringA",
+          "ea": "10007e23"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___ansicp",
+          "ea": "1000972f"
+        },
+        {
+          "name": "___convertcp",
+          "ea": "10009778"
+        },
+        {
+          "name": "__alloca_probe_16",
+          "ea": "10009930"
+        },
+        {
+          "name": "__freea",
+          "ea": "10007a5e"
+        },
+        {
+          "name": "__security_check_cookie",
+          "ea": "1000126a"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10003553",
+      "name": "__ioinit",
+      "size_bytes": 582,
+      "cyclomatic_complexity": 27,
+      "capabilities": [
+        "filesystem",
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "___tmainCRTStartup",
+          "ea": "100013e5"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___crtInitCritSecAndSpinCount",
+          "ea": "100059b4"
+        },
+        {
+          "name": "__calloc_crt",
+          "ea": "10003ea3"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004788",
+      "name": "__setmbcp_nolock",
+      "size_bytes": 485,
+      "cyclomatic_complexity": 20,
+      "capabilities": [
+        "privilege",
+        "scripting_shell"
+      ],
+      "callers": [
+        {
+          "name": "__setmbcp",
+          "ea": "1000496d"
+        }
+      ],
+      "callees": [
+        {
+          "name": "CPtoLCID",
+          "ea": "10004442"
+        },
+        {
+          "name": "__security_check_cookie",
+          "ea": "1000126a"
+        },
+        {
+          "name": "_memset",
+          "ea": "100052d0"
+        },
+        {
+          "name": "getSystemCP",
+          "ea": "1000470c"
+        },
+        {
+          "name": "setSBCS",
+          "ea": "10004471"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000505b",
+      "name": "__wctomb_s_l",
+      "size_bytes": 364,
+      "cyclomatic_complexity": 22,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "_wctomb_s",
+          "ea": "100051c7"
+        }
+      ],
+      "callees": [
+        {
+          "name": "_LocaleUpdate",
+          "ea": "10001979"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        },
+        {
+          "name": "__invalid_parameter",
+          "ea": "10002775"
+        },
+        {
+          "name": "_memset",
+          "ea": "100052d0"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100057d7",
+      "name": "_raise",
+      "size_bytes": 411,
+      "cyclomatic_complexity": 25,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "_abort",
+          "ea": "10008b19"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_1000594b",
+          "ea": "1000594b"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "__decode_pointer",
+          "ea": "1000386e"
+        },
+        {
+          "name": "__encoded_null",
+          "ea": "10003865"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10006e60",
+      "name": "_realloc",
+      "size_bytes": 524,
+      "cyclomatic_complexity": 28,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__realloc_crt",
+          "ea": "10003eef"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10006fa4",
+          "ea": "10006fa4"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___sbh_alloc_block",
+          "ea": "10006944"
+        },
+        {
+          "name": "___sbh_find_block",
+          "ea": "10006165"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10007e6b",
+      "name": "__crtGetStringTypeA_stat",
+      "size_bytes": 442,
+      "cyclomatic_complexity": 22,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "___crtGetStringTypeA",
+          "ea": "10008025"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___ansicp",
+          "ea": "1000972f"
+        },
+        {
+          "name": "___convertcp",
+          "ea": "10009778"
+        },
+        {
+          "name": "__alloca_probe_16",
+          "ea": "10009930"
+        },
+        {
+          "name": "__freea",
+          "ea": "10007a5e"
+        },
+        {
+          "name": "__security_check_cookie",
+          "ea": "1000126a"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10009778",
+      "name": "___convertcp",
+      "size_bytes": 436,
+      "cyclomatic_complexity": 22,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__crtGetStringTypeA_stat",
+          "ea": "10007e6b"
+        },
+        {
+          "name": "__crtLCMapStringA_stat",
+          "ea": "10007a7e"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__alloca_probe_16",
+          "ea": "10009930"
+        },
+        {
+          "name": "__calloc_crt",
+          "ea": "10003ea3"
+        },
+        {
+          "name": "__freea",
+          "ea": "10007a5e"
+        },
+        {
+          "name": "__security_check_cookie",
+          "ea": "1000126a"
+        },
+        {
+          "name": "_free",
+          "ea": "10003f3d"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100012f7",
+      "name": "_printf",
+      "size_bytes": 156,
+      "cyclomatic_complexity": 2,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_10001020",
+          "ea": "10001020"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10001393",
+          "ea": "10001393"
+        },
+        {
+          "name": "FUN_100016f4",
+          "ea": "100016f4"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100013e5",
+      "name": "___tmainCRTStartup",
+      "size_bytes": 292,
+      "cyclomatic_complexity": 11,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "entry",
+          "ea": "10001537"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10001020",
+          "ea": "10001020"
+        },
+        {
+          "name": "__RTC_Initialize",
+          "ea": "100037a7"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___crtGetEnvironmentStringsA",
+          "ea": "1000341c"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000264d",
+      "name": "__invoke_watson",
+      "size_bytes": 296,
+      "cyclomatic_complexity": 3,
+      "capabilities": [
+        "process",
+        "privilege",
+        "anti_debug_vm"
+      ],
+      "callers": [
+        {
+          "name": "__NMSG_WRITE",
+          "ea": "10002da4"
+        },
+        {
+          "name": "__invalid_parameter",
+          "ea": "10002775"
+        },
+        {
+          "name": "__setenvp",
+          "ea": "100030e9"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10003e56",
+          "ea": "10003e56"
+        },
+        {
+          "name": "__security_check_cookie",
+          "ea": "1000126a"
+        },
+        {
+          "name": "_memset",
+          "ea": "100052d0"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10002890",
+      "name": "__except_handler4",
+      "size_bytes": 396,
+      "cyclomatic_complexity": 16,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__IsNonwritableInCurrentImage",
+          "ea": "10005530"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        }
+      ],
+      "callees": [
+        {
+          "name": "_EH4_CallFilterFunc",
+          "ea": "1000543e"
+        },
+        {
+          "name": "_EH4_GlobalUnwind",
+          "ea": "1000546e"
+        },
+        {
+          "name": "_EH4_LocalUnwind",
+          "ea": "10005488"
+        },
+        {
+          "name": "_EH4_TransferToHandler",
+          "ea": "10005455"
+        },
+        {
+          "name": "__IsNonwritableInCurrentImage",
+          "ea": "10005530"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10002be0",
+      "name": "doexit",
+      "size_bytes": 285,
+      "cyclomatic_complexity": 9,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_10002d47",
+          "ea": "10002d47"
+        },
+        {
+          "name": "__cexit",
+          "ea": "10002d38"
+        },
+        {
+          "name": "__exit",
+          "ea": "10002d22"
+        },
+        {
+          "name": "_exit",
+          "ea": "10002d0c"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10002cf7",
+          "ea": "10002cf7"
+        },
+        {
+          "name": "FUN_1000429f",
+          "ea": "1000429f"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___crtExitProcess",
+          "ea": "10002af0"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10002da4",
+      "name": "__NMSG_WRITE",
+      "size_bytes": 410,
+      "cyclomatic_complexity": 12,
+      "capabilities": [
+        "filesystem",
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__FF_MSGBANNER",
+          "ea": "10002f4f"
+        },
+        {
+          "name": "__amsg_exit",
+          "ea": "10002a9c"
+        },
+        {
+          "name": "__mtinitlocknum",
+          "ea": "100042b6"
+        },
+        {
+          "name": "_abort",
+          "ea": "10008b19"
+        },
+        {
+          "name": "_malloc",
+          "ea": "10006c78"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___crtMessageBoxA",
+          "ea": "10005a4b"
+        },
+        {
+          "name": "__invoke_watson",
+          "ea": "1000264d"
+        },
+        {
+          "name": "__set_error_mode",
+          "ea": "10005d45"
+        },
+        {
+          "name": "_strcat_s",
+          "ea": "10005bb4"
+        },
+        {
+          "name": "_strcpy_s",
+          "ea": "10005cdd"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000341c",
+      "name": "___crtGetEnvironmentStringsA",
+      "size_bytes": 311,
+      "cyclomatic_complexity": 20,
+      "capabilities": [],
+      "callers": [
+        {
+          "name": "___tmainCRTStartup",
+          "ea": "100013e5"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__malloc_crt",
+          "ea": "10003e5e"
+        },
+        {
+          "name": "_free",
+          "ea": "10003f3d"
+        },
+        {
+          "name": "_memcpy",
+          "ea": "10005e00"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000395a",
+      "name": "__initptd",
+      "size_bytes": 207,
+      "cyclomatic_complexity": 4,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__getptd_noexit",
+          "ea": "10003a41"
+        },
+        {
+          "name": "__mtinit",
+          "ea": "10003c03"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10003a2f",
+          "ea": "10003a2f"
+        },
+        {
+          "name": "FUN_10003a38",
+          "ea": "10003a38"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___addlocaleref",
+          "ea": "10004c6e"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10003a41",
+      "name": "__getptd_noexit",
+      "size_bytes": 121,
+      "cyclomatic_complexity": 4,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__XcptFilter",
+          "ea": "10002f89"
+        },
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        },
+        {
+          "name": "__getptd",
+          "ea": "10003aba"
+        },
+        {
+          "name": "_raise",
+          "ea": "100057d7"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___set_flsgetvalue",
+          "ea": "100038e9"
+        },
+        {
+          "name": "__calloc_crt",
+          "ea": "10003ea3"
+        },
+        {
+          "name": "__decode_pointer",
+          "ea": "1000386e"
+        },
+        {
+          "name": "__initptd",
+          "ea": "1000395a"
+        },
+        {
+          "name": "_free",
+          "ea": "10003f3d"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10003c03",
+      "name": "__mtinit",
+      "size_bytes": 397,
+      "cyclomatic_complexity": 13,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "___tmainCRTStartup",
+          "ea": "100013e5"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__calloc_crt",
+          "ea": "10003ea3"
+        },
+        {
+          "name": "__crt_waiting_on_module_handle",
+          "ea": "10002a6c"
+        },
+        {
+          "name": "__decode_pointer",
+          "ea": "1000386e"
+        },
+        {
+          "name": "__encode_pointer",
+          "ea": "100037f3"
+        },
+        {
+          "name": "__init_pointers",
+          "ea": "10002d56"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10003f3d",
+      "name": "_free",
+      "size_bytes": 133,
+      "cyclomatic_complexity": 6,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_10003fcb",
+          "ea": "10003fcb"
+        },
+        {
+          "name": "___convertcp",
+          "ea": "10009778"
+        },
+        {
+          "name": "___crtGetEnvironmentStringsA",
+          "ea": "1000341c"
+        },
+        {
+          "name": "___free_lc_time",
+          "ea": "10008067"
+        },
+        {
+          "name": "___free_lconv_mon",
+          "ea": "10008241"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10003f93",
+          "ea": "10003f93"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___sbh_find_block",
+          "ea": "10006165"
+        },
+        {
+          "name": "___sbh_free_block",
+          "ea": "10006195"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000411a",
+      "name": "flsall",
+      "size_bytes": 187,
+      "cyclomatic_complexity": 11,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_100041f4",
+          "ea": "100041f4"
+        },
+        {
+          "name": "__fflush_nolock",
+          "ea": "100040d2"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_100041bc",
+          "ea": "100041bc"
+        },
+        {
+          "name": "FUN_100041eb",
+          "ea": "100041eb"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "__fflush_nolock",
+          "ea": "100040d2"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000429f",
+      "name": "FUN_1000429f",
+      "size_bytes": 23,
+      "cyclomatic_complexity": 1,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_10002b11",
+          "ea": "10002b11"
+        },
+        {
+          "name": "FUN_10002cf7",
+          "ea": "10002cf7"
+        },
+        {
+          "name": "FUN_10003a2f",
+          "ea": "10003a2f"
+        },
+        {
+          "name": "FUN_10003a38",
+          "ea": "10003a38"
+        },
+        {
+          "name": "FUN_10003bee",
+          "ea": "10003bee"
+        }
+      ],
+      "callees": [],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100042b6",
+      "name": "__mtinitlocknum",
+      "size_bytes": 186,
+      "cyclomatic_complexity": 6,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__lock",
+          "ea": "10004379"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10004370",
+          "ea": "10004370"
+        },
+        {
+          "name": "__FF_MSGBANNER",
+          "ea": "10002f4f"
+        },
+        {
+          "name": "__NMSG_WRITE",
+          "ea": "10002da4"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004379",
+      "name": "__lock",
+      "size_bytes": 51,
+      "cyclomatic_complexity": 3,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "FUN_10002b08",
+          "ea": "10002b08"
+        },
+        {
+          "name": "FUN_10003fcb",
+          "ea": "10003fcb"
+        },
+        {
+          "name": "_V6_HeapAlloc",
+          "ea": "10006c29"
+        },
+        {
+          "name": "___lock_fhandle",
+          "ea": "10009668"
+        },
+        {
+          "name": "___updatetlocinfo",
+          "ea": "10004dd4"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__amsg_exit",
+          "ea": "10002a9c"
+        },
+        {
+          "name": "__mtinitlocknum",
+          "ea": "100042b6"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004668",
+      "name": "___updatetmbcinfo",
+      "size_bytes": 152,
+      "cyclomatic_complexity": 8,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "_LocaleUpdate",
+          "ea": "10001979"
+        },
+        {
+          "name": "__setmbcp",
+          "ea": "1000496d"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10004703",
+          "ea": "10004703"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "__amsg_exit",
+          "ea": "10002a9c"
+        },
+        {
+          "name": "__getptd",
+          "ea": "10003aba"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000496d",
+      "name": "__setmbcp",
+      "size_bytes": 399,
+      "cyclomatic_complexity": 15,
+      "capabilities": [
+        "privilege",
+        "scripting_shell"
+      ],
+      "callers": [
+        {
+          "name": "___initmbctable",
+          "ea": "10004b07"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10004ace",
+          "ea": "10004ace"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___updatetmbcinfo",
+          "ea": "10004668"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004b25",
+      "name": "___freetlocinfo",
+      "size_bytes": 329,
+      "cyclomatic_complexity": 20,
+      "capabilities": [],
+      "callers": [
+        {
+          "name": "__updatetlocinfoEx_nolock",
+          "ea": "10004d96"
+        }
+      ],
+      "callees": [
+        {
+          "name": "___free_lc_time",
+          "ea": "10008067"
+        },
+        {
+          "name": "___free_lconv_mon",
+          "ea": "10008241"
+        },
+        {
+          "name": "___free_lconv_num",
+          "ea": "100081fc"
+        },
+        {
+          "name": "_free",
+          "ea": "10003f3d"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004dd4",
+      "name": "___updatetlocinfo",
+      "size_bytes": 106,
+      "cyclomatic_complexity": 4,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "_LocaleUpdate",
+          "ea": "10001979"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10004e3e",
+          "ea": "10004e3e"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "__amsg_exit",
+          "ea": "10002a9c"
+        },
+        {
+          "name": "__getptd",
+          "ea": "10003aba"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10004e4a",
+      "name": "__flsbuf",
+      "size_bytes": 356,
+      "cyclomatic_complexity": 16,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "write_char",
+          "ea": "10001a00"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_100016f4",
+          "ea": "100016f4"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        },
+        {
+          "name": "__fileno",
+          "ea": "10004410"
+        },
+        {
+          "name": "__getbuf",
+          "ea": "1000858e"
+        },
+        {
+          "name": "__isatty",
+          "ea": "100043ac"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10006d42",
+      "name": "__calloc_impl",
+      "size_bytes": 272,
+      "cyclomatic_complexity": 15,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__calloc_crt",
+          "ea": "10003ea3"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10006e3e",
+          "ea": "10006e3e"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___sbh_alloc_block",
+          "ea": "10006944"
+        },
+        {
+          "name": "__callnewh",
+          "ea": "10005a23"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100078a1",
+      "name": "__write",
+      "size_bytes": 210,
+      "cyclomatic_complexity": 6,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__flsbuf",
+          "ea": "10004e4a"
+        },
+        {
+          "name": "__flush",
+          "ea": "1000406a"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10007973",
+          "ea": "10007973"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "___lock_fhandle",
+          "ea": "10009668"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "1000797d",
+      "name": "__commit",
+      "size_bytes": 215,
+      "cyclomatic_complexity": 8,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__fflush_nolock",
+          "ea": "100040d2"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10007a54",
+          "ea": "10007a54"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "___lock_fhandle",
+          "ea": "10009668"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10008475",
+      "name": "__lseeki64",
+      "size_bytes": 271,
+      "cyclomatic_complexity": 6,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__flsbuf",
+          "ea": "10004e4a"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10008584",
+          "ea": "10008584"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "___lock_fhandle",
+          "ea": "10009668"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10008c30",
+      "name": "__msize",
+      "size_bytes": 146,
+      "cyclomatic_complexity": 5,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__onexit_nolock",
+          "ea": "10005637"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10008cca",
+          "ea": "10008cca"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___sbh_find_block",
+          "ea": "10006165"
+        },
+        {
+          "name": "__errno",
+          "ea": "100027dd"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100091a5",
+      "name": "__close_nolock",
+      "size_bytes": 156,
+      "cyclomatic_complexity": 9,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__close",
+          "ea": "10009241"
+        }
+      ],
+      "callees": [
+        {
+          "name": "__dosmaperr",
+          "ea": "10002803"
+        },
+        {
+          "name": "__free_osfhnd",
+          "ea": "1000956b"
+        },
+        {
+          "name": "__get_osfhandle",
+          "ea": "100095f1"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10009241",
+      "name": "__close",
+      "size_bytes": 195,
+      "cyclomatic_complexity": 6,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [
+        {
+          "name": "__fclose_nolock",
+          "ea": "1000707b"
+        }
+      ],
+      "callees": [
+        {
+          "name": "FUN_10009304",
+          "ea": "10009304"
+        },
+        {
+          "name": "__SEH_epilog4",
+          "ea": "1000286d"
+        },
+        {
+          "name": "__SEH_prolog4",
+          "ea": "10002828"
+        },
+        {
+          "name": "___doserrno",
+          "ea": "100027f0"
+        },
+        {
+          "name": "___lock_fhandle",
+          "ea": "10009668"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10001279",
+      "name": "_clock",
+      "size_bytes": 69,
+      "cyclomatic_complexity": 1,
+      "capabilities": [
+        "scripting_shell"
+      ],
+      "callers": [],
+      "callees": [
+        {
+          "name": "__allmul",
+          "ea": "100016c0"
+        },
+        {
+          "name": "__aulldiv",
+          "ea": "10001650"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "100012be",
+      "name": "___inittime",
+      "size_bytes": 57,
+      "cyclomatic_complexity": 1,
+      "capabilities": [
+        "scripting_shell"
+      ],
+      "callers": [],
+      "callees": [
+        {
+          "name": "__allmul",
+          "ea": "100016c0"
+        }
+      ],
+      "interesting_strings_used": []
+    },
+    {
+      "ea": "10001537",
+      "name": "entry",
+      "size_bytes": 10,
+      "cyclomatic_complexity": 1,
+      "capabilities": [
+        "privilege"
+      ],
+      "callers": [],
+      "callees": [
+        {
+          "name": "___security_init_cookie",
+          "ea": "10003dc0"
+        },
+        {
+          "name": "___tmainCRTStartup",
+          "ea": "100013e5"
+        }
+      ],
+      "interesting_strings_used": []
+    }
+  ],
+  "possible_configs": [],
+  "suspicion_signals": {
+    "uses_network": false,
+    "uses_filesystem": true,
+    "spawns_processes_or_shell": true,
+    "allocates_remote_or_rwx_memory": true,
+    "has_persistence_indicators": false,
+    "has_credential_theft_indicators": true,
+    "has_anti_debug_vm_indicators": true,
+    "has_suspicious_urls_or_ips": false,
+    "has_overlay_or_ui_cred_strings": true,
+    "is_unusually_small_but_complex": true,
+    "has_shell_execution_strings": false
+  },
+  "notes": {
+    "generation_version": "oneshot_pruner_v1",
+    "limits": {
+      "max_strings": 150,
+      "max_key_functions": 40
+    }
+  }
+}

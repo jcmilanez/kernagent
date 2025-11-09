@@ -1,0 +1,60 @@
+services:
+  kernagent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kernagent:latest
+    container_name: kernagent
+    # Example: mount a directory with binaries for analysis
+    # volumes:
+    #   - ./samples:/data
+    #   - /path/to/your/binaries:/binaries
+    env_file:
+      - .env
+    environment:
+      # Override or add environment variables here if needed
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    # Default command shows help
+    command: ["--help"]
+
+  # Development service with source code mounted for live editing
+  kernagent-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kernagent:latest
+    container_name: kernagent-dev
+    volumes:
+      # Example: mount a directory with binaries for analysis
+      # - ./samples:/data
+      # Mount source code for development
+      - ./kernagent:/workspace/kernagent/kernagent
+      - ./tests:/workspace/tests
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    command: ["--help"]
+
+# Example usage:
+#
+# Build the image:
+#   docker compose build
+#
+# Run analysis:
+#   docker compose run --rm kernagent summary /data/binary.exe
+#   docker compose run --rm kernagent ask /data/binary.exe "What does this do?"
+#   docker compose run --rm kernagent oneshot /data/sample.bin
+#
+# Development mode with live code changes:
+#   docker compose run --rm kernagent-dev summary /data/binary.exe
+#
+# Run tests:
+#   docker compose run --rm kernagent-dev pytest
+#
+# Interactive shell:
+#   docker compose run --rm kernagent bash
