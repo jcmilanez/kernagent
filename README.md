@@ -20,6 +20,9 @@
 
 **Turn binaries into conversations — offline, deterministic, and verifiable.**
 
+Unlike existing **Model Context Protocol (MCP) plugins for IDA/Ghidra**, `kernagent` is a **fully headless, snapshot-based pipeline**:
+no live disassembler, no GUI automation, no screen-scraping — just a portable static analysis bundle that any LLM or script can consume.
+
 `kernagent` is an **AI-powered reverse-engineering copilot** built on top of **Ghidra snapshots**.
 
 It converts a binary into a portable analysis bundle, then lets an LLM (or your scripts) answer questions about it.
@@ -47,6 +50,7 @@ Every answer is backed by **real evidence** (functions, strings, imports, xrefs,
   - [🛠️ Built With](#️-built-with)
   - [📑 Table of Contents](#-table-of-contents)
   - [🎯 What makes kernagent different?](#-what-makes-kernagent-different)
+  - [🆚 How is this different from IDA / Ghidra MCP integrations?](#-how-is-this-different-from-ida--ghidra-mcp-integrations)
   - [🖼️ Screenshots](#️-screenshots)
     - [Summary Command](#summary-command)
     - [Ask Command](#ask-command)
@@ -77,32 +81,70 @@ Every answer is backed by **real evidence** (functions, strings, imports, xrefs,
 
 ## 🎯 What makes kernagent different?
 
-There are lots of “AI + RE” toys. `kernagent` is opinionated:
+Most AI-assisted RE tooling today falls into two buckets:
 
-1. **Snapshot-first, not screen-scraping**
-   It runs a full Ghidra/PyGhidra extraction **once**, writes a structured archive, and all analysis happens on that immutable bundle.
+* **IDE plugins / MCP for IDA & Ghidra** – require a running GUI or live project, often tightly coupled to a specific tool.
+* **"Chat with your binary" toys** – stream random chunks into an LLM context window with little control or verifiability.
 
-2. **Evidence over vibes**
-   The LLM is constrained to a rich tool API (`functions.jsonl`, `strings.jsonl`, `callgraph.jsonl`, `decomp/*.c`, etc.).
-   Claims must map to addresses, imports, or strings you can verify.
+`kernagent` takes a different route:
 
-3. **Deterministic & portable**
-   Same snapshot → same JSON → same classification. Easy to:
+1. 🚫 **Not an MCP plugin, not tied to an IDE**
+   `kernagent` does **not** require an IDA or Ghidra GUI session, and does **not** drive your disassembler over MCP.
+   It runs as a **headless pipeline** (Docker-friendly, CI-friendly) that emits a self-contained snapshot directory.
 
-   * archive,
-   * diff across builds,
-   * ship between teams / environments.
+2. 📦 **Snapshot-first, tool-agnostic**
+   A binary is processed **once** into a structured archive (`functions.jsonl`, `strings.jsonl`, `callgraph.jsonl`, `decomp/*.c`, etc.).
+   Any LLM client, script, or service can work on that snapshot — locally, offline, or in another environment — without re-running Ghidra/IDA.
 
-4. **Model-agnostic & self-hostable**
-   Works with **any** OpenAI-compatible `/v1/chat/completions`:
+3. 🧪 **Evidence over vibes**
+   All answers must map back to concrete artifacts: addresses, functions, imports, strings, sections, xrefs, decomp.
+   No opaque embeddings, no hallucinated "guesses" you can't verify in a real RE tool.
 
-   * OpenAI
-   * Local models (llama.cpp, LM Studio, Ollama, custom gateways)
-   * Other vendors
-     You own where data goes.
+4. 🔁 **Deterministic & portable**
+   Same binary → same snapshot → same JSON → same report.
+   Easy to archive, diff across versions, ship between teams, or attach to tickets.
 
-5. **Production-friendly**
-   Dockerized Ghidra + decompiler; clean CLI; Python API; ready for CI and internal services.
+5. 🧩 **Model-agnostic & self-hostable**
+   Works with any `/v1/chat/completions`-compatible endpoint:
+   OpenAI, Ollama, llama.cpp, LM Studio, your own gateway, etc.
+   You decide where data lives.
+
+6. 📏 **Designed for context-window efficiency (and getting better)**
+   `kernagent` already prunes and structures data for LLM consumption.
+   Roadmap includes additional tools to:
+   - rank / filter high-signal functions & strings,
+   - generate compact semantic indexes over snapshots,
+   - stream targeted slices of evidence instead of dumping entire archives.
+   Goal: **maximize analysis quality per token**, not just "stuff more JSON into the prompt".
+
+---
+
+## 🆚 How is this different from IDA / Ghidra MCP integrations?
+
+Short version:
+
+- **No live IDE requirement**
+  MCP plugins for IDA/Ghidra typically assume:
+  - an interactive disassembler instance,
+  - an open database/project,
+  - and often GUI or plugin APIs.
+
+  `kernagent` instead:
+  - runs headless in Docker or your CI,
+  - produces a portable snapshot directory,
+  - lets you analyze that snapshot anywhere (including air-gapped or cloud LLMs) without rerunning the disassembler.
+
+- **Decoupled from specific vendors / UIs**
+  You're not locked into a single RE UI or MCP server. The snapshot is just files: easy to inspect, grep, and integrate.
+
+- **Inspired by modern static-export workflows**
+  This project is heavily inspired by the static-export + LLM methodology described by Check Point Research in
+  "Beating XLoader at Speed: Generative AI as a Force Multiplier for Reverse Engineering"
+  (a.k.a. "Generative AI for Reverse Engineering").
+  `kernagent` turns that idea into a reusable, open, production-ready toolchain with:
+  - a standardized snapshot format,
+  - a constrained evidence-backed agent,
+  - and CLI/CI integration out of the box.
 
 ---
 
@@ -293,6 +335,9 @@ You can also bypass the prompt and consume the JSON directly in your own tooling
 ---
 
 ## 🧬 How It Works
+
+`kernagent` packages the "export once, reason over structured data" approach into a headless pipeline:
+Ghidra runs in batch mode inside Docker to build the snapshot; all LLM/agent logic runs purely on that snapshot.
 
 ### 1. Snapshot extraction (once per binary)
 
