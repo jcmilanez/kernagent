@@ -286,22 +286,16 @@ success "Repository ready"
 
 # Step 3: Build/Pull image
 step 3 5 "Setting up Docker image..."
-HOST_ARCH=$(docker info --format '{{.Architecture}}' 2>/dev/null | tr '[:upper:]' '[:lower:]')
 
-if [[ "$HOST_ARCH" =~ ^(amd64|x86_64)$ ]]; then
-    info "Pulling pre-built image..."
-    if docker pull "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" &>/dev/null; then
-        docker tag "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" "${IMAGE_NAME}:latest"
-        success "Image pulled from registry"
-    else
-        warn "Pull failed, building locally..."
-        docker build -q -t "${IMAGE_NAME}:latest" . || error "Docker build failed"
-        success "Image built locally"
-    fi
+# Docker multi-arch manifest handles architecture selection automatically
+info "Pulling pre-built image from registry..."
+if docker pull "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" &>/dev/null; then
+    docker tag "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" "${IMAGE_NAME}:latest"
+    success "Image pulled from registry"
 else
-    info "Building for ${HOST_ARCH} architecture..."
+    warn "Pull failed, building locally..."
     docker build -q -t "${IMAGE_NAME}:latest" . || error "Docker build failed"
-    success "Image built for ${HOST_ARCH}"
+    success "Image built locally"
 fi
 
 # Step 4: Install CLI wrapper
@@ -326,6 +320,8 @@ CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 CONFIG_FILE="${KERNAGENT_CONFIG:-${CONFIG_HOME}/kernagent/config.env}"
 CONFIG_FILE="${CONFIG_FILE/#\~/$HOME}"
 CONTAINER_CONFIG_PATH="/config/config.env"
+UPDATE_CHECK_FILE="${CONFIG_HOME}/kernagent/.last_update_check"
+UPDATE_INTERVAL=86400  # 24 hours in seconds
 
 # Check Docker
 docker info &>/dev/null 2>&1 || {
@@ -333,14 +329,34 @@ docker info &>/dev/null 2>&1 || {
     exit 1
 }
 
-# Check image
-if ! docker image inspect "${IMAGE_NAME}" &>/dev/null; then
+# Auto-update check (once per day)
+should_check_update() {
+    [[ ! -f "$UPDATE_CHECK_FILE" ]] && return 0
+    local last_check=$(cat "$UPDATE_CHECK_FILE" 2>/dev/null || echo 0)
+    local now=$(date +%s)
+    (( now - last_check > UPDATE_INTERVAL ))
+}
+
+update_image() {
+    echo "Checking for updates..." >&2
+    if docker pull "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" &>/dev/null 2>&1; then
+        docker tag "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" "${IMAGE_NAME}:latest"
+        mkdir -p "$(dirname "$UPDATE_CHECK_FILE")"
+        date +%s > "$UPDATE_CHECK_FILE"
+        echo "Image updated successfully" >&2
+    fi
+}
+
+# Check and update if needed
+if ! docker image inspect "${IMAGE_NAME}:latest" &>/dev/null; then
     echo "Pulling ${IMAGE_NAME}..." >&2
     docker pull "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" &>/dev/null && \
-    docker tag "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" "${IMAGE_NAME}" || {
+    docker tag "${DOCKER_REGISTRY}/${IMAGE_NAME}:latest" "${IMAGE_NAME}:latest" || {
         echo "Error: Image not found. Run install script again." >&2
         exit 1
     }
+elif should_check_update; then
+    update_image &
 fi
 
 # Parse arguments for binary path
